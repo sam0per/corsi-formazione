@@ -72,7 +72,23 @@ Ogni **spazio** è collegato a uno **schema** che definisce:
 
 ---
 
+<style scoped>
+  section { font-size: 22px; }
+</style>
+
 # Tipi di schema
+
+Gli **schemi** (scheme) sono configurazioni riutilizzabili che definiscono il comportamento di uno spazio **company-managed**.
+
+| Schema | Definisce |
+|--------|-----------|
+| **Work Type Scheme** | Quali tipi di lavoro sono disponibili nello spazio |
+| **Workflow Scheme** | Quale workflow si applica a ciascun tipo di lavoro |
+| **Screen Scheme** | Quali campi mostrare per creazione, modifica e visualizzazione |
+| **Permission Scheme** | Chi può fare cosa nello spazio |
+| **Notification Scheme** | Chi riceve notifiche per quali eventi |
+
+> Negli spazi **team-managed**, queste configurazioni sono gestite direttamente senza schemi espliciti.
 
 ---
 
@@ -94,15 +110,66 @@ I tipi di lavoro sono configurabili: è possibile crearne di **custom** per esig
 
 ---
 
+<style scoped>
+  section { font-size: 24px; }
+</style>
+
 # Tipi di workflow
 
+Il **Workflow Scheme** collega ogni tipo di lavoro al suo workflow.
+
+| Tipo di workflow | Descrizione | Uso tipico |
+|------------------|-------------|------------|
+| **Predefinito** | To Do → In Progress → Done | Nuovi spazi, processi semplici |
+| **Personalizzato** | Stati e transizioni su misura | Processi con approvazione, review, ecc. |
+
+- **Team-managed**: workflow configurabile direttamente nella board
+- **Company-managed**: workflow gestito tramite scheme, condivisibile tra spazi
+
+> Approfondimento: personalizzazione workflow in **Sessione 4**.
+
 ---
+
+<style scoped>
+  section { font-size: 24px; }
+</style>
 
 # Tipi di schermata (Screen)
 
+Lo **Screen Scheme** definisce quali campi sono visibili per ciascuna operazione su un work item.
+
+| Contesto | Quando appare | Esempio campi |
+|----------|---------------|---------------|
+| **Create** | Creazione di un nuovo work item | Summary, Tipo, Priorità, Assegnatario |
+| **Edit** | Modifica di un work item | Tutti i campi modificabili |
+| **View** | Visualizzazione di un work item | Tutti i campi inclusi quelli di sola lettura |
+
+- **Team-managed**: campi gestiti direttamente per tipo di lavoro
+- **Company-managed**: schermate configurate tramite scheme centralizzati
+
+> Approfondimento: configurazione schermate in **Sessione 4**.
+
 ---
 
+<style scoped>
+  section { font-size: 22px; }
+</style>
+
 # Tipi di permesso (Permission)
+
+I permessi in Jira si dividono in due livelli:
+- **Globali** — azioni a livello di sito (es. creare spazi, gestire utenti)
+- **Di spazio** — azioni all'interno di un singolo spazio, definite dal **Permission Scheme**
+
+| Permesso di spazio | Azione |
+|--------------------|--------|
+| **Browse** | Visualizzare lo spazio e i work item |
+| **Create** | Creare nuovi work item |
+| **Edit** | Modificare work item esistenti |
+| **Assign** | Assegnare work item ad altri utenti |
+| **Transition** | Cambiare lo stato di un work item |
+
+> Approfondimento: gestione permessi e ruoli in **Sessione 4**.
 
 ---
 
