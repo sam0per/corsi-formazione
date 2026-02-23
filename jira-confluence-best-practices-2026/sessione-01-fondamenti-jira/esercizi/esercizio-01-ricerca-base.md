@@ -14,7 +14,7 @@ Padroneggiare la ricerca base di Jira e i filtri rapidi della board.
    - Una parola chiave generica (es. "manutenzione", "ordine", "accesso")
    - Lo status "In Progress"
    - Il tuo nome come assegnatario
-2. Dalla sidebar di navigazione sinistra, accedi alla "Ricerca avanzata" (Filters → Advanced issue search)
+2. Dalla sidebar di navigazione sinistra, accedi a **Filtri** e poi seleziona **Ricerca avanzata**
 3. Passa dalla modalità "Base" alla modalità "JQL" e osserva come Jira traduce i tuoi filtri in JQL
 
 ### Parte B — Filtri rapidi sulla board (10 min)
