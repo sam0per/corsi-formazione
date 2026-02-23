@@ -392,3 +392,123 @@ This session is the **dashboard and analytics** session, making it the most sens
 4. **Gadget coverage (line 46)**: The claim "ogni gadget usa un filtro JQL" is inaccurate — many gadgets (Activity Stream, Assigned To Me, Sprint Health, etc.) do not require a saved filter. This should be softened.
 5. **Sharing/permissions model (lines 77-80)**: Accurately described. No changes needed.
 6. **Wallboard mode (line 73)**: Still exists and is accurately described. No changes needed.
+
+---
+
+## `jira-confluence-best-practices-2026/sessione-03-dashboard-grafici-analytics/esercizi/esercizio-03-admin-permessi.md`
+
+**Topic placement note**: This exercise covers administration and permissions (permission schemes, notification schemes, project configuration, governance conventions). According to the course README, administration and permissions are a **Session 4** topic ("Automazioni, Workflow e Amministrazione" — which includes "permessi, configurazione progetti"). Placing this in Session 3 (Dashboard, Grafici e Analytics) is **misplaced**. **Recommendation**: Move this file to `sessione-04-automazioni-workflow-admin/esercizi/` and renumber.
+
+| # | Line(s) | Category | Issue | Suggested Fix |
+|---|---------|----------|-------|---------------|
+| 1 | 1 | Internal consistency | Exercise title "Amministrazione e permessi" covers a Session 4 topic (Automazioni, Workflow e Amministrazione). It is misplaced in Session 3 (Dashboard, Grafici e Analytics). | Move to `sessione-04-automazioni-workflow-admin/esercizi/` and renumber the exercise. |
+| 2 | 7 | Terminology | "la gestione dei permessi, degli schemi e delle configurazioni di progetto" — "progetto" (project) is now **"space"** (spazio) in Jira Cloud since Dec 2025. | Change to "configurazioni di space" (or "configurazioni dello spazio"). |
+| 3 | 15 | Feature accuracy | "Andate su **Project settings → Permissions** di un progetto" — "Project settings" is now **"Space settings"** in Jira Cloud. Additionally, "un progetto" should be "uno space". Navigation is via the left sidebar. | Change to "Dalla sidebar sinistra dello space, andate su **Space settings → Permissions**". |
+| 4 | 16 | Terminology | "Analizzate il **Permission scheme** associato" — "Permission scheme" is still the correct term; permission schemes have not been renamed. However, they now apply to **spaces**, not projects. | Minor: add context that permission schemes apply to spaces. |
+| 5 | 17 | Terminology | "Chi può creare issue?" — "issue" is now **"work item"** (elemento di lavoro) since Jul 2025. | Change to "Chi può creare work item?". |
+| 6 | 18 | Terminology | "Chi può assegnare issue?" — "issue" should be **"work item"**. | Change to "Chi può assegnare work item?". |
+| 7 | 20 | Terminology | "Chi può eliminare issue?" — "issue" should be **"work item"**. | Change to "Chi può eliminare work item?". |
+| 8 | 22 | Terminology | "Confrontate con un secondo progetto: usano lo stesso scheme o uno diverso?" — "progetto" should be **"space"**. | Change to "Confrontate con un secondo space". |
+| 9 | 28 | Terminology | "quali issue types sono disponibili nel progetto" — "issue types" is now **"work types"** (tipi di lavoro) and "progetto" should be **"space"**. | Change to "quali work types sono disponibili nello space". |
+| 10 | 30 | Terminology | "come organizzare le issue per area" — "issue" should be **"work item"**. | Change to "come organizzare i work item per area". |
+| 11 | 31 | Terminology | "come raggruppare i progetti a livello di sito" — "progetti" should be **"space"**. Note: "Categorie" for grouping spaces at site level may have been updated in the UI. | Change to "come raggruppare gli space a livello di sito". |
+| 12 | 34 | Terminology | "Quali componenti sarebbero utili per il proprio progetto?" — "progetto" should be **"space"**. | Change to "per il proprio space". |
+| 13 | 41 | Terminology | "Nomenclatura progetti" — "progetti" should be **"space"**. The example codes (IT-HELPDESK, HR-ONBOARDING, FAC-TICKETS) are space keys and remain valid. | Change to "Nomenclatura space" (or "Nomenclatura degli spazi"). |
+| 14 | 48 | Terminology | "Comprensione dei permission scheme e notification scheme" — acceptable; these terms have not been renamed. | No change needed. |
+| 15 | 49 | Terminology | "Lista di componenti ed etichette proposti per ciascun progetto" — "progetto" should be **"space"**. | Change to "per ciascuno space". |
+| 16 | 55 | Terminology | "Revisione permission scheme per ogni progetto" — "progetto" should be **"space"**. | Change to "per ogni space". |
+| 17 | 57 | Terminology | "Creazione di un template di progetto per nuovi team" — "progetto" should be **"space"**. Space templates exist in Jira Cloud. | Change to "Creazione di un template di space per nuovi team". |
+| 18 | 19 | Feature accuracy | "Chi può modificare il workflow?" — This permission exists in Jira Cloud but is now managed through the **new workflow editor** (the old editor is being removed June 2026). The permission itself is still valid. | Minor: no immediate change needed, but the exercise could note that workflow editing now uses the new visual editor. |
+
+**Summary**: 18 issues found (14 terminology, 2 feature accuracy, 1 internal consistency, 1 informational). The **most critical issue** is the topic placement: administration and permissions belong to Session 4, not Session 3. Beyond that, the file has extensive use of "progetto" (appearing 9 times, all needing replacement with "space") and "issue"/"issue types" (appearing 5 times, needing replacement with "work item"/"work types"). The permission and notification scheme concepts themselves are accurate. The navigation path "Project settings → Permissions" must be updated to "Space settings → Permissions".
+
+---
+
+## `jira-confluence-best-practices-2026/sessione-03-dashboard-grafici-analytics/esercizi/esercizio-03-report-analisi.md`
+
+**Topic placement note**: This exercise covers dashboard creation and report analysis. Dashboards, gadgets, and reports are the **core Session 3** topics ("Dashboard, Grafici e Analytics"). This exercise is **correctly placed**.
+
+| # | Line(s) | Category | Issue | Suggested Fix |
+|---|---------|----------|-------|---------------|
+| 1 | 21 | Feature accuracy | "Aggiungete un gadget comune: **'Creati vs Risolti'** su tutti i progetti" — the official gadget name is **"Created vs Resolved"**. Also, "progetti" (projects) is now **"space"** (spaces). | Change to "**Created vs Resolved** (Creati vs Risolti) su tutti gli space". |
+| 2 | 17 | Terminology | "gadget con conteggio ticket aperti per priorità" — "ticket" informally refers to "issue", now **"work item"** (elemento di lavoro). | Change to "gadget con conteggio work item aperti per priorità". |
+| 3 | 18 | Terminology | "gadget con issue in corso su ordini/fatture" — "issue" should be **"work item"**. | Change to "gadget con work item in corso su ordini/fatture". |
+| 4 | 21 | Terminology | "su tutti i progetti" — "progetti" should be **"space"**. | Change to "su tutti gli space". |
+| 5 | 27 | Feature accuracy | "navigate su **Report** (menu laterale del progetto)" — "progetto" should be **"space"**. The reference to "menu laterale" is correct for the new sidebar navigation. However, reports in Jira Cloud are accessed from the **board's sidebar**, not the space's general sidebar. | Change to "navigate su **Reports** dalla sidebar della board" (or "dalla sezione Reports della board nello space"). |
+| 6 | 29 | Feature accuracy | "Burndown Chart (se il progetto usa Scrum)" — "progetto" should be **"space"**. Burndown Chart is a board-level report, not a dashboard gadget. | Change to "Burndown Chart (se lo space usa Scrum)". |
+| 7 | 38 | Terminology | "1 dashboard condivisa con 5+ gadget, visibile a tutto il gruppo" — acceptable; "dashboard" and "gadget" are current terms. | No change needed. |
+| 8 | 39 | Feature accuracy | "Comprensione di almeno 2 report nativi di Jira" — acceptable; these are board-level reports that are indeed native to Jira Cloud. | No change needed. |
+| 9 | 44 | Terminology | "la dashboard alla direzione Tyvak" — acceptable; "dashboard" is current. | No change needed. |
+
+**Summary**: 9 items audited, **6 issues found** (3 terminology, 3 feature accuracy). This exercise is **correctly placed** and is the least impacted among the Session 3 exercises. The main issues are: (1) standard "issue"/"ticket" → "work item" and "progetto/i" → "space" terminology replacements on 4 lines, (2) the gadget name "Creati vs Risolti" should include the official English name "Created vs Resolved", and (3) the report navigation path should clarify that reports are accessed from the board's sidebar, not the space's general sidebar.
+
+---
+
+## `jira-confluence-best-practices-2026/sessione-03-dashboard-grafici-analytics/esercizi/esercizio-03-knowledge-sharing-plan.md`
+
+**Topic placement note**: This exercise covers knowledge sharing planning, Confluence space creation, and training material organization. According to the course README, knowledge sharing is a **Session 5** topic ("Confluence + Integrazione + **Knowledge Transfer**"). Placing this in Session 3 (Dashboard, Grafici e Analytics) is **clearly misplaced**. **Recommendation**: Move this file to `sessione-05-confluence-integrazione-knowledge/esercizi/` and renumber.
+
+| # | Line(s) | Category | Issue | Suggested Fix |
+|---|---------|----------|-------|---------------|
+| 1 | 1 | Internal consistency | Exercise title "Piano di Knowledge Sharing" covers a Session 5 topic (Confluence + Integrazione + Knowledge Transfer). It is misplaced in Session 3 (Dashboard, Grafici e Analytics). | Move to `sessione-05-confluence-integrazione-knowledge/esercizi/` and renumber the exercise. |
+| 2 | 27 | Terminology | "Navigazione base di Jira" — acceptable as a concept reference; "navigazione" is not deprecated. However, the navigation referred to here is the **new left sidebar** navigation (since March 2025). | No immediate text change, but ensure any linked navigation material reflects the sidebar UI. |
+| 3 | 28 | Terminology | "Creare e gestire issue correttamente" — "issue" is now **"work item"** (elemento di lavoro) since Jul 2025. | Change to "Creare e gestire work item correttamente". |
+| 4 | 31 | Terminology | "Leggere e usare le dashboard" — acceptable; "dashboard" is current terminology. | No change needed. |
+| 5 | 32 | Terminology | "Aprire ticket IT / facility / HR correttamente" — "ticket" informally refers to "issue", now **"work item"**. | Change to "Aprire work item IT / facility / HR correttamente" (or "Creare work item..."). |
+| 6 | 59 | Confluence references | "Create (o strutturate) uno spazio Confluence **'Formazione Jira — Tyvak'**" — Confluence still uses the term "spazio" (space), so this is correct. However, with Jira also now calling its containers "spaces" (since Dec 2025), the instruction could benefit from explicit disambiguation. | Consider adding "uno spazio **Confluence**" to disambiguate from Jira spaces, or note the shared terminology. |
+| 7 | 61 | Confluence references | "Create la struttura delle pagine" — "pagine" (pages) is correct Confluence terminology, unchanged. | No change needed. |
+| 8 | 80 | Confluence references | "Creare almeno 1 pagina Confluence di documentazione per i colleghi" — correct Confluence terminology. | No change needed. |
+| 9 | 81 | Terminology | "Condurre almeno 1 sessione di knowledge transfer nelle prossime 4 settimane" — acceptable; "knowledge transfer" is a general training term, not Jira-specific. | No change needed. |
+| 10 | 34 | Terminology | "Best practice: etichette, componenti, commenti" — acceptable; "etichette" (labels), "componenti" (components), and "commenti" (comments) are current Jira terms. | No change needed. |
+
+**Summary**: 10 items audited, **4 issues found** (2 terminology, 1 internal consistency, 1 Confluence references). The **most critical issue** is the topic placement: knowledge sharing planning is a Session 5 topic and has no relation to Session 3's dashboard/analytics theme. The content itself is largely terminology-neutral since it focuses on training planning rather than Jira features. The two terminology fixes are the standard "issue" → "work item" and "ticket" → "work item" replacements. The Confluence references are accurate.
+
+---
+
+## `jira-confluence-best-practices-2026/sessione-03-dashboard-grafici-analytics/esercizi/esercizio-03-tipi-progetto-workflow.md`
+
+**Topic placement note**: This exercise covers project types (Team-managed vs Company-managed) and workflow analysis. According to the course README, project/space types are a **Session 1** topic ("Fondamenti di Jira Cloud" — "tipi di progetto") and custom workflows are a **Session 4** topic ("Automazioni, Workflow e Amministrazione" — "workflow personalizzati"). This exercise overlaps both sessions but fits **neither** Session 3 (Dashboard, Grafici e Analytics). **Recommendation**: Split the exercise — move Parte A (project/space types) to Session 1 and Parte B (workflow analysis) to Session 4, or move the entire exercise to Session 4 as it leans more toward configuration.
+
+| # | Line(s) | Category | Issue | Suggested Fix |
+|---|---------|----------|-------|---------------|
+| 1 | 1 | Internal consistency | Exercise title "Tipi di progetto e workflow" covers Session 1 (space types) and Session 4 (workflow) topics. It is misplaced in Session 3 (Dashboard, Grafici e Analytics). | Move to `sessione-04-automazioni-workflow-admin/esercizi/` or split between Sessions 1 and 4. |
+| 2 | 1 | Terminology | Title "Tipi di progetto e workflow" — "progetto" (project) is now **"space"** (spazio) in Jira Cloud since Dec 2025. | Change to "Tipi di space e workflow". Also rename file from `esercizio-03-tipi-progetto-workflow.md` to `esercizio-03-tipi-space-workflow.md` (or renumber per new session). |
+| 3 | 7 | Terminology | "Comprendere le differenze tra progetti Team-managed e Company-managed" — "progetti" should be **"space"**. Since Dec 2025, Jira uses "Team-managed space" and "Company-managed space". | Change to "Comprendere le differenze tra space Team-managed e Company-managed". |
+| 4 | 12 | Terminology | "Apri un progetto **Team-managed** (se disponibile) e uno **Company-managed**" — "progetto" should be **"space"**. | Change to "Apri uno space **Team-managed** (se disponibile) e uno **Company-managed**". |
+| 5 | 15 | Terminology | "Dove si trovano le impostazioni del progetto" — "progetto" should be **"space"**. "Impostazioni del progetto" (Project settings) is now **"Space settings"**. | Change to "Dove si trovano le impostazioni dello space" (Space settings). |
+| 6 | 17 | Terminology | "Se puoi aggiungere nuovi issue types" — "issue types" is now **"work types"** (tipi di lavoro) since Jul 2025. | Change to "Se puoi aggiungere nuovi work types". |
+| 7 | 18 | Terminology | "Se puoi modificare i campi delle issue" — "issue" should be **"work item"**. | Change to "Se puoi modificare i campi dei work item". |
+| 8 | 23 | Terminology | "Si possono aggiungere issue types?" — "issue types" should be **"work types"**. | Change to "Si possono aggiungere work types?". |
+| 9 | 24 | Terminology | "I campi sono condivisi con altri progetti?" — "progetti" should be **"space"**. | Change to "I campi sono condivisi con altri space?". |
+| 10 | 30 | Terminology | "Vai nelle impostazioni di un progetto Company-managed" — "progetto" should be **"space"**. Navigation is now via the left sidebar. | Change to "Vai nelle impostazioni di uno space Company-managed (Space settings dalla sidebar sinistra)". |
+| 11 | 31 | Feature accuracy | "Visualizza il workflow associato (Board settings → Workflow)" — the path to view workflows in the new UI is **"Space settings → Workflows"**, not "Board settings → Workflow". Board settings control column mapping, not workflow definition. | Change to "Visualizza il workflow associato (**Space settings → Workflows**)". |
+| 12 | 36 | Terminology | "Confronta con il workflow di un progetto Team-managed" — "progetto" should be **"space"**. | Change to "di uno space Team-managed". |
+| 13 | 40 | Feature accuracy | "Bozza uno schema con gli stati: `Nuovo → In analisi → In lavorazione → In attesa di feedback → Risolto → Chiuso`" — these are valid workflow states. However, the exercise should note that workflow creation/editing will use the **new workflow editor** exclusively from June 2026 (the old editor is being removed). | Add a note: "Nota: dal giugno 2026 i workflow si modificano esclusivamente nel nuovo editor visuale." |
+| 14 | 46 | Terminology | "(IT Manager) Bozza del workflow ideale per helpdesk IT" — acceptable; "workflow" and "helpdesk" are current terms. | No change needed. |
+| 15 | 50 | Terminology | "Per il vostro team, quale tipo di progetto sarebbe più appropriato?" — "progetto" should be **"space"**. | Change to "quale tipo di space sarebbe più appropriato?". |
+
+**Summary**: 15 items audited, **14 issues found** (11 terminology, 2 feature accuracy, 1 internal consistency). The **most critical issue** is the topic placement: project/space types and workflow analysis are Session 1 and Session 4 topics, not Session 3. This exercise has **no connection** to the Session 3 theme of dashboards and analytics. The second most critical issue is the workflow navigation path (line 31): "Board settings → Workflow" is incorrect and should be "Space settings → Workflows". The file has extensive "progetto" usage (10 occurrences needing "space") and "issue"/"issue types" (3 occurrences needing "work item"/"work types"). The new workflow editor deprecation timeline (June 2026) should also be noted.
+
+---
+
+## `jira-confluence-best-practices-2026/sessione-03-dashboard-grafici-analytics/esercizi/esercizio-03-jql-avanzato.md`
+
+**Topic placement note**: This exercise covers advanced JQL functions, saving/sharing filters, and filter subscriptions. Advanced JQL is primarily a **Session 2** topic ("Filtri, Ricerche e JQL" — "JQL sintassi, operatori, funzioni, filtri avanzati, sottoscrizioni"). Including it in Session 3 may be intentional as a continuation/reinforcement of Session 2 JQL skills, using them in the context of dashboard creation (since dashboard gadgets rely on saved filters). If that is the intent, the exercise is **acceptable in Session 3** but should explicitly connect JQL filter skills to the dashboard/analytics theme. As-is, the exercise makes no reference to dashboards, making the connection unclear.
+
+| # | Line(s) | Category | Issue | Suggested Fix |
+|---|---------|----------|-------|---------------|
+| 1 | 1 | Internal consistency | Exercise "JQL avanzato e filtri condivisi" is a Session 2 continuation topic (Filtri, Ricerche e JQL). Placing it in Session 3 may be intentional as a bridge to dashboard gadgets (which use saved filters), but the exercise makes **no explicit connection** to the Session 3 dashboard theme. | Either (a) add an introductory note connecting this exercise to dashboards: "I filtri salvati in questo esercizio saranno usati come base per i gadget della dashboard nella prossima attività", or (b) move to `sessione-02-filtri-ricerche-jql/esercizi/` if no dashboard connection is intended. |
+| 2 | 16-17 | JQL syntax | Query `updated >= startOfDay()` — syntax is correct. `updated` field and `startOfDay()` function are unchanged in Jira Cloud 2026. | No change needed. |
+| 3 | 21-22 | JQL syntax | Query `status CHANGED AFTER -1w` — syntax is correct. The `CHANGED` operator and relative date syntax `-1w` are unchanged. | No change needed. |
+| 4 | 26-27 | JQL syntax | Query `text ~ "satellite"` — syntax is correct. The `text` pseudo-field and `~` (contains) operator are unchanged. | No change needed. |
+| 5 | 31-32 | JQL syntax | Query `reporter = currentUser() AND assignee != currentUser()` — syntax is correct. `reporter`, `assignee`, `currentUser()` are all unchanged. | No change needed. |
+| 6 | 25 | Terminology | "trova issue che contengono la parola 'satellite' nella descrizione o nel titolo" — "issue" is now **"work item"** (elemento di lavoro). | Change to "trova work item che contengono...". |
+| 7 | 30 | Terminology | "Issue create da te ma assegnate ad altri" — "Issue" should be **"work item"**. | Change to "Work item creati da te ma assegnati ad altri". |
+| 8 | 15 | Terminology | "Issue modificate oggi" — "Issue" should be **"work item"**. | Change to "Work item modificati oggi". |
+| 9 | 20 | Terminology | "Issue il cui status è cambiato nell'ultima settimana" — "Issue" should be **"work item"**. | Change to "Work item il cui status è cambiato nell'ultima settimana". |
+| 10 | 40 | Feature accuracy | "Clicca 'Save as' nella ricerca avanzata" — the "Save as" button is still present in Jira Cloud's advanced search. However, the navigation to advanced search may now be labeled "Advanced work item search" (instead of "Advanced issue search") and is accessed via the left sidebar. | Minor: verify the current label. If the exercise does not describe how to reach the advanced search, no change is needed for this line specifically. |
+| 11 | 44 | Feature accuracy | "Dettagli filtro → Modifica permessi → Aggiungi gruppo o progetto" — "progetto" here refers to sharing a filter with a project, now **"space"**. The filter sharing UI now references "space" where it previously said "project". | Change to "Aggiungi gruppo o space". |
+| 12 | 56 | Terminology | "5 query JQL avanzate funzionanti" — acceptable; "query JQL" is current terminology. | No change needed. |
+| 13 | 57 | Terminology | "1 filtro salvato, condiviso e con sottoscrizione attiva" — acceptable; "filtro" (filter) and "sottoscrizione" (subscription) are current terms. | No change needed. |
+
+**Summary**: 13 items audited, **7 issues found** (4 terminology, 2 feature accuracy, 1 internal consistency). This exercise is **lightly impacted** by the 2025-2026 changes. The JQL syntax in all four example queries is **completely accurate** — no functions or operators have changed. The main issues are: (1) the exercise's connection to the Session 3 dashboard theme is implicit at best and should be made explicit; (2) four occurrences of "issue" in query labels should be changed to "work item"; (3) the filter sharing reference to "progetto" on line 44 should be updated to "space". The exercise is well-structured and the JQL concepts taught (date functions, CHANGED operator, full-text search, currentUser()) are all current and useful.
