@@ -50,8 +50,8 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 1 (1:00 - 1:45)
 
-- [Esercizio 1: Navigazione e esplorazione spazio](esercizi/esercizio-0101-navigazione-space.md)
-- [Esercizio 2: Ricerca base](esercizi/esercizio-0102-ricerca-base.md)
+- [Esercizio 1: Navigazione e esplorazione spazio](./esercizi/esercizio-0101-navigazione-space.md)
+- [Esercizio 2: Ricerca base](./esercizi/esercizio-0102-ricerca-base.md)
 
 ---
 
@@ -86,7 +86,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 2 (2:45 - 3:30)
 
-- [Esercizio 3: Creazione e gestione work item](esercizi/esercizio-0103-creazione-work-item.md)
+- [Esercizio 3: Creazione e gestione work item](./esercizi/esercizio-0103-creazione-work-item.md)
 
 *Dopo l'esercizio: discussione guidata e Q&A sui work item creati*
 
@@ -102,5 +102,5 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ## Materiali di riferimento
 
-- [Slide sessione 1](slides/)
+- [Slide sessione 1](./slides/)
 - [Glossario Jira](../glossario.md)
