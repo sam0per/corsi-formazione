@@ -98,4 +98,4 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 ## Materiali di riferimento
 
 - [Slide sessione 1](slides/)
-- [Glossario Jira](../glossario.md)
+- Glossario Jira *(in preparazione)*
