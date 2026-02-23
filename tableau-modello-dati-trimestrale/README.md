@@ -319,7 +319,7 @@ Ogni sessione include **2-3 esercizi pratici** di difficoltà progressiva per co
 ## 🗂️ Struttura del Repository
 
 ```
-/training-tableau-quarterly-model/
+tableau-modello-dati-trimestrale/
 │
 ├── README.md (questo file)
 │
@@ -407,12 +407,12 @@ Ogni sessione include **2-3 esercizi pratici** di difficoltà progressiva per co
 ### Setup Iniziale
 
 **Prima della Sessione 1**:
-1. Installare Tableau Desktop seguendo le istruzioni in `/setup/installazione-tableau.md`
+1. Installare Tableau Desktop seguendo le istruzioni in `setup/installazione-tableau.md`
 2. Verificare accesso al repository GitHub del corso
-3. Scaricare i materiali della Sessione 1 da `/sessione-01-fondamenti-tableau-intro/`
+3. Scaricare i materiali della Sessione 1 da `sessione-01-fondamenti-tableau-intro/`
 
 **Prima della Sessione 2**:
-1. Configurare credenziali di accesso al database seguendo `/setup/configurazione-database.md`
+1. Configurare credenziali di accesso al database seguendo `setup/configurazione-database.md`
 2. Testare connessione database con query di test fornita
 
 ---
@@ -428,7 +428,7 @@ Ogni sessione include:
 
 ### Risorse Aggiuntive
 
-Nella cartella `/risorse/` troverete:
+Nella cartella `risorse/` troverete:
 - Cheat sheet per riferimento rapido
 - Glossario termini tecnici
 - Link a documentazione ufficiale Tableau
