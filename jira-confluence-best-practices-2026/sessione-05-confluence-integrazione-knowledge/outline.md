@@ -57,14 +57,14 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 #### 5.4 Integrazione Jira ↔ Confluence (25 min)
 
 - **Da Confluence a Jira**:
-  - Macro Jira Issues: incorporare tabelle di issue nella pagina
+  - Macro Jira Work Items: incorporare tabelle di **elementi di lavoro** (work item) nella pagina
   - Macro Jira Chart: incorporare grafici nella pagina
-  - Creare issue Jira direttamente da Confluence
+  - Creare work item Jira direttamente da Confluence
   - Smart links: incollare link Jira per preview automatica
 - **Da Jira a Confluence**:
-  - Collegare pagine Confluence alle issue Jira
-  - Confluence come knowledge base per i progetti Jira
-  - Link nella descrizione delle issue
+  - Collegare pagine Confluence ai work item Jira
+  - Confluence come knowledge base per gli spazi Jira
+  - Link nella descrizione dei work item
 - Casi d'uso Tyvak:
   - Pagina Confluence "Stato onboarding" con macro Jira che mostra le task in tempo reale
   - Documentazione procedure IT con link ai workflow Jira
@@ -74,7 +74,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 - Documentare i workflow su Confluence
 - Creare runbook per processi ricorrenti
-- Template di progetto con link a Confluence
+- Template di spazio con link a Confluence
 - Dashboard Jira + pagine Confluence: il reporting completo
 - Mantenere la documentazione aggiornata: chi è responsabile?
 
@@ -117,5 +117,5 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 ## Materiali di riferimento
 
 - [Slide sessione 5](slides/)
-- [Tutti i cheatsheet](../risorse/)
-- [Glossario](../risorse/glossario.md)
+- [Tutti i cheatsheet](../cheatsheet/)
+- [Glossario](../glossario.md)

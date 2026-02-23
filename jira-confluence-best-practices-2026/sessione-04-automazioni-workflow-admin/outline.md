@@ -8,7 +8,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 - Creare regole di automazione in Jira Cloud
 - Progettare e implementare workflow personalizzati
-- Gestire permessi, schemi e configurazioni di progetto (focus IT Manager)
+- Gestire permessi, schemi e configurazioni dello **spazio** (space) (focus IT Manager)
 - Applicare best practice di amministrazione Jira
 
 ---
@@ -21,36 +21,36 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 - Cos'è Jira Automation e perché usarla
 - Concetto chiave: **Trigger → Condizioni → Azioni**
-- Automazioni di progetto vs automazioni globali
+- Automazioni di spazio (space) vs automazioni globali
 - Limiti del piano Cloud (numero di esecuzioni mensili)
-- Dove trovare le automazioni: Project settings → Automation
+- Dove trovare le automazioni: Space settings → Automation
 
 #### 4.2 Trigger principali (15 min)
 
-- **Issue created**: quando viene creata un'issue
-- **Issue transitioned**: quando cambia lo status
+- **Work item created**: quando viene creato un elemento di lavoro (work item)
+- **Work item transitioned**: quando cambia lo status
 - **Field value changed**: quando cambia un campo
 - **Comment added**: quando viene aggiunto un commento
 - **Scheduled**: esecuzione programmata (cron)
 - **Manual trigger**: avviato dall'utente
-- Esempio Tyvak: trigger su creazione ticket IT → assegnazione automatica
+- Esempio Tyvak: trigger su creazione work item IT → assegnazione automatica
 
 #### 4.3 Condizioni e azioni (20 min)
 
-- **Condizioni**: Issue fields condition, JQL condition, User condition, Related issues condition
+- **Condizioni**: Work item fields condition, JQL condition, User condition, Related work items condition
 - **Azioni principali**:
-  - Transizione issue (cambia status)
+  - Transition work item (cambia status)
   - Modifica campo (assegna, cambia priorità, aggiungi etichetta)
   - Invia email / notifica Slack
   - Crea sotto-attività
   - Aggiungi commento
-  - Collega issue
-- **Branch rule**: applicare azioni su issue collegate
-- **Smart values**: `{{issue.key}}`, `{{issue.summary}}`, `{{now.plusDays(7)}}`, `{{issue.assignee.displayName}}`
+  - Link work items
+- **Branch rule**: applicare azioni su work item collegati
+- **Smart values**: `{{workItem.key}}`, `{{workItem.summary}}`, `{{now.plusDays(7)}}`, `{{workItem.assignee.displayName}}`
 - Esempi Tyvak pratici:
-  - HR: alla creazione di una issue "Nuovo dipendente" → crea automaticamente 5 sotto-task di onboarding
+  - HR: alla creazione di un work item "Nuovo dipendente" → crea automaticamente 5 sotto-task di onboarding
   - Facility: quando un reclamo passa a "Risolto" → invia email di conferma al reporter
-  - IT: se un ticket Critical resta aperto > 24h → notifica automatica al manager
+  - IT: se un work item Critical resta aperto > 24h → notifica automatica al manager
 
 **☕ Pausa (10 min)**
 
@@ -68,7 +68,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Ripasso: stati e transizioni
 - Editor visuale del workflow
 - Aggiungere stati personalizzati
-- Configurare transizioni: condizioni, validatori, post-function
+- Configurare transizioni: regole (rules) nel nuovo editor
 - Transizioni globali vs transizioni specifiche
 - Best practice: semplicità, chiarezza, non più di 6-7 stati
 - Workshop: progettare il workflow ideale per ciascun ruolo
@@ -80,18 +80,18 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 #### 4.5 Amministrazione Jira — Focus IT Manager (20 min)
 
 - **Gestione utenti e gruppi**: invitare utenti, creare gruppi, assegnare ruoli
-- **Permission schemes**: chi può fare cosa nel progetto
+- **Permission schemes**: chi può fare cosa nello spazio
 - **Notification schemes**: chi riceve quali notifiche
-- **Issue type schemes**: quali tipi di issue per quale progetto
+- **Work type schemes**: quali tipi di lavoro (work type) per quale spazio
 - **Screen schemes**: quali campi mostrare per quale operazione
-- **Configurazione progetto**: impostazioni generali, categorie, componenti
+- **Configurazione spazio**: impostazioni generali, categorie, componenti
 - Best practice: principio del minimo privilegio, documentare le configurazioni
 
 #### 4.6 Best practice di governance Jira (15 min)
 
-- Convenzioni di nomenclatura: progetti, etichette, componenti
-- Pulizia periodica: issue obsolete, filtri inutilizzati, utenti inattivi
-- Template di progetto per nuovi team
+- Convenzioni di nomenclatura: spazi, etichette, componenti
+- Pulizia periodica: work item obsoleti, filtri inutilizzati, utenti inattivi
+- Template di spazio per nuovi team
 - Documentare le configurazioni (collegamento con Confluence — sessione 5)
 - Controllo periodico permessi e accessi
 
@@ -105,7 +105,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 ### Recap e Q&A (3:30 - 4:00)
 
 - Riepilogo: automazione + workflow + governance = Jira efficiente
-- Checklist di configurazione per nuovi progetti
+- Checklist di configurazione per nuovi spazi
 - Anteprima sessione 5: Confluence, integrazione e knowledge transfer
 
 ---
@@ -113,5 +113,5 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 ## Materiali di riferimento
 
 - [Slide sessione 4](slides/)
-- [Automazioni Cheatsheet](../risorse/automazioni-cheatsheet.md)
-- [JQL Cheatsheet](../risorse/jql-cheatsheet.md)
+- [Automazioni Cheatsheet](../cheatsheet/automazioni-cheatsheet.md)
+- [JQL Cheatsheet](../cheatsheet/jql-cheatsheet.md)
