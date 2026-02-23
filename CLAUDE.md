@@ -16,7 +16,8 @@ Two courses exist:
 ```
 /
 ├── README.md                              # Course index (lists all courses)
-├── docs/plans/                            # Audit reports and implementation plans
+├── docs/audit/                            # Audit reports
+├── docs/plans/                            # Implementation plans
 ├── tableau-modello-dati-trimestrale/
 │   └── README.md                          # Full syllabus for the Tableau course
 └── jira-confluence-best-practices-2026/
