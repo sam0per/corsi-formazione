@@ -12,8 +12,8 @@ campo OPERATORE valore [AND/OR campo OPERATORE valore] [ORDER BY campo ASC/DESC]
 
 | Campo | Descrizione | Esempio |
 |-------|-------------|---------|
-| `project` | Progetto | `project = "IT-HELPDESK"` |
-| `issuetype` | Tipo issue | `issuetype = Bug` |
+| `space` (alias: `project`) | **Spazio** (space) | `space = "IT-HELPDESK"` |
+| `type` (alias: `issuetype`) | Tipo di lavoro (work type) | `type = Bug` |
 | `status` | Status attuale | `status = "In Progress"` |
 | `assignee` | Assegnatario | `assignee = currentUser()` |
 | `reporter` | Creatore | `reporter = "mario.rossi"` |
@@ -53,7 +53,7 @@ campo OPERATORE valore [AND/OR campo OPERATORE valore] [ORDER BY campo ASC/DESC]
 | `NOT` | Negazione |
 | `( )` | Raggruppamento |
 
-Esempio: `project = "IT" AND (priority = Critical OR priority = High)`
+Esempio: `space = "IT" AND (priority = Critical OR priority = High)`
 
 ## Funzioni temporali
 
@@ -68,6 +68,16 @@ Esempio: `project = "IT" AND (priority = Critical OR priority = High)`
 | `startOfMonth()` | Inizio mese corrente |
 | `endOfMonth()` | Fine mese corrente |
 | `startOfYear()` | Inizio anno corrente |
+| `endOfYear()` | Fine anno corrente |
+
+## Funzioni rinominate (2025)
+
+| Vecchio nome | Nuovo nome | Note |
+|-------------|------------|------|
+| `issueHistory()` | `workItemHistory()` | Il vecchio nome resta come alias |
+| `projectsLeadByUser()` | `spacesLeadByUser()` | Il vecchio nome resta come alias |
+| `projectsWhereUserHasRole()` | `spacesWhereUserHasRole()` | Il vecchio nome resta come alias |
+| `projectsWhereUserHasPermission()` | `spacesWhereUserHasPermission()` | Il vecchio nome resta come alias |
 
 ## Periodi relativi
 
@@ -92,29 +102,29 @@ ORDER BY updated DESC, priority ASC   -- combinato
 
 ### Per tutti
 ```sql
--- Le mie issue aperte
+-- I miei elementi di lavoro (work item) aperti
 assignee = currentUser() AND status != Done ORDER BY priority DESC
 
--- Issue create questa settimana
-project = "PROGETTO" AND created >= startOfWeek()
+-- Elementi di lavoro creati questa settimana
+space = "PROGETTO" AND created >= startOfWeek()
 
--- Issue in scadenza entro 3 giorni
+-- Elementi di lavoro in scadenza entro 3 giorni
 due <= 3d AND due >= now() AND status != Done
 
--- Issue aggiornate oggi
-updated >= startOfDay() AND project = "PROGETTO"
+-- Elementi di lavoro aggiornati oggi
+updated >= startOfDay() AND space = "PROGETTO"
 ```
 
 ### IT Manager
 ```sql
--- Ticket critici aperti da più di 24h
-project = "IT-HELPDESK" AND priority = Critical AND status != Done AND created <= -24h
+-- Work item critici aperti da più di 24h
+space = "IT-HELPDESK" AND priority = Critical AND status != Done AND created <= -24h
 
--- Ticket per tipo di problema
-project = "IT-HELPDESK" AND component = "Hardware" AND status != Done
+-- Work item per tipo di problema
+space = "IT-HELPDESK" AND component = "Hardware" AND status != Done
 
--- Volume ticket ultima settimana
-project = "IT-HELPDESK" AND created >= -7d
+-- Volume work item ultima settimana
+space = "IT-HELPDESK" AND created >= -7d
 ```
 
 ### Administration & Finance
@@ -125,7 +135,7 @@ labels = "acquisti" AND status = "In attesa approvazione"
 -- Fatture in scadenza
 labels = "fatturazione" AND due <= 7d AND status != Done
 
--- Issue completate questo mese
+-- Elementi di lavoro completati questo mese
 labels IN ("acquisti", "fatturazione") AND resolved >= startOfMonth()
 ```
 
@@ -149,8 +159,8 @@ labels = "reclami" AND status != Done ORDER BY priority DESC
 -- Manutenzioni programmate questo mese
 labels = "manutenzione" AND due >= startOfMonth() AND due <= endOfMonth()
 
--- Ticket facility risolti ultima settimana
-project = "FACILITY" AND resolved >= -7d
+-- Work item facility risolti ultima settimana
+space = "FACILITY" AND resolved >= -7d
 ```
 
 ## Suggerimenti

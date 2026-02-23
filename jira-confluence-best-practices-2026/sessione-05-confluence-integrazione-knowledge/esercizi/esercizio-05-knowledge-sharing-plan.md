@@ -25,11 +25,11 @@ Per ogni gruppo target, selezionate i **3 argomenti più importanti** da trasfer
 
 Scegliete tra:
 - Navigazione base di Jira
-- Creare e gestire issue correttamente
+- Creare e gestire **elementi di lavoro** (work item) correttamente
 - Usare i filtri rapidi e la ricerca
 - JQL base (le 5 query essenziali)
 - Leggere e usare le dashboard
-- Aprire ticket IT / facility / HR correttamente
+- Aprire work item IT / facility / HR correttamente
 - Usare Confluence per documentazione
 - Best practice: etichette, componenti, commenti
 

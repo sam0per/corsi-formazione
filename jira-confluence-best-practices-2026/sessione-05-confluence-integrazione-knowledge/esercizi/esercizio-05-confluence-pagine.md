@@ -2,6 +2,8 @@
 
 > ⏱ Tempo stimato: 20 minuti | 👥 Individuale
 
+> ℹ️ L'editor legacy di Confluence sarà rimosso ad aprile 2026. Questo esercizio usa l'editor moderno.
+
 ## Obiettivo
 
 Creare una pagina Confluence strutturata e utile per il proprio ruolo.
@@ -11,15 +13,15 @@ Creare una pagina Confluence strutturata e utile per il proprio ruolo.
 ### Preparazione (2 min)
 
 1. Accedi a Confluence Cloud
-2. Identifica (o crea) uno spazio adatto al tuo ruolo
+2. Identifica (o crea) uno spazio Confluence adatto al tuo ruolo
 
 ### Creazione pagina (18 min)
 
 Ogni partecipante crea **1 pagina** seguendo il proprio scenario:
 
-**🔧 IT Manager — "Procedura gestione ticket IT":**
+**🔧 IT Manager — "Procedura gestione elementi di lavoro IT":**
 - Titolo chiaro e descrittivo
-- Sezione "Come aprire un ticket": istruzioni passo-passo
+- Sezione "Come aprire un **elemento di lavoro** (work item)": istruzioni passo-passo
 - Sezione "Priorità e tempi di risposta": tabella con SLA
 - Sezione "Escalation": chi contattare per urgenze
 - Usa: pannello informativo, tabella, elenco numerato

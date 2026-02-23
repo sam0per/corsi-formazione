@@ -4,7 +4,7 @@
 
 ## A
 
-**Assegnatario (Assignee)**: La persona responsabile di un'issue.
+**Assegnatario (Assignee)**: La persona responsabile di un elemento di lavoro (work item).
 
 **Automazione (Automation)**: Sistema di regole per eseguire azioni automatiche basate su trigger e condizioni.
 
@@ -12,23 +12,23 @@
 
 ## B
 
-**Backlog**: Lista di issue da completare, non ancora pianificate in uno sprint.
+**Backlog**: Lista di elementi di lavoro (work item) da completare, non ancora pianificati in uno sprint.
 
-**Board (Bacheca)**: Visualizzazione delle issue in colonne per status. Può essere Scrum o Kanban.
+**Board (Bacheca)**: Visualizzazione degli elementi di lavoro (work item) in colonne per status. Può essere Scrum o Kanban.
 
 **Burndown Chart**: Grafico che mostra il lavoro rimanente in uno sprint nel tempo.
 
 ## C
 
-**Campo (Field)**: Un attributo di un'issue (es. Summary, Priority, Assignee, Labels).
+**Campo (Field)**: Un attributo di un elemento di lavoro (work item) (es. Summary, Priority, Assignee, Labels).
 
 **Campo personalizzato (Custom Field)**: Campo creato dall'amministratore per esigenze specifiche.
 
-**Commento (Comment)**: Nota aggiunta a un'issue per comunicare con il team.
+**Commento (Comment)**: Nota aggiunta a un work item per comunicare con il team.
 
-**Company-managed project**: Progetto con configurazione centralizzata dall'amministratore Jira. Più opzioni di personalizzazione, condivisione degli schemi tra progetti.
+**Company-managed space**: Spazio (space) con configurazione centralizzata dall'amministratore Jira. Più opzioni di personalizzazione, condivisione degli schemi tra spazi.
 
-**Componente (Component)**: Sotto-sezione di un progetto per categorizzare le issue (es. "Hardware", "Software").
+**Componente (Component)**: Sotto-sezione di uno spazio (space) per categorizzare gli elementi di lavoro (es. "Hardware", "Software").
 
 **Condizione (Condition)**: Criterio che deve essere soddisfatto perché un'automazione esegua le sue azioni.
 
@@ -38,19 +38,19 @@
 
 **Dashboard**: Pagina personalizzabile con gadget che visualizzano dati da Jira.
 
-**Due Date (Scadenza)**: Data entro cui un'issue deve essere completata.
+**Due Date (Scadenza)**: Data entro cui un work item deve essere completato.
 
 ## E
 
-**Epic**: Issue di alto livello che raggruppa altre issue correlate. Rappresenta una funzionalità o un obiettivo grande.
+**Epic**: Work item di alto livello che raggruppa altri work item correlati. Rappresenta una funzionalità o un obiettivo grande.
 
-**Etichetta (Label)**: Tag testuale libero per categorizzare le issue (es. "urgente", "onboarding").
+**Etichetta (Label)**: Tag testuale libero per categorizzare i work item (es. "urgente", "onboarding").
 
 ## F
 
 **Filtro (Filter)**: Query JQL salvata che può essere riutilizzata in dashboard, sottoscrizioni e report.
 
-**Filtro rapido (Quick Filter)**: Filtro predefinito visibile sulla board per filtrare rapidamente le issue.
+**Filtro rapido (Quick Filter)**: Filtro predefinito visibile sulla board per filtrare rapidamente i work item.
 
 ## G
 
@@ -58,15 +58,15 @@
 
 ## I
 
-**Issue**: Unità di lavoro in Jira. Può essere un Task, Bug, Story, Epic, o tipo personalizzato.
+**Issue**: vedi → Work Item
 
-**Issue type (Tipo di issue)**: Categoria dell'issue che ne definisce lo scopo (Task, Bug, Story, Epic, Sub-task).
+**Issue type**: vedi → Work Type
 
-**Issue type scheme**: Schema che definisce quali tipi di issue sono disponibili in un progetto.
+**Issue type scheme**: Schema che definisce quali tipi di lavoro (work type) sono disponibili in uno spazio (space).
 
 ## J
 
-**JQL (Jira Query Language)**: Linguaggio di query per cercare issue in Jira con criteri specifici.
+**JQL (Jira Query Language)**: Linguaggio di query per cercare work item in Jira con criteri specifici.
 
 ## K
 
@@ -74,63 +74,67 @@
 
 ## L
 
-**Link (Collegamento)**: Relazione tra due issue (es. "blocks", "is blocked by", "relates to").
+**Link (Collegamento)**: Relazione tra due work item (es. "blocks", "is blocked by", "relates to").
 
 ## M
 
-**Macro (Confluence)**: Componente inseribile in una pagina Confluence per mostrare contenuti dinamici (es. Jira Issues macro).
+**Macro (Confluence)**: Componente inseribile in una pagina Confluence per mostrare contenuti dinamici (es. Jira Work Items macro).
 
 **Menzione (@mention)**: Notifica a un utente tramite `@nome` in un commento o descrizione.
 
 ## N
 
-**Notifica (Notification)**: Avviso inviato a un utente quando accade qualcosa di rilevante per un'issue.
+**Notifica (Notification)**: Avviso inviato a un utente quando accade qualcosa di rilevante per un work item.
 
-**Notification scheme**: Schema che definisce chi riceve notifiche per quali eventi in un progetto.
+**Notification scheme**: Schema che definisce chi riceve notifiche per quali eventi in uno spazio (space).
 
 ## P
 
 **Pagina (Page)**: Unità di contenuto in Confluence, equivalente a un documento wiki.
 
-**Permission scheme**: Schema che definisce chi può fare cosa all'interno di un progetto.
+**Permission scheme**: Schema che definisce chi può fare cosa all'interno di uno spazio (space).
 
-**Post-function**: Azione automatica eseguita dopo che una transizione di workflow viene completata.
+**Post-function**: Azione automatica eseguita dopo che una transizione di workflow viene completata. ⚠️ Il vecchio editor di workflow sarà rimosso a giugno 2026: verificare che le post-function siano migrate al nuovo editor.
 
-**Priorità (Priority)**: Livello di urgenza di un'issue (Lowest, Low, Medium, High, Critical/Highest).
+**Priorità (Priority)**: Livello di urgenza di un work item (Lowest, Low, Medium, High, Critical/Highest).
 
-**Progetto (Project)**: Contenitore in Jira che raggruppa issue correlate a un obiettivo comune.
+**Progetto (Project)**: vedi → Spazio (Space)
 
 ## R
 
-**Reporter**: La persona che ha creato un'issue.
+**Reporter**: La persona che ha creato un work item.
 
-**Risoluzione (Resolution)**: Indica come un'issue è stata risolta (Done, Won't Do, Duplicate, etc.).
+**Risoluzione (Resolution)**: Indica come un work item è stato risolto (Done, Won't Do, Duplicate, etc.).
 
 ## S
 
-**Schema (Scheme)**: Configurazione riutilizzabile che collega impostazioni ai progetti (permission, notification, workflow, issue type, screen).
+**Schema (Scheme)**: Configurazione riutilizzabile che collega impostazioni agli spazi (permission, notification, workflow, work type, screen).
 
 **Scrum**: Metodologia agile basata su sprint (iterazioni a tempo fisso).
 
-**Smart values**: Variabili dinamiche usate nelle automazioni (es. `{{issue.key}}`, `{{now}}`).
+**Sidebar di navigazione**: La barra di navigazione laterale sinistra di Jira Cloud, introdotta nel 2025. Sostituisce la precedente barra di navigazione superiore. Consente l'accesso rapido a spazi recenti, board, backlog, e impostazioni.
 
-**Sotto-attività (Sub-task)**: Issue figlia che dipende da un'issue padre.
+**Smart values**: Variabili dinamiche usate nelle automazioni (es. `{{workItem.key}}`, `{{now}}`). Nota: `{{issue.key}}` funziona ancora come alias.
+
+**Sotto-attività (Sub-task)**: Work item figlio che dipende da un work item padre.
 
 **Sottoscrizione (Subscription)**: Notifica email periodica basata sui risultati di un filtro JQL.
 
-**Spazio (Space)**: Contenitore in Confluence che raggruppa pagine correlate (equivalente di un progetto Jira).
+**Spazio (Space)**: In Jira Cloud: **contenitore organizzativo per il lavoro** (in precedenza chiamato "progetto/project"). In Confluence: contenitore per pagine e documentazione. Non confondere i due contesti.
+
+**Space (Spazio Jira)**: Contenitore organizzativo in Jira Cloud (in precedenza "progetto/project"). Non confondere con gli spazi Confluence.
 
 **Sprint**: Iterazione di lavoro a tempo fisso (tipicamente 1-4 settimane) nella metodologia Scrum.
 
-**Status**: Lo stato attuale di un'issue nel suo workflow (es. "To Do", "In Progress", "Done").
+**Status**: Lo stato attuale di un work item nel suo workflow (es. "To Do", "In Progress", "Done").
 
 ## T
 
-**Team-managed project**: Progetto con configurazione semplificata gestita dal team. Ogni progetto ha i propri workflow e campi indipendenti.
+**Team-managed space**: Spazio (space) con configurazione semplificata gestita dal team. Ogni spazio ha i propri workflow e campi indipendenti.
 
-**Template**: Modello predefinito per creare pagine Confluence o configurazioni di progetto.
+**Template**: Modello predefinito per creare pagine Confluence o configurazioni di spazio (space).
 
-**Transizione (Transition)**: Passaggio di un'issue da uno status a un altro all'interno di un workflow.
+**Transizione (Transition)**: Passaggio di un work item da uno status a un altro all'interno di un workflow.
 
 **Trigger**: Evento che avvia l'esecuzione di una regola di automazione.
 
@@ -138,10 +142,14 @@
 
 **Validatore (Validator)**: Controllo eseguito durante una transizione di workflow per verificare che certe condizioni siano soddisfatte prima di procedere.
 
-**Versione (Version/Release)**: Marcatore per raggruppare issue associate a un rilascio o milestone.
+**Versione (Version/Release)**: Marcatore per raggruppare work item associati a un rilascio o milestone.
 
 ## W
 
 **Wallboard**: Modalità di visualizzazione a schermo intero di una dashboard.
 
-**Workflow**: Sequenza di stati e transizioni che definisce il ciclo di vita di un'issue.
+**Work Item (Elemento di lavoro)**: Unità di lavoro in Jira Cloud (in precedenza chiamata "issue"). Include Epic, Story, Task, Sub-task, Bug e tipi personalizzati.
+
+**Work Type (Tipo di lavoro)**: Classificazione dei work item in Jira Cloud (in precedenza "issue type"). Esempi: Epic, Story, Task, Bug.
+
+**Workflow**: Sequenza di stati e transizioni che definisce il ciclo di vita di un work item. ⚠️ Il vecchio editor di workflow sarà rimosso a giugno 2026.

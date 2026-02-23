@@ -13,22 +13,23 @@
 
 | Gadget | Cosa mostra | Ideale per |
 |--------|-------------|-----------|
-| **Filter Results** | Tabella issue da un filtro JQL | Lista operativa delle attività |
+| **Filter Results** | Tabella **elementi di lavoro** (work item) da un filtro JQL | Lista operativa delle attività |
 | **Pie Chart** | Grafico a torta per campo | Distribuzione per status/priorità/assegnatario |
 | **Created vs Resolved** | Andamento creazione/risoluzione | Monitorare il carico di lavoro nel tempo |
 | **Two Dimensional Filter Statistics** | Matrice campo × campo | Panoramica priorità × status |
 | **Activity Stream** | Feed attività recenti | Monitorare l'attività del team |
-| **Average Age Chart** | Età media delle issue | Identificare issue stagnanti |
-| **Heat Map** | Mappa di calore per campo | Visualizzare concentrazioni |
-| **Recently Created Chart** | Issue create di recente | Monitorare il volume di nuovo lavoro |
-| **Resolution Time** | Tempo di risoluzione | Misurare l'efficienza |
-| **Text** | Testo libero (wiki) | Note, link, istruzioni |
-| **Assigned to Me** | Le tue issue | Dashboard personale |
+| **Average Age** | Età media degli elementi di lavoro | Identificare work item stagnanti |
+| **Recently Created Work Items** | Elementi di lavoro creati di recente | Monitorare il volume di nuovo lavoro |
+| **Introduzione** (Introduction) | Testo libero (wiki) | Note, link, istruzioni |
+| **Assigned to Me** | I tuoi elementi di lavoro | Dashboard personale |
+
+> ⚠️ **Gadget in fase di rimozione** (rimozione sospesa, ma potrebbero non essere disponibili):
+> Heat Map, Resolution Time, Time Since Chart, Time to First Response, Workload Pie Chart
 
 ## Configurazione gadget — Impostazioni chiave
 
 Ogni gadget che usa dati richiede:
-- **Filtro salvato** (Saved Filter) o **Project/Filter**
+- **Filtro salvato** (Saved Filter) o **Space/Filter**
 - **Refresh interval**: quanto spesso aggiornare (15 min consigliato)
 - **Numero risultati**: quante righe mostrare (10-25 per tabelle)
 
@@ -42,8 +43,8 @@ Ogni gadget che usa dati richiede:
 | Priority | Sempre |
 | Assignee | Per dashboard di team |
 | Created | Per monitorare il volume |
-| Updated | Per identificare issue ferme |
-| Due Date | Per issue con scadenza |
+| Updated | Per identificare work item fermi |
+| Due Date | Per work item con scadenza |
 | Labels | Per categorizzazione |
 
 ### Pie Chart — Campi consigliati
@@ -61,12 +62,12 @@ Ogni gadget che usa dati richiede:
 ```
 ┌─────────────────────┬─────────────────────┐
 │  Filter Results     │  Pie Chart          │
-│  (le mie issue)     │  (per status)       │
+│  (i miei work item) │  (per status)       │
 ├─────────────────────┼─────────────────────┤
 │  Created vs         │  Two Dimensional    │
 │  Resolved           │  (priorità×status)  │
 ├─────────────────────┼─────────────────────┤
-│  Text               │  Activity Stream    │
+│  Introduzione       │  Activity Stream    │
 │  (note/obiettivi)   │  (attività recente) │
 └─────────────────────┴─────────────────────┘
 ```
@@ -79,7 +80,7 @@ Ogni gadget che usa dati richiede:
 │  (per assegnatario) │  (per priorità)     │
 ├─────────────────────┼─────────────────────┤
 │  Created vs         │  Two Dimensional    │
-│  Resolved           │  (progetto×status)  │
+│  Resolved           │  (spazio×status)    │
 ├─────────────────────┼─────────────────────┤
 │  Filter Results     │  Filter Results     │
 │  (critical/high)    │  (in scadenza)      │
@@ -92,7 +93,7 @@ Ogni gadget che usa dati richiede:
 |---------|---------------|-------------|
 | Privata | Solo tu | Dashboard personale |
 | Gruppo | Membri del gruppo | Dashboard di team |
-| Progetto | Ruolo nel progetto | Dashboard di progetto |
+| **Spazio** (Space) | Ruolo nello spazio | Dashboard di spazio |
 | Pubblica | Tutti gli utenti del sito | Dashboard aziendale |
 
 **Come condividere**: Dashboard → ⋯ → Edit → Share → Aggiungi utenti/gruppi

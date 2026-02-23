@@ -8,13 +8,13 @@ Creare una dashboard personale con almeno 4 gadget utili per il proprio ruolo.
 
 ## Prerequisiti
 
-Avere almeno 2 filtri JQL salvati dalla sessione precedente.
+Avere almeno 2 filtri JQL salvati dalla sessione 2.
 
 ## Istruzioni
 
 ### Step 1 — Crea la dashboard (5 min)
 
-1. Vai su **Dashboards → Crea dashboard**
+1. Dalla sidebar, vai su **Dashboards → Create dashboard**
 2. Nome: `[Tuo ruolo] — Dashboard operativa` (es. `IT Manager — Dashboard operativa`)
 3. Descrizione: breve spiegazione dello scopo
 4. Layout: seleziona **2 colonne**
@@ -24,28 +24,28 @@ Avere almeno 2 filtri JQL salvati dalla sessione precedente.
 Aggiungi almeno **4 gadget** scegliendo tra quelli indicati per il tuo ruolo:
 
 **🔧 IT Manager:**
-1. **Risultati filtro**: ticket IT aperti (usa filtro JQL dalla sessione 2)
-2. **Grafico a torta**: distribuzione ticket per priorità
-3. **Creati vs Risolti**: andamento ticket ultimo mese
-4. **Due dimensioni**: matrice priorità × status
+1. **Risultati filtro** (Filter Results): **elementi di lavoro** (work item) IT aperti (usa filtro JQL dalla sessione 2)
+2. **Grafico a torta** (Pie Chart): distribuzione work item per priorità
+3. **Creati vs Risolti** (Created vs Resolved): andamento work item ultimo mese
+4. **Due dimensioni** (Two Dimensional Filter Statistics): matrice priorità × status
 
 **💼 Administration & Finance:**
-1. **Risultati filtro**: ordini e fatture in corso
-2. **Grafico a torta**: distribuzione per etichetta (acquisti/fatturazione)
-3. **Creati vs Risolti**: andamento issue ultimo trimestre
-4. **Testo**: note con scadenze importanti
+1. **Risultati filtro** (Filter Results): ordini e fatture in corso
+2. **Grafico a torta** (Pie Chart): distribuzione per etichetta (acquisti/fatturazione)
+3. **Creati vs Risolti** (Created vs Resolved): andamento elementi di lavoro ultimo trimestre
+4. **Introduzione** (Introduction): note con scadenze importanti
 
 **👥 HR Generalist:**
-1. **Risultati filtro**: task onboarding attivi
-2. **Grafico a torta**: distribuzione per status
-3. **Attività recente**: ultime modifiche nel progetto HR
-4. **Creati vs Risolti**: andamento task ultimo mese
+1. **Risultati filtro** (Filter Results): task onboarding attivi
+2. **Grafico a torta** (Pie Chart): distribuzione per status
+3. **Attività recente** (Activity Stream): ultime modifiche nello **spazio** (space) HR
+4. **Creati vs Risolti** (Created vs Resolved): andamento task ultimo mese
 
 **🏢 Facility Manager:**
-1. **Risultati filtro**: ticket facility aperti
-2. **Grafico a torta**: distribuzione per componente (manutenzione/reclami/sicurezza)
-3. **Creati vs Risolti**: andamento reclami e manutenzioni
-4. **Due dimensioni**: matrice priorità × componente
+1. **Risultati filtro** (Filter Results): work item facility aperti
+2. **Grafico a torta** (Pie Chart): distribuzione per componente (manutenzione/reclami/sicurezza)
+3. **Creati vs Risolti** (Created vs Resolved): andamento reclami e manutenzioni
+4. **Due dimensioni** (Two Dimensional Filter Statistics): matrice priorità × componente
 
 ## Risultato atteso
 

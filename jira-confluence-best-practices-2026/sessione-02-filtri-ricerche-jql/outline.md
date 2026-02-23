@@ -19,23 +19,23 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 #### 2.1 Ricerca in Jira: panoramica (15 min)
 
-- Ricerca globale vs ricerca nel progetto
+- Ricerca globale vs ricerca nello **spazio** (space)
 - Filtri rapidi sulla board (Quick Filters)
-- Filtri predefiniti: "Le mie issue aperte", "Segnalate di recente"
+- Filtri predefiniti: "I miei **elementi di lavoro** (work item) aperti", "Segnalate di recente"
 - La vista "Filtri" nel menu laterale
 
 #### 2.2 Introduzione a JQL (35 min)
 
 - Cos'è JQL e perché è fondamentale
 - Anatomia di una query JQL: `campo operatore valore`
-- Campi principali: `project`, `status`, `assignee`, `reporter`, `priority`, `issuetype`, `created`, `updated`, `resolved`, `labels`, `component`
+- Campi principali: `space` (alias: `project`), `status`, `assignee`, `reporter`, `priority`, `type` (alias: `issuetype`), `created`, `updated`, `resolved`, `labels`, `component`
 - Operatori di confronto: `=`, `!=`, `>`, `<`, `>=`, `<=`
 - Operatori logici: `AND`, `OR`, `NOT`
 - Operatore `IN`: `status IN ("To Do", "In Progress")`
 - Operatore `WAS` / `CHANGED`: per la cronologia degli stati
 - Ordinamento: `ORDER BY created DESC`
 - Esempi pratici contestualizzati Tyvak:
-  - `project = "IT-HELPDESK" AND status = "Open" ORDER BY priority DESC`
+  - `space = "IT-HELPDESK" AND status = "Open" ORDER BY priority DESC`
   - `assignee = currentUser() AND status != Done`
   - `labels = "onboarding" AND created >= -7d`
 
@@ -55,17 +55,17 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Funzioni temporali: `now()`, `startOfDay()`, `startOfWeek()`, `startOfMonth()`, `endOfDay()`
 - Periodi relativi: `-7d`, `-1w`, `-30d`, `-1M`
 - Funzioni di testo: `text ~ "keyword"` (ricerca full-text)
-- Funzioni di progetto: `projectsLeadByUser()`, `projectsWhereUserHasRole()`
+- Funzioni di spazio: `spacesLeadByUser()`, `spacesWhereUserHasRole()`
 - Combinazioni avanzate:
-  - `project = "FACILITY" AND created >= startOfMonth() AND priority IN (High, Critical)`
+  - `space = "FACILITY" AND created >= startOfMonth() AND priority IN (High, Critical)`
   - `assignee WAS currentUser() AND status CHANGED TO "Done" AFTER -7d`
-  - `text ~ "satellite" AND project IN ("MISSIONI", "R&D")`
+  - `text ~ "satellite" AND space IN ("MISSIONI", "R&D")`
 
 #### 2.4 Salvataggio e gestione filtri (15 min)
 
 - Salvare un filtro: nome, descrizione
 - Filtri personali vs filtri condivisi
-- Condivisione: con utenti, gruppi, progetti
+- Condivisione: con utenti, gruppi, spazi (space)
 - Filtri come segnalibri: stella per accesso rapido
 - Best practice per la denominazione dei filtri
 
@@ -73,7 +73,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 - Configurare notifiche email periodiche
 - Frequenza: giornaliera, settimanale
-- Casi d'uso Tyvak: report settimanale ticket aperti, issue in scadenza
+- Casi d'uso Tyvak: report settimanale work item aperti, elementi di lavoro in scadenza
 - Attenzione: non sovraccaricare la casella email
 
 **☕ Pausa (10 min)**
@@ -93,5 +93,5 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 ## Materiali di riferimento
 
 - [Slide sessione 2](slides/)
-- [JQL Cheatsheet](../risorse/jql-cheatsheet.md)
-- [Glossario Jira](../risorse/glossario.md)
+- [JQL Cheatsheet](../cheatsheet/jql-cheatsheet.md)
+- [Glossario Jira](../glossario.md)

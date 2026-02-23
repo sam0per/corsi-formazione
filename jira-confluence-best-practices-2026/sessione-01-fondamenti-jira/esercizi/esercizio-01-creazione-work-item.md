@@ -1,20 +1,20 @@
-# Esercizio 2 — Creazione e gestione issue
+# Esercizio 1 — Creazione e gestione **elementi di lavoro** (work item)
 
 > ⏱ Tempo stimato: 25 minuti | 👥 Individuale, poi confronto in gruppo
 
 ## Obiettivo
 
-Creare issue complete con tutti i campi rilevanti e comprendere le relazioni tra issue.
+Creare elementi di lavoro (work item) completi con tutti i campi rilevanti e comprendere le relazioni tra work item.
 
 ## Scenario Tyvak
 
-Stai lavorando al progetto di supporto interno dell'azienda. Ogni partecipante creerà issue rilevanti per il proprio ruolo.
+Stai lavorando allo **spazio** (space) di supporto interno dell'azienda. Ogni partecipante creerà work item rilevanti per il proprio ruolo.
 
 ## Istruzioni
 
-### Parte A — Creazione issue per ruolo (15 min)
+### Parte A — Creazione work item per ruolo (15 min)
 
-Crea **2 issue** nel progetto di training seguendo il tuo scenario:
+Crea **2 elementi di lavoro** nello spazio di training seguendo il tuo scenario:
 
 **🔧 IT Manager:**
 1. Task: "Configurare accesso VPN per nuovo dipendente" — Priorità: High, Etichetta: `onboarding`, Componente: `Infrastruttura`
@@ -32,25 +32,25 @@ Crea **2 issue** nel progetto di training seguendo il tuo scenario:
 1. Task: "Manutenzione impianto climatizzazione clean room" — Priorità: Critical, Etichetta: `manutenzione`, Componente: `Facilities`
 2. Task: "Gestire reclamo rumore ufficio open space" — Priorità: Low, Etichetta: `reclami`
 
-Per ogni issue assicurati di compilare:
+Per ogni work item assicurati di compilare:
 - Titolo (Summary)
 - Descrizione dettagliata
-- Tipo di issue (Task, Bug, Story)
+- **Tipo di lavoro** (work type): Task, Bug, Story
 - Priorità
 - Almeno un'etichetta
 - Assegnazione a te stesso
 
-### Parte B — Relazioni tra issue (10 min)
+### Parte B — Relazioni tra work item (10 min)
 
-1. Crea una **sotto-attività** per una delle tue issue
-2. **Collega** le due issue tra loro con "is related to"
+1. Crea una **sotto-attività** per uno dei tuoi work item
+2. **Collega** i due elementi di lavoro tra loro con "is related to"
 3. Aggiungi un **commento** menzionando un collega con `@nome`
 
 ## Risultato atteso
 
-- 2 issue create correttamente con tutti i campi compilati
+- 2 work item creati correttamente con tutti i campi compilati
 - 1 sotto-attività collegata
-- 1 relazione tra issue
+- 1 relazione tra elementi di lavoro
 - 1 commento con menzione
 
 ## Domande di riflessione

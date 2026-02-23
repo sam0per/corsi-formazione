@@ -18,10 +18,10 @@
 
 | Ruolo | Focus Jira | Livello target |
 |-------|-----------|----------------|
-| **IT Manager** | Admin Jira, ticket IT, ordini, gestione permessi | Amministratore base |
+| **IT Manager** | Admin Jira, work item IT, ordini, gestione permessi | Amministratore base |
 | **Administration & Finance Officer** | Workflow ordini/fatture, grafici, dashboard, PM | Utente avanzato |
 | **HR Generalist** | Automazioni onboarding, filtri, visualizzazioni, PM | Utente avanzato |
-| **Facility Manager** | Ticket facility desk, reclami, PM, dashboard | Utente avanzato |
+| **Facility Manager** | Work item facility desk, reclami, PM, dashboard | Utente avanzato |
 
 ## Obiettivo
 
@@ -31,10 +31,10 @@ I 4 partecipanti dovranno passare da un uso quotidiano non strutturato a un util
 
 | # | Sessione | Durata | Argomenti principali |
 |---|----------|--------|----------------------|
-| 1 | [Fondamenti di Jira Cloud](sessione-01-fondamenti-jira/outline.md) | 4h | Architettura Jira, navigazione, tipi di progetto, issue types, workflow base |
+| 1 | [Fondamenti di Jira Cloud](sessione-01-fondamenti-jira/outline.md) | 4h | Architettura Jira, navigazione, **tipi di spazio** (space type), **tipi di lavoro** (work type), workflow base |
 | 2 | [Filtri, Ricerche e JQL](sessione-02-filtri-ricerche-jql/outline.md) | 4h | Ricerca base, JQL (sintassi, operatori, funzioni), filtri avanzati, sottoscrizioni |
 | 3 | [Dashboard, Grafici e Analytics](sessione-03-dashboard-grafici-analytics/outline.md) | 4h | Creazione dashboard, gadget, report, grafici, condivisione |
-| 4 | [Automazioni, Workflow e Amministrazione](sessione-04-automazioni-workflow-admin/outline.md) | 4h | Regole di automazione, workflow personalizzati, permessi, configurazione progetti |
+| 4 | [Automazioni, Workflow e Amministrazione](sessione-04-automazioni-workflow-admin/outline.md) | 4h | Regole di automazione, workflow personalizzati, permessi, configurazione **spazi** (space) |
 | 5 | [Confluence + Integrazione + Knowledge Transfer](sessione-05-confluence-integrazione-knowledge/outline.md) | 4h | Confluence essenziali, integrazione Jira-Confluence, piano di knowledge sharing |
 
 ## Struttura di ogni sessione
@@ -61,27 +61,27 @@ jira-confluence-best-practices-2026/
 │
 ├── sessione-01-fondamenti-jira/
 │   ├── outline.md                     ← Programma dettagliato
-│   ├── esercizi/                      ← 3 esercizi pratici
+│   ├── esercizi/                      ← 3 esercizi (navigazione-space, ricerca-base, creazione-work-item)
 │   └── slides/                        ← Slide PPTX di riferimento
 │
 ├── sessione-02-filtri-ricerche-jql/
 │   ├── outline.md
-│   ├── esercizi/
+│   ├── esercizi/                      ← 2 esercizi (jql-fondamentali, jql-avanzato)
 │   └── slides/
 │
 ├── sessione-03-dashboard-grafici-analytics/
 │   ├── outline.md
-│   ├── esercizi/
+│   ├── esercizi/                      ← 3 esercizi (dashboard-personale, gadget-grafici, report-analisi)
 │   └── slides/
 │
 ├── sessione-04-automazioni-workflow-admin/
 │   ├── outline.md
-│   ├── esercizi/
+│   ├── esercizi/                      ← 4 esercizi (regole-automazione, workflow-personalizzato, admin-permessi, tipi-space-workflow)
 │   └── slides/
 │
 ├── sessione-05-confluence-integrazione-knowledge/
 │   ├── outline.md
-│   ├── esercizi/
+│   ├── esercizi/                      ← 3 esercizi (confluence-pagine, integrazione-jira, knowledge-sharing-plan)
 │   └── slides/
 │
 └── risorse/

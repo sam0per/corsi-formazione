@@ -12,22 +12,22 @@ Configurare gadget avanzati e imparare a leggere i grafici di Jira.
 
 Sulla dashboard creata nell'esercizio precedente, aggiungi:
 
-1. **Grafico "Creati vs Risolti"**:
-   - Collegalo a un filtro che copra il tuo progetto
+1. **Grafico "Creati vs Risolti"** (Created vs Resolved):
+   - Collegalo a un filtro che copra il tuo **spazio** (space)
    - Imposta il periodo: ultimi 30 giorni
    - Granularità: giornaliera
    - Domanda: il trend è positivo (più risolti che creati) o negativo?
 
-2. **Gadget "Due dimensioni"**:
+2. **Gadget "Due dimensioni"** (Two Dimensional Filter Statistics):
    - Riga: `Priority`
    - Colonna: `Status`
-   - Filtro: tutte le issue del tuo progetto
-   - Domanda: ci sono issue ad alta priorità bloccate in uno status?
+   - Filtro: tutti gli **elementi di lavoro** (work item) del tuo spazio
+   - Domanda: ci sono work item ad alta priorità bloccate in uno status?
 
-3. **Gadget "Testo"**:
-   - Aggiungi un gadget di testo con:
+3. **Gadget "Introduzione"** (Introduction):
+   - Aggiungi un gadget Introduction con:
      - Titolo del team/ruolo
-     - KPI target (es. "Obiettivo: risolvere ticket critici entro 24h")
+     - KPI target (es. "Obiettivo: risolvere work item critici entro 24h")
      - Link utili
 
 ### Parte B — Interpretazione grafici (10 min)
@@ -35,7 +35,7 @@ Sulla dashboard creata nell'esercizio precedente, aggiungi:
 In coppia, analizzate i grafici creati e rispondete:
 
 1. Guardando "Creati vs Risolti": il team riesce a gestire il carico di lavoro?
-2. Guardando la matrice "Due dimensioni": ci sono pattern problematici? (es. molte issue Critical in "To Do")
+2. Guardando la matrice "Due dimensioni": ci sono pattern problematici? (es. molti work item Critical in "To Do")
 3. Se doveste presentare questi dati alla direzione, quale gadget scegliereste come il più comunicativo?
 
 ## Risultato atteso

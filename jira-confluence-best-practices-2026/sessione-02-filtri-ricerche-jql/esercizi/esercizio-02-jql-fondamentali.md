@@ -10,48 +10,50 @@ Scrivere query JQL corrette usando campi, operatori e ordinamento.
 
 Vai su **Filters → Advanced issue search** e passa alla modalità JQL. Scrivi le seguenti query, verifica i risultati e annotali.
 
+> ℹ️ Il campo `project` è stato rinominato `space` in Jira Cloud 2025. `project` funziona ancora come alias. Analogamente, `issuetype` è stato rinominato `type` (`issuetype` resta valido come alias).
+
 ### Query da completare
 
 **Livello 1 — Base:**
 
-1. Trova tutte le issue del progetto di training:
+1. Trova tutti gli elementi di lavoro (work item) dello spazio di training:
    ```
-   project = "___" 
+   space = "___"
    ```
 
-2. Trova tutte le issue assegnate a te:
+2. Trova tutti gli elementi di lavoro assegnati a te:
    ```
    assignee = ___
    ```
 
-3. Trova tutte le issue con priorità High o Critical:
+3. Trova tutti gli elementi di lavoro con priorità High o Critical:
    ```
    priority IN (___, ___)
    ```
 
 **Livello 2 — Combinazioni:**
 
-4. Trova le issue aperte (non "Done") assegnate a te, ordinate per priorità:
+4. Trova gli elementi di lavoro aperti (non "Done") assegnati a te, ordinati per priorità:
    ```
    assignee = currentUser() AND status ___ "Done" ORDER BY priority ___
    ```
 
-5. Trova tutte le issue con etichetta "onboarding" create nell'ultima settimana:
+5. Trova tutti gli elementi di lavoro con etichetta "onboarding" creati nell'ultima settimana:
    ```
    labels = "___" AND created >= ___
    ```
 
-6. Trova le issue di tipo Task o Bug nel tuo progetto, create questo mese:
+6. Trova gli elementi di lavoro di tipo Task o Bug nel tuo spazio, creati questo mese:
    ```
-   project = "___" AND issuetype IN (___) AND created >= startOfMonth()
+   space = "___" AND type IN (___) AND created >= startOfMonth()
    ```
 
 **Livello 3 — Sfida per ruolo:**
 
-7. **IT Manager**: Trova tutti i ticket IT aperti con priorità Critical, ordinati per data di creazione (più vecchi prima)
-8. **Admin & Finance**: Trova tutte le issue con etichetta "fatturazione" o "acquisti" non ancora completate
-9. **HR Generalist**: Trova le issue di tipo Story relative all'onboarding, create negli ultimi 30 giorni
-10. **Facility Manager**: Trova i ticket di manutenzione con priorità >= Medium, assegnati a te
+7. **IT Manager**: Trova tutti gli elementi di lavoro IT aperti con priorità Critical, ordinati per data di creazione (più vecchi prima)
+8. **Admin & Finance**: Trova tutti gli elementi di lavoro con etichetta "fatturazione" o "acquisti" non ancora completati
+9. **HR Generalist**: Trova gli elementi di lavoro di tipo Story relativi all'onboarding, creati negli ultimi 30 giorni
+10. **Facility Manager**: Trova gli elementi di lavoro di manutenzione con priorità >= Medium, assegnati a te
 
 ## Risultato atteso
 

@@ -12,22 +12,22 @@ Utilizzare funzioni JQL avanzate, salvare filtri e configurare sottoscrizioni.
 
 Scrivi le seguenti query usando funzioni JQL avanzate:
 
-1. **Issue modificate oggi**:
+1. **Elementi di lavoro (work item) modificati oggi**:
    ```
    updated >= startOfDay()
    ```
 
-2. **Issue il cui status è cambiato nell'ultima settimana**:
+2. **Elementi di lavoro il cui status è cambiato nell'ultima settimana**:
    ```
    status CHANGED AFTER -1w
    ```
 
-3. **Ricerca full-text**: trova issue che contengono la parola "satellite" nella descrizione o nel titolo:
+3. **Ricerca full-text**: trova elementi di lavoro che contengono la parola "satellite" nella descrizione o nel titolo:
    ```
    text ~ "satellite"
    ```
 
-4. **Issue create da te ma assegnate ad altri**:
+4. **Elementi di lavoro creati da te ma assegnati ad altri**:
    ```
    reporter = currentUser() AND assignee != currentUser()
    ```
@@ -38,10 +38,10 @@ Scrivi le seguenti query usando funzioni JQL avanzate:
 
 1. Prendi la query più utile che hai scritto e **salvala come filtro**:
    - Clicca "Save as" nella ricerca avanzata
-   - Dai un nome descrittivo seguendo la convenzione: `[Ruolo] - Descrizione` (es. `[IT] - Ticket critici aperti`)
+   - Dai un nome descrittivo seguendo la convenzione: `[Ruolo] - Descrizione` (es. `[IT] - Work item critici aperti`)
    - Aggiungi una descrizione
 2. **Condividi il filtro** con il gruppo di training:
-   - Dettagli filtro → Modifica permessi → Aggiungi gruppo o progetto
+   - Dettagli filtro → Modifica permessi → Aggiungi gruppo o spazio (space)
 3. **Aggiungi il filtro ai preferiti** (stella)
 
 ### Parte C — Sottoscrizione (5 min)

@@ -23,7 +23,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Dashboard di sistema vs dashboard personali
 - La dashboard come strumento di comunicazione e visibilità
 - Best practice: una dashboard per ruolo, una per direzione
-- Esempio Tyvak: dashboard del Facility Manager per i ticket aperti
+- Esempio Tyvak: dashboard del Facility Manager per i work item aperti
 
 #### 3.2 Creare e configurare una dashboard (20 min)
 
@@ -35,15 +35,15 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 #### 3.3 Gadget principali (25 min)
 
-- **Risultati filtro** (Filter Results): tabella issue da un filtro JQL
+- **Risultati filtro** (Filter Results): tabella **elementi di lavoro** (work item) da un filtro JQL
 - **Grafico a torta** (Pie Chart): distribuzione per campo (status, priority, assignee)
 - **Creati vs Risolti** (Created vs Resolved): andamento nel tempo
 - **Grafico a due dimensioni** (Two Dimensional Filter Statistics): matrice campo × campo
 - **Attività recente** (Activity Stream): feed delle attività
-- **Media tempo in status** (Average Age Chart): tempo medio di permanenza
-- **Mappa di calore** (Heat Map): visualizzazione intensità
-- **Testo** (Text): note e istruzioni in formato wiki
-- Collegamento gadget ↔ filtro salvato: ogni gadget usa un filtro JQL
+- **Media tempo in status** (Average Age): tempo medio di permanenza
+- **Mappa di calore** (Heat Map) — ⚠️ gadget in fase di rimozione, potrebbe non essere disponibile
+- **Introduzione** (Introduction): note e istruzioni in formato wiki
+- Collegamento gadget ↔ filtro salvato: molti gadget si basano su un filtro JQL salvato (ma non tutti lo richiedono)
 
 **☕ Pausa (10 min)**
 
@@ -58,17 +58,17 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 #### 3.4 Report integrati di Jira (20 min)
 
-- Report del progetto: dove trovarli
-- **Burndown Chart** (progetti Scrum): monitorare lo sprint
-- **Velocity Chart**: capacità del team nel tempo
-- **Cumulative Flow Diagram**: visualizzare i colli di bottiglia
-- **Control Chart**: tempo di ciclo delle issue
+- Report dello **spazio** (space): dove trovarli (sezione Reports nella sidebar)
+- **Burndown Chart** (board Scrum): report a livello di board, non gadget dashboard
+- **Velocity Chart**: report a livello di board
+- **Cumulative Flow Diagram**: report a livello di board
+- **Control Chart**: report a livello di board, tempo di ciclo dei work item
 - Interpretazione pratica: cosa ci dicono questi report?
 
 #### 3.5 Dashboard avanzate e trucchi (15 min)
 
 - Gadget con JQL dinamico (es. `currentUser()`, date relative)
-- Dashboard "manager": panoramica cross-progetto
+- Dashboard "manager": panoramica cross-spazio
 - Dashboard "operativa": focus sulle attività del giorno
 - Wallboard mode: dashboard su schermo condiviso
 - Refresh automatico dei gadget
@@ -99,5 +99,5 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 ## Materiali di riferimento
 
 - [Slide sessione 3](slides/)
-- [Dashboard Cheatsheet](../risorse/dashboard-cheatsheet.md)
-- [JQL Cheatsheet](../risorse/jql-cheatsheet.md)
+- [Dashboard Cheatsheet](../cheatsheet/dashboard-cheatsheet.md)
+- [JQL Cheatsheet](../cheatsheet/jql-cheatsheet.md)

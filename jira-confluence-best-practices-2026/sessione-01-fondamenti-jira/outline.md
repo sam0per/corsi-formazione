@@ -6,11 +6,12 @@
 
 Al termine di questa sessione i partecipanti saranno in grado di:
 
-- Comprendere l'architettura di Jira Cloud (sito → progetto → board → issue)
+- Comprendere l'architettura di Jira Cloud (Sito → Spazio → Board → Elemento di lavoro)
 - Navigare con sicurezza l'interfaccia di Jira Cloud
-- Distinguere tra progetti Team-managed e Company-managed
-- Creare e configurare issue con campi, priorità, etichette e componenti
+- Distinguere tra spazi Team-managed e Company-managed
+- Creare e configurare **elementi di lavoro** (work item) con campi, priorità, etichette e componenti
 - Comprendere il concetto di workflow e status
+- Nota: il vecchio editor di workflow sarà rimosso a giugno 2026
 
 ---
 
@@ -23,20 +24,20 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Jira, Confluence, e le integrazioni principali
 - Jira Cloud vs Data Center: differenze chiave
 - Il concetto di "Sito Atlassian" e come è strutturato
-- Ruoli globali vs ruoli di progetto
+- Ruoli globali vs ruoli dello **spazio** (space)
 
 #### 1.2 Architettura di Jira (20 min)
 
-- **Gerarchia**: Sito → Progetto → Board → Issue
-- **Progetti**: contenitori logici per il lavoro
-- **Issue types**: Epic, Story, Task, Sub-task, Bug (e tipi custom)
-- **Schemi**: come Jira collega issue types, workflow, schermate e permessi
-- Esempio Tyvak: come un progetto di missione satellitare (es. MILANI) si mappa su Jira
+- **Gerarchia**: Sito → **Spazio** (Space) → Board → **Elemento di lavoro** (Work Item)
+- **Spazi** (Space): contenitori logici per il lavoro
+- **Tipi di lavoro** (Work Type): Epic, Story, Task, Sub-task, Bug (e tipi custom)
+- **Schemi**: come Jira collega tipi di lavoro (work type), workflow, schermate e permessi
+- Esempio Tyvak: come uno spazio di missione satellitare (es. MILANI) si mappa su Jira
 
 #### 1.3 Navigazione dell'interfaccia (15 min)
 
-- Barra di navigazione superiore
-- Menu laterale del progetto
+- **Sidebar di navigazione sinistra**: spazi recenti, board, backlog, code, impostazioni
+- Navigazione contestuale dello spazio
 - Ricerca globale rapida
 - La tua area di lavoro (Your Work)
 - Notifiche e menzioni
@@ -52,9 +53,9 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ---
 
-### Blocco 2 — Tipi di progetto, Issue e Workflow (1:45 - 2:45)
+### Blocco 2 — Tipi di spazio (Space), Elementi di lavoro e Workflow (1:45 - 2:45)
 
-#### 2.1 Tipi di progetto in Jira Cloud (20 min)
+#### 2.1 Tipi di **spazio** (Space) in Jira Cloud (20 min)
 
 - **Team-managed** (ex "Next-gen"): configurazione semplificata, ideale per team autonomi
 - **Company-managed** (ex "Classic"): configurazione centralizzata dall'admin
@@ -62,11 +63,11 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Differenze pratiche: workflow, campi, permessi
 - Esempio Tyvak: Team-managed per piccoli team operativi, Company-managed per processi aziendali
 
-#### 2.2 Issue in profondità (20 min)
+#### 2.2 Elementi di lavoro in profondità (20 min)
 
-- Anatomia di un'issue: campi standard e custom
+- Anatomia di un elemento di lavoro (work item): campi standard e custom
 - Priorità, etichette, componenti, versioni
-- Relazioni tra issue: collegamento, clonazione, sotto-attività
+- Relazioni tra elementi di lavoro: collegamento, clonazione, sotto-attività
 - Allegati e commenti
 - Menzioni e notifiche
 - Esempio Tyvak: creare un ordine forniture per il laboratorio (Facility Manager)
@@ -75,9 +76,9 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 - Cos'è un workflow: stati e transizioni
 - Workflow predefiniti di Jira
-- Visualizzazione del workflow di un progetto
+- Visualizzazione del workflow di uno spazio
 - Stati personalizzati: quando e perché
-- Esempio Tyvak: workflow di un ticket IT (IT Manager)
+- Esempio Tyvak: workflow di un work item IT (IT Manager)
 
 **☕ Pausa (10 min)**
 
@@ -96,4 +97,4 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 ## Materiali di riferimento
 
 - [Slide sessione 1](slides/)
-- [Glossario Jira](../risorse/glossario.md)
+- [Glossario Jira](../glossario.md)
