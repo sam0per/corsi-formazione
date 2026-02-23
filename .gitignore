@@ -1,1 +1,16 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tableau temp files
+*.twbr
+~$*.twbx
+
+# Editor files
+*.swp
+*~
+.vscode/
+.idea/
+
+# Draft/working files
 training_readme_italiano.md
