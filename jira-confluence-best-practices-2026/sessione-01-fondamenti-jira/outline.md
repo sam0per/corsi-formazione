@@ -48,7 +48,6 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 - [Esercizio 1: Navigazione e esplorazione spazio](esercizi/esercizio-01-navigazione-space.md)
 - [Esercizio 2: Ricerca base](esercizi/esercizio-01-ricerca-base.md)
-- [Esercizio 3: Creazione e gestione work item](esercizi/esercizio-01-creazione-work-item.md)
 
 ---
 
@@ -84,7 +83,9 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 2 (2:45 - 3:30)
 
-*Nessun esercizio assegnato — sessione di discussione guidata e Q&A*
+- [Esercizio 3: Creazione e gestione work item](esercizi/esercizio-01-creazione-work-item.md)
+
+*Dopo l'esercizio: discussione guidata e Q&A sui work item creati*
 
 ### Recap e Q&A (3:30 - 4:00)
 
