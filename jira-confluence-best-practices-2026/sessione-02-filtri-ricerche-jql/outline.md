@@ -43,8 +43,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 1 (1:00 - 1:45)
 
-- [Esercizio 1: Ricerca base e primi filtri](esercizi/esercizio-01-ricerca-base.md)
-- [Esercizio 2: JQL fondamentali](esercizi/esercizio-02-jql-fondamentali.md)
+- [Esercizio 1: JQL fondamentali](esercizi/esercizio-02-jql-fondamentali.md)
 
 ---
 
@@ -81,7 +80,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 2 (2:45 - 3:30)
 
-- [Esercizio 3: JQL avanzato e filtri condivisi](esercizi/esercizio-03-jql-avanzato.md)
+- [Esercizio 2: JQL avanzato e filtri condivisi](esercizi/esercizio-02-jql-avanzato.md)
 
 ### Recap e Q&A (3:30 - 4:00)
 

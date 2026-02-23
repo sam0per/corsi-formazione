@@ -46,8 +46,9 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 1 (1:00 - 1:45)
 
-- [Esercizio 1: Navigazione e esplorazione progetto](esercizi/esercizio-01-navigazione-progetto.md)
-- [Esercizio 2: Creazione e gestione issue](esercizi/esercizio-02-creazione-issue.md)
+- [Esercizio 1: Navigazione e esplorazione spazio](esercizi/esercizio-01-navigazione-space.md)
+- [Esercizio 2: Ricerca base](esercizi/esercizio-01-ricerca-base.md)
+- [Esercizio 3: Creazione e gestione work item](esercizi/esercizio-01-creazione-work-item.md)
 
 ---
 
@@ -82,7 +83,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 2 (2:45 - 3:30)
 
-- [Esercizio 3: Tipi di progetto e workflow](esercizi/esercizio-03-tipi-progetto-workflow.md)
+*Nessun esercizio assegnato — sessione di discussione guidata e Q&A*
 
 ### Recap e Q&A (3:30 - 4:00)
 

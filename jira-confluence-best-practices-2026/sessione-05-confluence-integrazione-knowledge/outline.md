@@ -47,8 +47,8 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 1 (1:00 - 1:45)
 
-- [Esercizio 1: Creare pagine Confluence](esercizi/esercizio-01-confluence-pagine.md)
-- [Esercizio 2: Integrazione Jira-Confluence](esercizi/esercizio-02-integrazione-jira.md)
+- [Esercizio 1: Creare pagine Confluence](esercizi/esercizio-05-confluence-pagine.md)
+- [Esercizio 2: Integrazione Jira-Confluence](esercizi/esercizio-05-integrazione-jira.md)
 
 ---
 
@@ -94,7 +94,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 2 (2:45 - 3:30)
 
-- [Esercizio 3: Piano di knowledge sharing](esercizi/esercizio-03-knowledge-sharing-plan.md)
+- [Esercizio 3: Piano di knowledge sharing](esercizi/esercizio-05-knowledge-sharing-plan.md)
 
 ### Recap finale del corso e chiusura (3:30 - 4:00)
 

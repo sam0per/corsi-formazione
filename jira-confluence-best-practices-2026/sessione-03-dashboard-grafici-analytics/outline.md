@@ -49,8 +49,8 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 1 (1:00 - 1:45)
 
-- [Esercizio 1: Crea la tua dashboard personale](esercizi/esercizio-01-dashboard-personale.md)
-- [Esercizio 2: Gadget e grafici](esercizi/esercizio-02-gadget-grafici.md)
+- [Esercizio 1: Crea la tua dashboard personale](esercizi/esercizio-03-dashboard-personale.md)
+- [Esercizio 2: Gadget e grafici](esercizi/esercizio-03-gadget-grafici.md)
 
 ---
 
