@@ -7,6 +7,7 @@ Repository contenente i materiali per i corsi di formazione.
 | Corso | Descrizione | Durata |
 |-------|-------------|--------|
 | [Tableau e Modello Dati Trimestrale](tableau-modello-dati-trimestrale/README.md) | Data Visualization con Tableau e modello dati della trimestrale | 24 ore (6 sessioni) |
+| [Jira & Confluence Best Practices 2026](jira-confluence-best-practices-2026/README.md) | Best practice Jira Cloud e Confluence per team IT, HR, Finance e Facility | 20 ore (5 sessioni) |
 
 ## Struttura
 
