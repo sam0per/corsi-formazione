@@ -29,7 +29,7 @@ Crea **2 elementi di lavoro** nello spazio di training seguendo il tuo scenario:
 2. Story: "Definire checklist onboarding primo mese" — Priorità: Medium, Etichetta: `processi`
 
 **🏢 Facility Manager:**
-1. Task: "Manutenzione impianto climatizzazione clean room" — Priorità: Critical, Etichetta: `manutenzione`, Componente: `Facilities`
+1. Task: "Manutenzione impianto climatizzazione clean room" — Priorità: Highest, Etichetta: `manutenzione`, Componente: `Facilities`
 2. Task: "Gestire reclamo rumore ufficio open space" — Priorità: Low, Etichetta: `reclami`
 
 Per ogni work item assicurati di compilare:
