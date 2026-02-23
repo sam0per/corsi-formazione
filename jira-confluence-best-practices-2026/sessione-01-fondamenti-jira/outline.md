@@ -11,7 +11,6 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Distinguere tra spazi Team-managed e Company-managed
 - Creare e configurare **elementi di lavoro** (work item) con campi, priorità, etichette e componenti
 - Comprendere il concetto di workflow e status
-- Nota: il vecchio editor di workflow sarà rimosso a giugno 2026
 
 ---
 
@@ -79,6 +78,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Visualizzazione del workflow di uno spazio
 - Stati personalizzati: quando e perché
 - Esempio Tyvak: workflow di un work item IT (IT Manager)
+- **Nota**: il vecchio editor di workflow sarà rimosso a partire da giugno 2026 ([JRACLOUD-83818](https://jira.atlassian.com/browse/JRACLOUD-83818)) — il nuovo editor è già disponibile e funzionalmente completo
 
 **☕ Pausa (10 min)**
 
