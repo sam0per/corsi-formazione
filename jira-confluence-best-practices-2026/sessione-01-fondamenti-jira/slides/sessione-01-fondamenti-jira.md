@@ -2,12 +2,12 @@
 marp: true
 theme: default
 paginate: true
-title: Sessione 1 — Fondamenti di Jira Cloud
+title: Sessione 1 Fondamenti di Jira
 ---
 
 <!-- _class: lead -->
 
-# Sessione 1 — Fondamenti di Jira Cloud
+# Sessione 1: Fondamenti di Jira
 
 **Architettura, navigazione, tipi di lavoro (work type) e workflow base**
 
@@ -16,18 +16,18 @@ Tyvak International
 
 ---
 
+<style scoped>
+  section { font-size: 26px; }
+</style>
+
 # Agenda
 
-| Blocco | Argomento | Durata |
-|--------|-----------|--------|
-| **1.1** | Panoramica ecosistema Atlassian | 15 min |
-| **1.2** | Architettura di Jira | 20 min |
-| **1.3** | Navigazione dell'interfaccia | 15 min |
-| | ☕ Pausa + Esercizi Blocco 1 | 55 min |
-| **2.1** | Tipi di spazio (space type) | 20 min |
-| **2.2** | Elementi di lavoro in profondità | 20 min |
-| **2.3** | Workflow base | 20 min |
-| | ☕ Pausa + Esercizi Blocco 2 + Recap | 75 min |
+| Blocco | Argomento | Dettaglio |
+|--------|-----------|-----------|
+| **1** | Architettura e Navigazione | Panoramica Atlassian, architettura Jira, navigazione dell'interfaccia |
+| | Esercizi Blocco 1 |  |
+| **2** | Elementi Jira | Tipi di spazio, di lavoro e workflow |
+| | Esercizi Blocco 2 |  |
 
 ---
 
@@ -38,23 +38,18 @@ Tyvak International
 
 ---
 
-# Cos'è Jira Cloud
+# Cos'è Jira
 
 - Piattaforma Atlassian per il **tracciamento del lavoro** e la gestione dei flussi operativi
-- Utilizzata da team software, IT, HR, finance, facility e altri
+- Utilizzata da team software, IT, HR, finance e altri
 - **Cloud-native**: aggiornamenti automatici, accessibile via browser
 - Parte dell'ecosistema Atlassian: Jira, Confluence, Jira Service Management
 
-### Jira Cloud vs Data Center
-
-| | Cloud | Data Center |
-|---|-------|-------------|
-| **Hosting** | Atlassian gestisce tutto | Self-hosted |
-| **Aggiornamenti** | Automatici e continui | Manuali |
-| **Personalizzazione** | Tramite Marketplace e automazioni | Completa (plugin, DB) |
-| **Ideale per** | Team che vogliono semplicità | Organizzazioni con requisiti specifici |
-
 ---
+
+<style scoped>
+  section { font-size: 22px; }
+</style>
 
 # Architettura di Jira
 
@@ -77,11 +72,19 @@ Ogni **spazio** è collegato a uno **schema** che definisce:
 
 ---
 
+# Tipi di schema
+
+---
+
+<style scoped>
+  section { font-size: 24px; }
+</style>
+
 # Tipi di lavoro (Work Type)
 
 | Tipo | Descrizione | Esempio Tyvak |
 |------|-------------|---------------|
-| **Epic** | Iniziativa ampia, raggruppa altri elementi | Missione MILANI |
+| **Epic** | Iniziativa ampia, raggruppa altri elementi | Missione KINETIKON |
 | **Story** | Requisito o funzionalità da realizzare | "Definire checklist onboarding" |
 | **Task** | Attività operativa concreta | "Configurare VPN nuovo dipendente" |
 | **Bug** | Problema da risolvere | "Stampante non raggiungibile" |
@@ -91,11 +94,21 @@ I tipi di lavoro sono configurabili: è possibile crearne di **custom** per esig
 
 ---
 
-<!-- _class: lead -->
-
-# ☕ Pausa (10 min)
+# Tipi di workflow
 
 ---
+
+# Tipi di schermata (Screen)
+
+---
+
+# Tipi di permesso (Permission)
+
+---
+
+<style scoped>
+  section { font-size: 24px; }
+</style>
 
 # Navigazione dell'interfaccia
 
@@ -131,6 +144,10 @@ La navigazione principale di Jira Cloud è nella **sidebar sinistra**:
 
 ---
 
+<style scoped>
+  section { font-size: 24px; }
+</style>
+
 # Tipi di spazio (Space Type)
 
 ### Team-managed (ex "Next-gen")
@@ -144,6 +161,8 @@ La navigazione principale di Jira Cloud è nella **sidebar sinistra**:
 - Configurazione **centralizzata** dall'amministratore
 - Workflow, schermate e permessi gestiti tramite schemi condivisi
 - Ideale per processi aziendali standardizzati
+
+---
 
 ### Quando usare quale?
 
