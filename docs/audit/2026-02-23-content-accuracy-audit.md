@@ -223,3 +223,124 @@ This session is the most JQL-intensive in the course, covering search fundamenta
 3. **Terminology "progetto"/"issue"/"ticket" in prose (lines 22, 24, 69, 77)**: Several prose references use deprecated terms that should be updated to "space", "work item", etc.
 
 Notably, the navigation reference on line 25 ("menu laterale") is **already correct** for the new sidebar UI — this is an exception compared to other sessions where navigation references were outdated. The JQL operator syntax, date/time functions, and ordering clauses are all accurate and require no changes.
+
+---
+
+## `jira-confluence-best-practices-2026/sessione-02-filtri-ricerche-jql/esercizi/esercizio-02-gadget-grafici.md`
+
+**Topic placement note**: This exercise covers dashboard gadget configuration and chart interpretation. According to the course README, dashboards, gadgets, and charts are **Session 3** topics ("Dashboard, Grafici e Analytics"). Placing this exercise in Session 2 (Filters & JQL) is **potentially misplaced**. Students have not yet been introduced to dashboard creation or gadget concepts in Session 2. **Recommendation**: Move this file to `sessione-03-dashboard-grafici-analytics/esercizi/` and renumber it accordingly.
+
+| # | Line(s) | Category | Issue | Suggested Fix |
+|---|---------|----------|-------|---------------|
+| 1 | 1 | Internal consistency | Exercise title "Gadget e grafici" covers a Session 3 topic (Dashboard, Grafici e Analytics), not Session 2 (Filtri, Ricerche e JQL). The exercise assumes a dashboard was already created "nell'esercizio precedente" (line 13), which is not part of Session 2 outline. | Move this exercise to `sessione-03-dashboard-grafici-analytics/esercizi/` and renumber. Alternatively, if kept in Session 2, add a prerequisite note explaining it bridges to Session 3 content. |
+| 2 | 15 | Terminology | "Grafico 'Creati vs Risolti'" — the official gadget name in Jira Cloud 2026 is **"Created vs Resolved"**. The gadget now tracks "work items created vs resolved", not "issues". | Change to "Grafico **Created vs Resolved** (Creati vs Risolti)" to match the official gadget name. |
+| 3 | 16 | Terminology | "Collegalo a un filtro che copra il tuo progetto" — "progetto" (project) is now **"space"** (spazio) in Jira Cloud since Dec 2025. | Change to "Collegalo a un filtro che copra il tuo space" (or "il tuo spazio"). |
+| 4 | 21 | Terminology | "Gadget 'Due dimensioni'" — the official gadget name is **"Two Dimensional Filter Statistics"**. | Change to "Gadget **Two Dimensional Filter Statistics** (Due dimensioni)" to match the official name. |
+| 5 | 24 | Terminology | "tutte le issue del tuo progetto" — both "issue" and "progetto" are deprecated. "Issue" is now **"work item"** (since Jul 2025) and "progetto" is now **"space"** (since Dec 2025). | Change to "tutti i work item del tuo space". |
+| 6 | 25 | Terminology | "ci sono issue ad alta priorità bloccate in uno status?" — "issue" should be **"work item"**. | Change to "ci sono work item ad alta priorità bloccati in uno status?". |
+| 7 | 37 | Terminology | "il team riesce a gestire il carico di lavoro?" — acceptable as-is, no deprecated terms. | No change needed. |
+| 8 | 38 | Terminology | "ci sono pattern problematici? (es. molte issue Critical in 'To Do')" — "issue" should be **"work item"**. | Change to "molti work item Critical in 'To Do'". |
+| 9 | 30 | Terminology | "KPI target (es. 'Obiettivo: risolvere ticket critici entro 24h')" — "ticket" informally refers to "issue", now **"work item"**. | Change to "risolvere work item critici entro 24h" (or "elementi critici entro 24h"). |
+| 10 | 27-31 | Feature accuracy | The "Gadget 'Testo'" described here maps to the **"Introduction"** gadget in Jira Cloud (not a generic "Text" gadget). The Introduction gadget allows HTML content, titles, and links. | Clarify: "Gadget **Introduction** (Testo introduttivo)" to match the official name. |
+| 11 | 43 | Terminology | "3 nuovi gadget aggiunti alla dashboard" — acceptable; "gadget" and "dashboard" are not deprecated. | No change needed. |
+
+**Summary**: 11 issues found (7 terminology, 2 feature accuracy, 1 internal consistency, 1 informational). The **most critical issue** is the topic placement: this exercise belongs in Session 3, not Session 2. The gadget names should use the official English names (with Italian in parentheses for clarity). All references to "issue" must be updated to "work item" and "progetto" to "space".
+
+---
+
+## `jira-confluence-best-practices-2026/sessione-02-filtri-ricerche-jql/esercizi/esercizio-02-jql-fondamentali.md`
+
+This exercise is **correctly placed** in Session 2 (Filtri, Ricerche e JQL). It covers JQL query writing, which is the core topic of this session.
+
+| # | Line(s) | Category | Issue | Suggested Fix |
+|---|---------|----------|-------|---------------|
+| 1 | 11 | Feature accuracy | "Vai su **Filters → Advanced issue search**" — the menu item may now be labeled **"Advanced work item search"** in the Jira Cloud UI. Additionally, the navigation should specify sidebar access. | Change to "Dalla sidebar sinistra, vai su **Filters** e seleziona **Advanced work item search**" (or verify the exact current label). |
+| 2 | 11 | Terminology | "passa alla modalità JQL" — correct; the JQL toggle mode has not been renamed. | No change needed. |
+| 3 | 17 | Terminology | "Trova tutte le issue del progetto di training" — "issue" is now **"work item"** and "progetto" is now **"space"**. | Change to "Trova tutti i work item dello space di training". |
+| 4 | 19 | JQL syntax | `project = "___"` — the JQL field `project` has been renamed to `space` (backward compatible). Students learning JQL in 2026 should use the current canonical field name. | Change to `space = "___"`. Add a note that `project` still works for backward compatibility. |
+| 5 | 22 | Terminology | "Trova tutte le issue assegnate a te" — "issue" should be **"work item"**. | Change to "Trova tutti i work item assegnati a te". |
+| 6 | 27 | Terminology | "Trova tutte le issue con priorità High o Critical" — "issue" should be **"work item"**. | Change to "Trova tutti i work item con priorità High o Critical". |
+| 7 | 34 | Terminology | "Trova le issue aperte (non 'Done') assegnate a te" — "issue" should be **"work item"**. | Change to "Trova i work item aperti (non 'Done') assegnati a te". |
+| 8 | 39 | Terminology | "Trova tutte le issue con etichetta 'onboarding'" — "issue" should be **"work item"**. | Change to "Trova tutti i work item con etichetta 'onboarding'". |
+| 9 | 44 | Terminology | "Trova le issue di tipo Task o Bug nel tuo progetto" — "issue" should be **"work item"** and "progetto" should be **"space"**. | Change to "Trova i work item di tipo Task o Bug nel tuo space". |
+| 10 | 46 | JQL syntax | `project = "___" AND issuetype IN (___) AND created >= startOfMonth()` — uses old field names `project` and `issuetype`. The field `project` is now `space`; `issuetype` is documented as `type` (unchanged but the alias `issuetype` is deprecated in documentation). | Change to `space = "___" AND type IN (___) AND created >= startOfMonth()`. |
+| 11 | 51 | Terminology | "Trova tutti i ticket IT aperti" — "ticket" informally refers to "issue", now **"work item"**. | Change to "Trova tutti i work item IT aperti". |
+| 12 | 52 | Terminology | "Trova tutte le issue con etichetta 'fatturazione' o 'acquisti' non ancora completate" — "issue" should be **"work item"**. | Change to "Trova tutti i work item con etichetta 'fatturazione' o 'acquisti' non ancora completati". |
+| 13 | 53 | Terminology | "Trova le issue di tipo Story relative all'onboarding" — "issue" should be **"work item"**. | Change to "Trova i work item di tipo Story relativi all'onboarding". |
+| 14 | 54 | Terminology | "Trova i ticket di manutenzione con priorità >= Medium, assegnati a te" — "ticket" should be **"work item"**. | Change to "Trova i work item di manutenzione con priorità >= Medium, assegnati a te". |
+| 15 | 58 | Terminology | "10 query JQL scritte e funzionanti" — acceptable; "query JQL" is correct terminology. | No change needed. |
+
+**Summary**: 15 issues found (11 terminology, 2 JQL syntax, 2 feature accuracy). This exercise is **correctly placed** in Session 2. The core JQL syntax taught (operators `=`, `!=`, `IN`, `>=`, `ORDER BY`, `currentUser()`, `startOfMonth()`, relative dates) is all accurate and unchanged. The main issues are: (1) pervasive use of "issue" (11 occurrences) which should be "work item", (2) the JQL field `project` should be updated to `space`, and (3) `issuetype` should be updated to `type`. The exercise structure and pedagogical approach are sound.
+
+---
+
+## `jira-confluence-best-practices-2026/sessione-02-filtri-ricerche-jql/esercizi/esercizio-02-creazione-issue.md`
+
+**Topic placement note**: This exercise covers creating and managing work items (issues), including setting fields, creating sub-tasks, linking items, and adding comments. Work item creation is a **Session 1** topic ("Fondamenti di Jira Cloud" — which covers architecture, work types, and basic workflow). Placing it in Session 2 (Filters & JQL) seems **misplaced** unless it is intended as a warmup to generate data for JQL exercises. **Recommendation**: Move this to `sessione-01-fondamenti-jira/esercizi/` or add a clear note explaining that this exercise generates data that the subsequent JQL exercises will query.
+
+**Terminology note**: The filename itself uses deprecated terminology: `esercizio-02-creazione-issue.md`. The term "issue" is now "work item". Consider renaming to `esercizio-02-creazione-work-item.md`.
+
+| # | Line(s) | Category | Issue | Suggested Fix |
+|---|---------|----------|-------|---------------|
+| 1 | 1 | Terminology | Title "Creazione e gestione issue" — "issue" is now **"work item"** (elemento di lavoro) since Jul 2025. | Change to "Creazione e gestione work item" (or "elementi di lavoro"). Also rename file to `esercizio-02-creazione-work-item.md`. |
+| 2 | 7 | Terminology | "Creare issue complete con tutti i campi rilevanti e comprendere le relazioni tra issue." — two occurrences of "issue" should be **"work item"**. | Change to "Creare work item completi con tutti i campi rilevanti e comprendere le relazioni tra work item." |
+| 3 | 11 | Terminology | "Stai lavorando al progetto di supporto interno" — "progetto" (project) is now **"space"** in Jira Cloud. | Change to "Stai lavorando allo space di supporto interno". |
+| 4 | 15 | Terminology | "Creazione issue per ruolo" — "issue" should be **"work item"**. | Change to "Creazione work item per ruolo". |
+| 5 | 17 | Terminology | "Crea **2 issue** nel progetto di training" — "issue" should be **"work item"** and "progetto" should be **"space"**. | Change to "Crea **2 work item** nello space di training". |
+| 6 | 38 | Terminology | "Tipo di issue (Task, Bug, Story)" — "Tipo di issue" is now **"Work type"** (tipo di lavoro). | Change to "Work type (Task, Bug, Story)" or "Tipo di lavoro (Task, Bug, Story)". |
+| 7 | 43 | Terminology | "Relazioni tra issue" — "issue" should be **"work item"**. | Change to "Relazioni tra work item". |
+| 8 | 45 | Terminology | "Crea una **sotto-attività** per una delle tue issue" — "issue" should be **"work item"**. The term "sotto-attività" (sub-task) is still valid as a work type. | Change to "Crea una **sotto-attività** per uno dei tuoi work item". |
+| 9 | 46 | Terminology | "**Collega** le due issue tra loro con 'is related to'" — "issue" should be **"work item"**. | Change to "**Collega** i due work item tra loro con 'is related to'". |
+| 10 | 51 | Terminology | "2 issue create correttamente" — "issue" should be **"work item"**. | Change to "2 work item creati correttamente". |
+| 11 | 52 | Terminology | "1 sotto-attività collegata" — acceptable; "sotto-attività" (sub-task) is still a valid work type name. | No change needed. |
+| 12 | 53 | Terminology | "1 relazione tra issue" — "issue" should be **"work item"**. | Change to "1 relazione tra work item". |
+| 13 | 1 | Internal consistency | Exercise is placed in `sessione-02-filtri-ricerche-jql/` but covers work item creation, which is a Session 1 (Fondamenti) topic, not a Session 2 (Filtri & JQL) topic. | Move to `sessione-01-fondamenti-jira/esercizi/` or add a note explaining this is a data-generation warmup for subsequent JQL exercises. |
+
+**Summary**: 13 issues found (11 terminology, 1 internal consistency, 1 informational). The exercise content itself is **technically accurate** — all described fields (Summary, Description, Priority, Labels, Components, Assignee), relationships (sub-tasks, linking with "is related to"), and interactions (comments with @mentions) are current Jira Cloud features. The sole problem domains are: (1) **pervasive "issue" terminology** appearing 12 times across the file, all of which should be "work item"; (2) **"progetto" → "space"** on lines 11 and 17; and (3) **topic placement** — the exercise fits better in Session 1 or needs a rationale for being in Session 2.
+
+---
+
+## `jira-confluence-best-practices-2026/sessione-02-filtri-ricerche-jql/esercizi/esercizio-02-workflow-personalizzato.md`
+
+**Topic placement note**: This exercise covers designing and implementing a custom workflow, including states, transitions, conditions, and publishing. According to the course README, custom workflows are a **Session 4** topic ("Automazioni, Workflow e Amministrazione"). Placing this in Session 2 (Filters & JQL) is **clearly misplaced** — students have not yet been introduced to workflow configuration concepts. **Recommendation**: Move this file to `sessione-04-automazioni-workflow-admin/esercizi/` and renumber.
+
+| # | Line(s) | Category | Issue | Suggested Fix |
+|---|---------|----------|-------|---------------|
+| 1 | 1 | Internal consistency | Exercise "Workflow personalizzato" covers a Session 4 topic (Automazioni, Workflow e Amministrazione). It is misplaced in Session 2 (Filtri, Ricerche e JQL). | Move to `sessione-04-automazioni-workflow-admin/esercizi/` and renumber the exercise. |
+| 2 | 38 | Feature accuracy | "Andate su **Project settings → Workflows**" — "Project settings" is now **"Space settings"** in Jira Cloud since the Project-to-Space rename (Dec 2025). Navigation is via the left sidebar, not a top-bar menu. | Change to "Dalla sidebar sinistra dello space, andate su **Space settings → Workflows**" (or "Impostazioni space → Workflow"). |
+| 3 | 39 | Feature accuracy | "Copiate un workflow esistente (non modificare l'originale)" — this instruction is valid. The new workflow editor supports duplicating workflows. However, the old workflow editor will be **removed in June 2026**. The exercise should note that only the new visual editor is available. | Add a note: "Nota: da giugno 2026 è disponibile solo il nuovo editor visuale dei workflow." |
+| 4 | 40 | Feature accuracy | "Nell'editor visuale" — this correctly references the visual editor. However, the new workflow editor in Jira Cloud has specific UI differences from the old one (e.g., drag-and-drop states, rule-based transitions). The instruction should clarify that this is the **new** workflow editor. | Clarify: "Nel **nuovo editor visuale** dei workflow (l'unico disponibile dal 2026):" |
+| 5 | 43 | Feature accuracy | "aggiungete una **condizione** (es. 'Only assignee')" — In the new workflow editor, conditions on transitions work differently. The new editor uses **rules** (not the old "conditions/validators/post-functions" model). "Only assignee" translates to a **restrict transition** rule. | Update to: "aggiungete una **regola** di restrizione (es. 'Restrict to assignee')" to match the new workflow editor terminology. |
+| 6 | 44 | Feature accuracy | "Pubblicate il workflow (se in ambiente di test)" — in the new workflow editor, workflows are published by clicking "Update workflow" and the changes go live. The verb "publish" may be slightly misleading. | Change to "Salvate e aggiornate il workflow (Update workflow)" to match the current UI action. |
+| 7 | 55 | Terminology | "stati dove le issue si accumulano" — "issue" is now **"work item"**. | Change to "stati dove i work item si accumulano". |
+| 8 | 24 | Terminology | "es. solo il manager può approvare" — acceptable; this is a business concept, not a Jira-specific term. | No change needed. |
+| 9 | 49 | Terminology | "1 workflow implementato (o in bozza) nell'editor di Jira" — acceptable; "workflow" and "editor" are not deprecated terms. | No change needed. |
+
+**Summary**: 9 issues found (1 terminology, 5 feature accuracy, 1 internal consistency, 2 informational). The **most critical issue** is the topic placement: this exercise belongs in Session 4, not Session 2. The second most critical area is the **workflow editor references**: the exercise should be updated to reflect the new workflow editor (which is the only editor available since the old one is being removed June 2026). Specifically, the "conditions" terminology (line 43) must be updated to "rules" to match the new editor's model, and the navigation path must change from "Project settings" to "Space settings".
+
+---
+
+## `jira-confluence-best-practices-2026/sessione-02-filtri-ricerche-jql/esercizi/esercizio-02-integrazione-jira.md`
+
+**Topic placement note**: This exercise covers Jira-Confluence integration (embedding Jira macros in Confluence, linking Confluence pages to Jira work items). According to the course README, Jira-Confluence integration is a **Session 5** topic ("Confluence + Integrazione + Knowledge Transfer"). Placing this in Session 2 (Filters & JQL) is **clearly misplaced** — students have not yet been introduced to Confluence in the course. **Recommendation**: Move this file to `sessione-05-confluence-integrazione-knowledge/esercizi/` and renumber.
+
+| # | Line(s) | Category | Issue | Suggested Fix |
+|---|---------|----------|-------|---------------|
+| 1 | 1 | Internal consistency | Exercise "Integrazione Jira-Confluence" covers a Session 5 topic (Confluence + Integrazione + Knowledge Transfer). It is misplaced in Session 2 (Filtri, Ricerche e JQL). | Move to `sessione-05-confluence-integrazione-knowledge/esercizi/` and renumber the exercise. |
+| 2 | 12 | Internal consistency | "Nella pagina creata nell'esercizio precedente" — this assumes students have already created a Confluence page, which is not part of Session 2. This prerequisite belongs to Session 5 flow. | If moved to Session 5, this reference becomes valid. If kept in Session 2, this prerequisite is unmet. |
+| 3 | 17 | Terminology | "Inserisci una query JQL rilevante per il tuo ruolo (riusa i filtri della sessione 2)" — self-referential: this exercise is in Session 2 but references "filtri della sessione 2" as if it is external. | If moved to Session 5, change to "riusa i filtri salvati dalla sessione 2". If kept in Session 2, change to "riusa i filtri appena creati". |
+| 4 | 21 | Terminology | "Copia l'URL di un'issue Jira" — "issue" is now **"work item"** (elemento di lavoro). | Change to "Copia l'URL di un work item Jira". |
+| 5 | 22 | Terminology | "Incollalo nella pagina Confluence" — acceptable; "pagina Confluence" is correct terminology. | No change needed. |
+| 6 | 23 | Terminology | "Osserva come Confluence crea automaticamente una preview con status e dettagli" — this describes Confluence Smart Links, which is a current feature. Terminology is acceptable. | No change needed. |
+| 7 | 26-28 | Feature accuracy | "Usa la macro Jira Chart per incorporare un grafico a torta o 'creati vs risolti'" — the Jira Chart macro is still available in Confluence Cloud. However, it should be noted that this is labeled as **optional** (line 26: "Opzionale"), which is appropriate given that the macro may require specific permissions. | No change needed. The optional label is appropriate. |
+| 8 | 32 | Terminology | "Vai su un'issue Jira creata durante il corso" — "issue" should be **"work item"**. | Change to "Vai su un work item Jira creato durante il corso". |
+| 9 | 33 | Terminology | "Nella sezione **'Confluence pages'** (pannello laterale dell'issue)" — "issue" should be **"work item"**. The section label "Confluence pages" in the work item detail panel is still accurate. | Change to "pannello laterale del work item". |
+| 10 | 35 | Terminology | "Verifica che il link appaia sia nell'issue che nella pagina Confluence" — "issue" should be **"work item"**. | Change to "sia nel work item che nella pagina Confluence". |
+| 11 | 37 | Terminology | "Nella **descrizione** di un'issue Jira" — "issue" should be **"work item"**. | Change to "Nella **descrizione** di un work item Jira". |
+| 12 | 44 | Terminology | "Quali pagine Confluence sarebbero più utili da collegare ai vostri progetti Jira?" — "progetti" (projects) is now **"space"** in Jira. | Change to "ai vostri space Jira" (or "ai vostri spazi Jira"). |
+| 13 | 50 | Terminology | "1 pagina Confluence con almeno una macro Jira Issues funzionante" — "Jira Issues" in the macro name may have been updated to reflect "work item" terminology. | Verify the current macro name in Confluence. If still "Jira Issues", keep as-is but add a note. If renamed, update accordingly. |
+| 14 | 51 | Terminology | "1 issue Jira collegata a una pagina Confluence" — "issue" should be **"work item"**. | Change to "1 work item Jira collegato a una pagina Confluence". |
+| 15 | 52 | Terminology | "flusso bidirezionale Jira ↔ Confluence" — acceptable; this is a conceptual description, not deprecated terminology. | No change needed. |
+| 16 | 15 | Confluence references | "Nell'editor Confluence, digita `/jira` per inserire la macro" — this slash-command shortcut is valid in the current Confluence cloud editor. However, note that the legacy editor will be fully deprecated in April 2026. | Add a note that this uses the Confluence cloud editor (not the legacy editor). |
+
+**Summary**: 16 issues found (9 terminology, 1 feature accuracy, 2 internal consistency, 1 Confluence references, 3 informational). The **most critical issue** is the topic placement: this exercise belongs in Session 5, not Session 2. Students in Session 2 have not yet been introduced to Confluence. The remaining issues are the standard "issue" → "work item" and "progetto" → "space" terminology updates, which affect 8 lines in the file. The Jira-Confluence integration features described (Smart Links, Jira Issues macro, Confluence pages panel in work items) are all current and technically accurate.
