@@ -202,6 +202,8 @@ I permessi in Jira si dividono in due livelli:
 
 # Esercizi Blocco 1
 
+### Navigazione + ricerca base
+
 ---
 
 <!-- _class: lead -->
@@ -341,6 +343,12 @@ Per adattare il workflow al proprio processo (es. "In Review", "Waiting for Appr
 - **Coerenza**: stessi nomi di stato tra spazi simili
 
 ### Esempio Tyvak ?
+
+---
+
+# Esercizi Blocco 2
+
+### Creazione e gestione work item
 
 ---
 
