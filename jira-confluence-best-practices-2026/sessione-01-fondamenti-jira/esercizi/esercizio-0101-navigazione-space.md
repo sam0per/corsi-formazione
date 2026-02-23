@@ -1,4 +1,4 @@
-# Esercizio 1 — Navigazione e esplorazione **spazio** (space)
+# Blocco 1 Esercizio 1: Navigazione e esplorazione **spazio** (space)
 
 > ⏱ Tempo stimato: 20 minuti | 👥 Individuale
 
@@ -8,19 +8,19 @@ Familiarizzare con l'interfaccia di Jira Cloud e la struttura degli **spazi** (s
 
 ## Istruzioni
 
-### Parte A — Esplorazione dell'interfaccia (10 min)
+### Parte A: Esplorazione dell'interfaccia (10 min)
 
 1. Accedi a Jira Cloud con le tue credenziali Tyvak
 2. Dalla **sidebar di navigazione sinistra**, individua e annota:
    - Quanti spazi sono visibili nella sezione spazi recenti
    - Dove si trovano le tue notifiche
-   - Come accedere alla sezione "Your Work"
+   - Come accedere alla sezione "For you"
 3. Seleziona uno spazio qualsiasi e identifica:
    - Il tipo di spazio (Team-managed o Company-managed)
    - La board associata (Scrum o Kanban)
    - Il numero di **elementi di lavoro** (work item) attualmente aperti
 
-### Parte B — Ricerca globale (10 min)
+### Parte B: Ricerca globale (10 min)
 
 1. Usa la barra di ricerca globale (shortcut: `/`) per cercare:
    - Un elemento di lavoro per chiave (es. `PROJ-123`)

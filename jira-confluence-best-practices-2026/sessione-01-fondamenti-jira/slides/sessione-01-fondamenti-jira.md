@@ -9,7 +9,7 @@ title: Sessione 1 Fondamenti di Jira
 
 # Sessione 1: Fondamenti di Jira
 
-**Architettura, navigazione, tipi di lavoro (work type) e workflow base**
+**Architettura, navigazione, work type e workflow base**
 
 Corso Atlassian: Jira e Confluence Best Practices 2026
 Tyvak International
@@ -41,7 +41,7 @@ Tyvak International
 # Cos'è Jira
 
 - Piattaforma Atlassian per il **tracciamento del lavoro** e la gestione dei flussi operativi
-- Utilizzata da team software, IT, HR, finance e altri
+- Utilizzata da team software, IT, Marketing e altri
 - **Cloud-native**: aggiornamenti automatici, accessibile via browser
 - Parte dell'ecosistema Atlassian: Jira, Confluence, Jira Service Management
 
@@ -69,26 +69,7 @@ Ogni **spazio** è collegato a uno **schema** che definisce:
 - Quale **workflow** si applica a ciascun tipo
 - Quali **schermate** (screen) mostrare per creazione/modifica
 - Quali **permessi** regolano l'accesso
-
----
-
-<style scoped>
-  section { font-size: 22px; }
-</style>
-
-# Tipi di schema
-
-Gli **schemi** (scheme) sono configurazioni riutilizzabili che definiscono il comportamento di uno spazio **company-managed**.
-
-| Schema | Definisce |
-|--------|-----------|
-| **Work Type Scheme** | Quali tipi di lavoro sono disponibili nello spazio |
-| **Workflow Scheme** | Quale workflow si applica a ciascun tipo di lavoro |
-| **Screen Scheme** | Quali campi mostrare per creazione, modifica e visualizzazione |
-| **Permission Scheme** | Chi può fare cosa nello spazio |
-| **Notification Scheme** | Chi riceve notifiche per quali eventi |
-
-> Negli spazi **team-managed**, queste configurazioni sono gestite direttamente senza schemi espliciti.
+- Quali **notifiche** vengono inviate per quali eventi
 
 ---
 
@@ -130,6 +111,10 @@ Il **Workflow Scheme** collega ogni tipo di lavoro al suo workflow.
 
 ---
 
+![bg 90%](../../../images/sessione-01-jira-board.png)
+
+---
+
 <style scoped>
   section { font-size: 24px; }
 </style>
@@ -158,8 +143,8 @@ Lo **Screen Scheme** definisce quali campi sono visibili per ciascuna operazione
 # Tipi di permesso (Permission)
 
 I permessi in Jira si dividono in due livelli:
-- **Globali** — azioni a livello di sito (es. creare spazi, gestire utenti)
-- **Di spazio** — azioni all'interno di un singolo spazio, definite dal **Permission Scheme**
+- **Globali**: azioni a livello di sito (es. creare spazi, gestire utenti)
+- **Di spazio**: azioni all'interno di un singolo spazio, definite dal **Permission Scheme**
 
 | Permesso di spazio | Azione |
 |--------------------|--------|
@@ -173,27 +158,38 @@ I permessi in Jira si dividono in due livelli:
 
 ---
 
-<style scoped>
-  section { font-size: 24px; }
-</style>
-
 # Navigazione dell'interfaccia
 
 ### Sidebar di navigazione sinistra
 
-La navigazione principale di Jira Cloud è nella **sidebar sinistra**:
+- **For you**: la tua area di lavoro personale (elementi assegnati, recenti, preferiti)
+- **Spazi**: accesso rapido agli spazi visitati di recente e a quelli preferiti
+- **Apps**: ricerca e accesso alle app integrate (es. smart checklists)
+- **Filtri**: filtri salvati per ricerche frequenti
+- **Dashboards**: panoramiche personalizzate dei dati
+- **Personalizza barra laterale**: trascina gli elementi per visualizzarli, riordinarli o nasconderli
 
-- **Spazi recenti** — accesso rapido agli spazi visitati
-- **Board** — visualizzazione Scrum o Kanban
-- **Backlog** — gestione del backlog dello spazio
-- **Code** — integrazione con repository (se configurata)
-- **Impostazioni dello spazio** — configurazione (in basso)
+---
+
+# Navigazione dell'interfaccia
+
+### Barra superiore (space toolbar)
+
+- **Summary**: panoramica dei progressi dello spazio (es. % completamento, work item aperti)
+- **List**: visualizzazione tabellare di tutti i work item dello spazio
+- **Board**: visualizzazione principale del lavoro (Scrum o Kanban)
+- **Calendario**: visualizzazione temporale degli elementi con date (es. scadenze, sprint)
+- **Timeline**: la visualizzazione della linea temporale aiuta a visualizzare i tempi, la durata e le dipendenze delle attività all'interno dello spazio
+
+---
+
+# Navigazione dell'interfaccia
 
 ### Elementi chiave
 
-- **Your Work** — la tua area di lavoro personale (elementi assegnati, recenti, preferiti)
-- **Notifiche** — avvisi su menzioni, assegnazioni, aggiornamenti
-- **Ricerca globale rapida** — cerca ovunque in Jira
+- **Notifiche**: avvisi su menzioni, assegnazioni, aggiornamenti
+- **Ricerca globale rapida**: cerca ovunque in Jira
+- **Impostazioni dello spazio**: configurazione e amministrazione (per chi ha permessi)
 
 ### Shortcut utili
 
@@ -204,10 +200,14 @@ La navigazione principale di Jira Cloud è nella **sidebar sinistra**:
 
 ---
 
+# Esercizi Blocco 1
+
+---
+
 <!-- _class: lead -->
 
 # Blocco 2
-## Tipi di spazio, Elementi di lavoro e Workflow
+## Tipi di spazio, elementi di lavoro e Workflow
 
 ---
 
@@ -217,13 +217,13 @@ La navigazione principale di Jira Cloud è nella **sidebar sinistra**:
 
 # Tipi di spazio (Space Type)
 
-### Team-managed (ex "Next-gen")
+### Team-managed
 
 - Configurazione **semplificata**, gestita dal team
 - Workflow, campi e permessi indipendenti dallo schema globale
 - Ideale per team autonomi con esigenze specifiche
 
-### Company-managed (ex "Classic")
+### Company-managed
 
 - Configurazione **centralizzata** dall'amministratore
 - Workflow, schermate e permessi gestiti tramite schemi condivisi
@@ -231,22 +231,32 @@ La navigazione principale di Jira Cloud è nella **sidebar sinistra**:
 
 ---
 
-### Quando usare quale?
+<style scoped>
+  section { font-size: 24px; }
+</style>
+
+# Tipi di spazio (Space Type)
+
+## Quando usare quale?
 
 | Criterio | Team-managed | Company-managed |
 |----------|-------------|-----------------|
 | **Controllo** | Il team decide | L'admin decide |
 | **Complessità** | Bassa | Media-alta |
 | **Standardizzazione** | Flessibile | Uniforme |
-| **Esempio Tyvak** | Piccoli team operativi | Processi aziendali (IT, HR, Facility) |
+| **Esempio Tyvak** | ? | ? |
 
 ---
 
 <!-- _class: lead -->
 
-# Elementi di lavoro in profondità
+# Elementi di lavoro (Work Item)
 
 ---
+
+<style scoped>
+  section { font-size: 24px; }
+</style>
 
 # Anatomia di un elemento di lavoro (work item)
 
@@ -256,36 +266,44 @@ La navigazione principale di Jira Cloud è nella **sidebar sinistra**:
 |-------|-------------|
 | **Summary** | Titolo dell'elemento di lavoro |
 | **Tipo di lavoro** | Task, Bug, Story, Epic, Sub-task |
+| **Descrizione** | Dettagli e informazioni aggiuntive |
 | **Status** | Stato nel workflow (es. To Do, In Progress, Done) |
 | **Assegnatario** | Persona responsabile |
 | **Reporter** | Chi ha creato l'elemento |
 | **Priorità** | Lowest → Low → Medium → High → Highest |
 | **Etichette** | Tag liberi per categorizzare |
-| **Componente** | Area funzionale (es. Infrastruttura, HR) |
-| **Sprint** | Iterazione di riferimento (spazi Scrum) |
+| **Data di scadenza** | Data entro cui completare |
 
 Oltre ai campi standard, è possibile aggiungere **campi custom**.
 
 ---
 
+<style scoped>
+  section { font-size: 24px; }
+</style>
+
 # Relazioni tra elementi di lavoro
 
 ### Tipi di relazione
 
-- **Sotto-attività** — elemento figlio di un elemento padre
-- **Collegamento** (link) — relazione tra elementi indipendenti
-  - "is related to" — relazione generica
-  - "is blocked by" / "blocks" — dipendenza
-  - "is cloned by" / "clones" — copia
-- **Epic link** — collegamento di un elemento alla sua Epic
+- **Sotto-attività**: elemento figlio di un elemento padre
+- **Collegamento** (link): relazione tra elementi indipendenti
+  - "is related to" indica una relazione generica
+  - "is blocked by" / "blocks" indica una dipendenza
+  - "is cloned by" / "clones" indica una copia
+- **Epic link**: collegamento di un elemento alla sua Epic
 
 ### Interazioni
 
-- **Commenti** — discussione sull'elemento, con supporto per menzioni (`@nome`)
-- **Allegati** — file, screenshot, documenti
-- **Cronologia** (Activity) — registro di tutte le modifiche
+- **Commenti**: discussione sull'elemento, con supporto per menzioni (`@nome`)
+- **Allegati**: file, screenshot, documenti
+- **Cronologia** (Activity): registro di tutte le modifiche
 
 ---
+
+<style scoped>
+  section { font-size: 24px; }
+</style>
 
 # Workflow base
 
@@ -307,9 +325,13 @@ Un workflow definisce il **ciclo di vita** di un elemento di lavoro attraverso *
 
 ### Stati personalizzati
 
-Si possono aggiungere stati custom (es. "In Review", "Waiting for Approval") per adattare il workflow al proprio processo.
+Per adattare il workflow al proprio processo (es. "In Review", "Waiting for Approval")
 
 ---
+
+<style scoped>
+  section { font-size: 24px; }
+</style>
 
 # Best practice per i workflow
 
@@ -318,21 +340,15 @@ Si possono aggiungere stati custom (es. "In Review", "Waiting for Approval") per
 - **Transizioni esplicite**: definire chiaramente chi può spostare e quando
 - **Coerenza**: stessi nomi di stato tra spazi simili
 
-### Nota sul workflow editor
-
-Il vecchio editor di workflow sarà rimosso a partire da **giugno 2026** ([JRACLOUD-83818](https://jira.atlassian.com/browse/JRACLOUD-83818)). Il nuovo editor è già disponibile e funzionalmente completo.
-
-### Esempio Tyvak
-
-Un work item IT (IT Manager) potrebbe seguire:
-
-```
-Aperto → In Lavorazione → In Verifica → Completato
-```
+### Esempio Tyvak ?
 
 ---
 
-# Recap — Sessione 1
+<style scoped>
+  section { font-size: 22px; }
+</style>
+
+# Recap Sessione 1
 
 ### Concetti chiave
 
@@ -344,7 +360,7 @@ Aperto → In Lavorazione → In Verifica → Completato
 
 ### Prossima sessione
 
-**Sessione 2 — Filtri, Ricerche e JQL**
+**Sessione 2: Filtri, Ricerche e JQL**
 - Ricerca base e avanzata
 - Sintassi JQL (operatori, funzioni)
 - Filtri salvati e sottoscrizioni

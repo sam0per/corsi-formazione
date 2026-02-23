@@ -1,4 +1,4 @@
-# Esercizio 1 — Ricerca base e primi filtri
+# Blocco 1 Esercizio 2: Ricerca base e primi filtri
 
 > ⏱ Tempo stimato: 20 minuti | 👥 Individuale
 
@@ -8,7 +8,7 @@ Padroneggiare la ricerca base di Jira e i filtri rapidi della board.
 
 ## Istruzioni
 
-### Parte A — Ricerca base (10 min)
+### Parte A: Ricerca base (10 min)
 
 1. Dalla barra di ricerca globale, cerca **elementi di lavoro** (work item) usando:
    - Una parola chiave generica (es. "manutenzione", "ordine", "accesso")
@@ -17,7 +17,7 @@ Padroneggiare la ricerca base di Jira e i filtri rapidi della board.
 2. Dalla sidebar di navigazione sinistra, accedi a **Filtri** e poi seleziona **Ricerca avanzata**
 3. Passa dalla modalità "Base" alla modalità "JQL" e osserva come Jira traduce i tuoi filtri in JQL
 
-### Parte B — Filtri rapidi sulla board (10 min)
+### Parte B: Filtri rapidi sulla board (10 min)
 
 1. Vai su una board del tuo **spazio** (space)
 2. Identifica i filtri rapidi disponibili (in alto sulla board)
