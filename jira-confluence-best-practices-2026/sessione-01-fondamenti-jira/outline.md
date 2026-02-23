@@ -87,6 +87,8 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 *Dopo l'esercizio: discussione guidata e Q&A sui work item creati*
 
+> **Nota sulla terminologia JQL e automazioni:** nonostante l'interfaccia di Jira ora utilizzi "spazio" e "elemento di lavoro", il linguaggio JQL continua a usare `project` e `issuetype` per retrocompatibilità. Anche gli smart value delle automazioni usano ancora `{{project}}`. Questi aspetti saranno approfonditi nella sessione 2.
+
 ### Recap e Q&A (3:30 - 4:00)
 
 - Riepilogo concetti chiave
