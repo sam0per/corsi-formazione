@@ -17,6 +17,8 @@ Padroneggiare la ricerca base di Jira e i filtri rapidi della board.
 2. Dalla sidebar di navigazione sinistra, accedi a **Filtri** e poi seleziona **Ricerca avanzata**
 3. Passa dalla modalità "Base" alla modalità "JQL" e osserva come Jira traduce i tuoi filtri in JQL
 
+> Come default, la ricerca base mostra solo gli elementi di lavoro creati negli ultimi 30 giorni. Per visualizzare elementi di lavoro più vecchi, fai clic su X per rimuovere quel criterio di ricerca.
+
 ### Parte B: Filtri rapidi sulla board (10 min)
 
 1. Vai su una board del tuo **spazio** (space)

@@ -17,7 +17,7 @@ Scegli uno **spazio** (space) in cui puoi esercitarti liberamente e creare work 
 Crea **2 work items** nello spazio di training. Per ogni work item assicurati di compilare:
 - Titolo (Summary)
 - Descrizione dettagliata
-- **Tipo di lavoro** (work type): Task, Bug, Story
+- Tipo di lavoro (es. Task, Bug, Story)
 - Priorità
 - Almeno un'etichetta
 - Assegnazione a te stesso
@@ -40,3 +40,16 @@ Crea **2 work items** nello spazio di training. Per ogni work item assicurati di
 
 - Quali campi ti sembrano più utili per il tuo lavoro quotidiano?
 - Come potresti usare le etichette per organizzare meglio il tuo lavoro?
+
+## Extra
+
+### Parte C: Work types o request types personalizzati (opzionale)
+
+1. Crea un team-managed space (se non ne hai già uno per esercitarti)
+2. Crea un nuovo tipo di lavoro (work type) o request type (space settings o request management)
+3. Aggiungi un nome, una descrizione e un'icona
+4. Prova a creare un work item usando il nuovo tipo di lavoro
+
+## Domande di riflessione extra
+- Quali campi potresti aggiungere al nuovo tipo di lavoro o di richiesta per renderlo più utile?
+- Che tipo di layout potrebbe essere più funzionale per il nuovo tipo di lavoro o di richiesta?
