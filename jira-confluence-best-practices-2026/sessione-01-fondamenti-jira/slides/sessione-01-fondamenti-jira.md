@@ -26,10 +26,10 @@ Tyvak International
 
 | Blocco | Argomento | Dettaglio |
 |--------|-----------|-----------|
-| **1** | Architettura e Navigazione | Panoramica Atlassian, architettura Jira, navigazione dell'interfaccia |
-| | Esercizi Blocco 1 |  |
+| **1** | Architettura e Navigazione | Architettura Jira, navigazione dell'interfaccia |
+| | Esercizi Blocco 1 | Navigazione e ricerca |
 | **2** | Elementi Jira | Tipi di spazio, di lavoro e workflow |
-| | Esercizi Blocco 2 |  |
+| | Esercizi Blocco 2 | Creazione e gestione work items |
 
 ---
 
@@ -212,7 +212,8 @@ I permessi in Jira si dividono in due livelli:
 
 # Esercizi Blocco 1
 
-### Navigazione + ricerca base
+### 1. Navigazione - [Link](https://github.com/sam0per/corsi-formazione/blob/main/jira-confluence-best-practices-2026/sessione-01-fondamenti-jira/esercizi/esercizio-0101-navigazione-space.md)
+### 2. Ricerca base - [Link](https://github.com/sam0per/corsi-formazione/blob/main/jira-confluence-best-practices-2026/sessione-01-fondamenti-jira/esercizi/esercizio-0102-ricerca-base.md)
 
 ---
 
@@ -358,13 +359,9 @@ Per adattare il workflow al proprio processo (es. "In Review", "Waiting for Appr
 
 # Esercizi Blocco 2
 
-### Creazione e gestione work item
+### 3. Creazione e gestione work item - [Link](https://github.com/sam0per/corsi-formazione/blob/main/jira-confluence-best-practices-2026/sessione-01-fondamenti-jira/esercizi/esercizio-0103-creazione-work-item.md)
 
 ---
-
-<style scoped>
-  section { font-size: 22px; }
-</style>
 
 # Recap Sessione 1
 
@@ -375,6 +372,8 @@ Per adattare il workflow al proprio processo (es. "In Review", "Waiting for Appr
 - **Tipi di lavoro**: Epic, Story, Task, Bug, Sub-task
 - **Elementi di lavoro**: campi, priorità, etichette, relazioni
 - **Workflow**: stati, transizioni, personalizzazione
+
+---
 
 ### Prossima sessione
 
