@@ -9,10 +9,12 @@ title: Sessione 1 Fondamenti di Jira
 
 # Sessione 1: Fondamenti di Jira
 
-**Architettura, navigazione, work type e workflow base**
+**Architettura, navigazione, work item e workflow base**
 
 Corso Atlassian: Jira e Confluence Best Practices 2026
 Tyvak International
+
+> Samuel Perini, docente a Kinetikon
 
 ---
 
@@ -38,12 +40,17 @@ Tyvak International
 
 ---
 
-# Cos'è Jira
+# Cos'è Jira?
 
-- Piattaforma Atlassian per il **tracciamento del lavoro** e la gestione dei flussi operativi
+---
+
+# Cos'è Jira?
+
+- Piattaforma centralizzata per la **pianificazione**, **organizzazione** e **tracciamento** del lavoro
 - Utilizzata da team software, IT, Marketing e altri
-- **Cloud-native**: aggiornamenti automatici, accessibile via browser
-- Parte dell'ecosistema Atlassian: Jira, Confluence, Jira Service Management
+- Facilita la **collaborazione** e **condivisione** tra teams
+- Aiuta a prendere **decisioni basate sui dati** e migliorare i processi
+- Parte dell'ecosistema **Atlassian**: Jira, Confluence, Jira Service Management
 
 ---
 
@@ -65,7 +72,7 @@ Sito Atlassian (tyvak.atlassian.net)
 ### Schema
 
 Ogni **spazio** è collegato a uno **schema** che definisce:
-- Quali **tipi di lavoro** (work type) sono disponibili
+- Quali **tipi di lavoro** (work item) sono disponibili
 - Quale **workflow** si applica a ciascun tipo
 - Quali **schermate** (screen) mostrare per creazione/modifica
 - Quali **permessi** regolano l'accesso
@@ -73,11 +80,14 @@ Ogni **spazio** è collegato a uno **schema** che definisce:
 
 ---
 
+# Quali tipi di lavoro (work item) esistono?
+
+---
 <style scoped>
   section { font-size: 24px; }
 </style>
 
-# Tipi di lavoro (Work Type)
+# Tipi di lavoro (work item)
 
 | Tipo | Descrizione | Esempio Tyvak |
 |------|-------------|---------------|
