@@ -55,10 +55,30 @@ Vai su **Filters → Advanced issue search** e passa alla modalità JQL. Scrivi 
 9. **HR Generalist**: Trova gli elementi di lavoro di tipo Story relativi all'onboarding, creati negli ultimi 30 giorni
 10. **Facility Manager**: Trova gli elementi di lavoro di manutenzione con priorità >= Medium, assegnati a te
 
+**Livello 4 — Condizioni annidate e cronologia:**
+
+11. Trova tutti i subtask (elementi di lavoro con un parent) del tuo spazio che non sono completati:
+    ```
+    space = "___" AND parent IS ___ AND status != "Done"
+    ```
+
+12. Trova gli elementi di lavoro il cui status è passato per "In Review" nell'ultimo mese:
+    ```
+    status ___ "In Review" AND created >= ___
+    ```
+
+13. Trova gli elementi di lavoro con priorità Critical OPPURE con scadenza entro 7 giorni, nello spazio IT, ordinati per scadenza:
+    ```
+    space = "IT-HELPDESK" AND (___ = Critical ___ due <= ___) AND status != Done ORDER BY ___ ASC
+    ```
+
+14. **Sfida finale**: Scrivi una query per il tuo ruolo che combini almeno 4 condizioni, includa parentesi di raggruppamento e utilizzi `WAS` o `CHANGED`. Discuti la query con il gruppo.
+
 ## Risultato atteso
 
-- 10 query JQL scritte e funzionanti
-- Comprensione degli operatori `=`, `!=`, `IN`, `>=` e dell'ordinamento
+- 14 query JQL scritte e funzionanti
+- Comprensione degli operatori `=`, `!=`, `IN`, `>=`, `IS EMPTY`, `WAS` e dell'ordinamento
+- Capacità di comporre query multi-condizione con raggruppamento tramite parentesi
 
 ## Soluzioni
 
