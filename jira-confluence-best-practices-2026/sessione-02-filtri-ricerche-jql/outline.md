@@ -16,29 +16,62 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ## Programma dettagliato
 
-### Blocco 1 — Ricerca base e introduzione a JQL (0:00 - 1:00)
+### Blocco 1 — JQL: dai fondamenti ai filtri complessi (0:00 - 1:00)
 
-#### 2.1 Ricerca in Jira: panoramica (15 min)
-
-- Ricerca globale vs ricerca nello **spazio** (space)
-- Filtri rapidi sulla board (Quick Filters)
-- Filtri predefiniti: "I miei **elementi di lavoro** (work item) aperti", "Segnalate di recente"
-- La vista "Filtri" nel menu laterale
-
-#### 2.2 Introduzione a JQL (35 min)
+#### 2.1 Introduzione a JQL (30 min)
 
 - Cos'è JQL e perché è fondamentale
 - Anatomia di una query JQL: `campo operatore valore`
 - Campi principali: `space` (alias: `project`), `status`, `assignee`, `reporter`, `priority`, `type` (alias: `issuetype`), `created`, `updated`, `resolved`, `labels`, `component`
 - Operatori di confronto: `=`, `!=`, `>`, `<`, `>=`, `<=`
 - Operatori logici: `AND`, `OR`, `NOT`
-- Operatore `IN`: `status IN ("To Do", "In Progress")`
-- Operatore `WAS` / `CHANGED`: per la cronologia degli stati
+- Operatore `IN` / `NOT IN`: `status IN ("To Do", "In Progress")`
+- Operatore `IS EMPTY` / `IS NOT EMPTY`: `assignee IS EMPTY`
 - Ordinamento: `ORDER BY created DESC`
 - Esempi pratici contestualizzati Tyvak:
   - `space = "IT-HELPDESK" AND status = "Open" ORDER BY priority DESC`
   - `assignee = currentUser() AND status != Done`
   - `labels = "onboarding" AND created >= -7d`
+
+#### 2.2 Filtri multi-condizione e scenari per ruolo (20 min)
+
+**Parte 1 — Building incrementale (5 min)**
+
+Partire da una query semplice e aggiungere condizioni passo dopo passo:
+
+1. `space = "IT-HELPDESK"`
+2. `space = "IT-HELPDESK" AND status != Done`
+3. `space = "IT-HELPDESK" AND status != Done AND (priority = Critical OR priority = High)`
+4. `space = "IT-HELPDESK" AND status != Done AND (priority = Critical OR priority = High) AND assignee = currentUser() ORDER BY created ASC`
+
+Concetto chiave: precedenza degli operatori (`AND` ha priorità su `OR`), perché servono le parentesi.
+
+**Parte 2 — Condizioni annidate: gerarchia e cronologia (7 min)**
+
+- Campo `parent`: `parent IS NOT EMPTY`, `parent IS EMPTY`
+- Status storico: `status WAS "In Review"`, `status CHANGED FROM "To Do" TO "In Progress"`
+- Date range: `created >= startOfMonth(-1) AND created <= endOfMonth(-1)`
+- Combinazione gerarchia + cronologia + date
+
+Demo incrementale:
+
+1. `type = Task AND space = "IT-HELPDESK"`
+2. `type = Task AND space = "IT-HELPDESK" AND parent IS NOT EMPTY`
+3. `type = Task AND space = "IT-HELPDESK" AND parent IS NOT EMPTY AND status WAS "In Review"`
+4. `type = Task AND space = "IT-HELPDESK" AND parent IS NOT EMPTY AND status WAS "In Review" AND created >= startOfMonth(-1) AND created <= endOfMonth(-1)`
+
+> ℹ️ **Nota per il formatore:** JQL standard non supporta `parent.status` (non è un campo valido). Workaround: creare un filtro salvato sui parent e incrociare i risultati su board o dashboard.
+
+**Parte 3 — Uno scenario per ruolo (8 min)**
+
+- **IT Manager** — Subtask aperti con storia "In Review", ultimo mese:
+  `type = Task AND space = "IT-HELPDESK" AND parent IS NOT EMPTY AND status WAS "In Review" AND status != Done AND created >= -30d`
+- **Admin & Finance** — Ordini con cambio stato e scadenza imminente:
+  `labels IN ("acquisti", "fatturazione") AND (status CHANGED FROM "In attesa approvazione" OR due <= 7d) AND status NOT IN ("Done", "Cancelled")`
+- **HR Generalist** — Task onboarding figli, in ritardo o revisionati:
+  `labels = "onboarding" AND parent IS NOT EMPTY AND (due < now() OR status WAS "In Review") AND status != Done ORDER BY due ASC`
+- **Facility Manager** — Manutenzioni con passaggio di stato questo mese:
+  `space = "FACILITY" AND labels = "manutenzione" AND status CHANGED FROM "Open" TO "In Progress" AFTER startOfMonth() ORDER BY priority DESC`
 
 **☕ Pausa (10 min)**
 
