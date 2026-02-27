@@ -6,8 +6,9 @@
 
 Al termine di questa sessione i partecipanti saranno in grado di:
 
-- Utilizzare la ricerca base e i filtri rapidi di Jira
-- Scrivere query JQL (Jira Query Language) per ricerche avanzate
+- Scrivere query JQL (Jira Query Language) per ricerche mirate
+- Comporre query multi-condizione con operatori logici e raggruppamento
+- Utilizzare i campi di gerarchia (`parent`) e cronologia (`WAS`, `CHANGED`) nelle query
 - Salvare, condividere e gestire filtri personali e di team
 - Configurare sottoscrizioni email sui filtri
 
