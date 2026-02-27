@@ -41,8 +41,8 @@ Partire da una query semplice e aggiungere condizioni passo dopo passo:
 
 1. `space = "IT-HELPDESK"`
 2. `space = "IT-HELPDESK" AND status != Done`
-3. `space = "IT-HELPDESK" AND status != Done AND (priority = Critical OR priority = High)`
-4. `space = "IT-HELPDESK" AND status != Done AND (priority = Critical OR priority = High) AND assignee = currentUser() ORDER BY created ASC`
+3. `space = "IT-HELPDESK" AND status != Done AND (priority = Highest OR priority = High)`
+4. `space = "IT-HELPDESK" AND status != Done AND (priority = Highest OR priority = High) AND assignee = currentUser() ORDER BY created ASC`
 
 Concetto chiave: precedenza degli operatori (`AND` ha priorità su `OR`), perché servono le parentesi.
 
@@ -73,6 +73,8 @@ Demo incrementale:
 - **Facility Manager** — Manutenzioni con passaggio di stato questo mese:
   `space = "FACILITY" AND labels = "manutenzione" AND status CHANGED FROM "Open" TO "In Progress" AFTER startOfMonth() ORDER BY priority DESC`
 
+> ℹ️ **Nota per il formatore:** `due <= 7d` include anche gli elementi scaduti (overdue). Per filtrare solo i prossimi 7 giorni usare: `due >= startOfDay() AND due <= 7d`.
+
 **☕ Pausa (10 min)**
 
 ### Esercizi Blocco 1 (1:00 - 1:45)
@@ -87,7 +89,7 @@ Demo incrementale:
 
 - Funzioni utente: `currentUser()`, `membersOf("team")`
 - Funzioni temporali: `now()`, `startOfDay()`, `startOfWeek()`, `startOfMonth()`, `endOfDay()`
-- Periodi relativi: `-7d`, `-1w`, `-30d`, `-1M`
+- Periodi relativi: `-7d`, `-1w`, `-30d` (⚠️ non esiste `-1M`: per i mesi usare `startOfMonth(-1)`)
 - Funzioni di testo: `text ~ "keyword"` (ricerca full-text)
 - Funzioni di spazio: `spacesLeadByUser()`, `spacesWhereUserHasRole()`
 - Combinazioni avanzate:

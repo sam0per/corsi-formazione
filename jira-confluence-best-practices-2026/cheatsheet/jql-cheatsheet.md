@@ -87,8 +87,10 @@ Esempio: `space = "IT" AND (priority = Critical OR priority = High)`
 | `-7d` | 7 giorni fa |
 | `-1w` | 1 settimana fa |
 | `-30d` | 30 giorni fa |
-| `-1M` | 1 mese fa |
-| `-3M` | 3 mesi fa |
+| `startOfMonth(-1)` | Inizio del mese scorso |
+| `startOfMonth(-3)` | Inizio di 3 mesi fa |
+
+> ⚠️ In JQL le unità relative sono `d` (giorni), `w` (settimane), `h` (ore), `m` (minuti). Non esiste un'unità per i mesi: usare `startOfMonth(-N)` / `endOfMonth(-N)`.
 
 ## Ordinamento
 

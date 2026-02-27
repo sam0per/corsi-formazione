@@ -10,7 +10,7 @@ Scrivere query JQL corrette usando campi, operatori e ordinamento.
 
 Vai su **Filters → Advanced issue search** e passa alla modalità JQL. Scrivi le seguenti query, verifica i risultati e annotali.
 
-> ℹ️ Il campo `project` è stato rinominato `space` in Jira Cloud 2025. `project` funziona ancora come alias. Analogamente, `issuetype` è stato rinominato `type` (`issuetype` resta valido come alias).
+> ℹ️ In Jira Cloud 2025 la UI usa "Space" al posto di "Project" e "Work Type" al posto di "Issue Type". In JQL entrambe le forme sono valide: `space` e `project` sono alias, così come `type` e `issuetype`.
 
 ### Query da completare
 
@@ -67,9 +67,9 @@ Vai su **Filters → Advanced issue search** e passa alla modalità JQL. Scrivi 
     status ___ "In Review" AND created >= ___
     ```
 
-13. Trova gli elementi di lavoro con priorità Critical OPPURE con scadenza entro 7 giorni, nello spazio IT, ordinati per scadenza:
+13. Trova gli elementi di lavoro con priorità Highest OPPURE con scadenza entro 7 giorni, nello spazio IT, ordinati per scadenza:
     ```
-    space = "IT-HELPDESK" AND (___ = Critical ___ due <= ___) AND status != Done ORDER BY ___ ASC
+    space = "IT-HELPDESK" AND (___ = Highest ___ due <= ___) AND status != Done ORDER BY ___ ASC
     ```
 
 14. **Sfida finale**: Scrivi una query per il tuo ruolo che combini almeno 4 condizioni, includa parentesi di raggruppamento e utilizzi `WAS` o `CHANGED`. Discuti la query con il gruppo.
