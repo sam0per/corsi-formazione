@@ -114,11 +114,11 @@ Demo incrementale:
 
 **☕ Pausa (10 min)**
 
-### Esercizi Blocco 2 (2:45 - 3:30)
+### Esercizi Blocco 2 (3:00 - 3:45)
 
 - [Esercizio 2: JQL avanzato e filtri condivisi](./esercizi/esercizio-0202-jql-avanzato.md)
 
-### Recap e Q&A (3:30 - 4:00)
+### Recap e Q&A (3:45 - 4:00)
 
 - Riepilogo: JQL è il fondamento per dashboard, automazioni e report
 - Cheatsheet JQL: dove trovarlo e come usarlo
