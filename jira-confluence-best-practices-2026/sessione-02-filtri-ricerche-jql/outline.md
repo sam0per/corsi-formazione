@@ -29,7 +29,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Operatore `IS EMPTY` / `IS NOT EMPTY`: `assignee IS EMPTY`
 - Ordinamento: `ORDER BY created DESC`
 - Esempi pratici contestualizzati Tyvak:
-  - `space = "IT-HELPDESK" AND status = "Open" ORDER BY priority DESC`
+  - `space = "SERVICE-DESK-IT" AND status = "Open" ORDER BY priority DESC`
   - `assignee = currentUser() AND status != Done`
   - `labels = "onboarding" AND created >= -7d`
 
@@ -39,10 +39,10 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 Partire da una query semplice e aggiungere condizioni passo dopo passo:
 
-1. `space = "IT-HELPDESK"`
-2. `space = "IT-HELPDESK" AND status != Done`
-3. `space = "IT-HELPDESK" AND status != Done AND (priority = Highest OR priority = High)`
-4. `space = "IT-HELPDESK" AND status != Done AND (priority = Highest OR priority = High) AND assignee = currentUser() ORDER BY created ASC`
+1. `space = "SERVICE-DESK-IT"`
+2. `space = "SERVICE-DESK-IT" AND status != Done`
+3. `space = "SERVICE-DESK-IT" AND status != Done AND (priority = Highest OR priority = High)`
+4. `space = "SERVICE-DESK-IT" AND status != Done AND (priority = Highest OR priority = High) AND assignee = currentUser() ORDER BY created ASC`
 
 Concetto chiave: precedenza degli operatori (`AND` ha priorità su `OR`), perché servono le parentesi.
 
@@ -55,17 +55,17 @@ Concetto chiave: precedenza degli operatori (`AND` ha priorità su `OR`), perch�
 
 Demo incrementale:
 
-1. `type = Task AND space = "IT-HELPDESK"`
-2. `type = Task AND space = "IT-HELPDESK" AND parent IS NOT EMPTY`
-3. `type = Task AND space = "IT-HELPDESK" AND parent IS NOT EMPTY AND status WAS "In Review"`
-4. `type = Task AND space = "IT-HELPDESK" AND parent IS NOT EMPTY AND status WAS "In Review" AND created >= startOfMonth(-1) AND created <= endOfMonth(-1)`
+1. `type = Task AND space = "SERVICE-DESK-IT"`
+2. `type = Task AND space = "SERVICE-DESK-IT" AND parent IS NOT EMPTY`
+3. `type = Task AND space = "SERVICE-DESK-IT" AND parent IS NOT EMPTY AND status WAS "In Review"`
+4. `type = Task AND space = "SERVICE-DESK-IT" AND parent IS NOT EMPTY AND status WAS "In Review" AND created >= startOfMonth(-1) AND created <= endOfMonth(-1)`
 
-> ℹ️ **Nota per il formatore:** JQL standard non supporta `parent.status` (non è un campo valido). Workaround: creare un filtro salvato sui parent e incrociare i risultati su board o dashboard.
+> ℹ️ **Nota:** JQL standard non supporta `parent.status` (non è un campo valido). Workaround: creare un filtro salvato sui parent e incrociare i risultati su board o dashboard.
 
 **Parte 3 — Uno scenario per ruolo (8 min)**
 
 - **IT Manager** — Subtask aperti con storia "In Review", ultimo mese:
-  `type = Task AND space = "IT-HELPDESK" AND parent IS NOT EMPTY AND status WAS "In Review" AND status != Done AND created >= -30d`
+  `type = Task AND space = "SERVICE-DESK-IT" AND parent IS NOT EMPTY AND status WAS "In Review" AND status != Done AND created >= -30d`
 - **Admin & Finance** — Ordini con cambio stato e scadenza imminente:
   `labels IN ("acquisti", "fatturazione") AND (status CHANGED FROM "In attesa approvazione" OR due <= 7d) AND status NOT IN ("Done", "Cancelled")`
 - **HR Generalist** — Task onboarding figli, in ritardo o revisionati:
@@ -73,13 +73,13 @@ Demo incrementale:
 - **Facility Manager** — Manutenzioni con passaggio di stato questo mese:
   `space = "FACILITY" AND labels = "manutenzione" AND status CHANGED FROM "Open" TO "In Progress" AFTER startOfMonth() ORDER BY priority DESC`
 
-> ℹ️ **Nota per il formatore:** `due <= 7d` include anche gli elementi scaduti (overdue). Per filtrare solo i prossimi 7 giorni usare: `due >= startOfDay() AND due <= 7d`.
+> ℹ️ **Nota:** `due <= 7d` include anche gli elementi scaduti (overdue). Per filtrare solo i prossimi 7 giorni usare: `due >= startOfDay() AND due <= 7d`.
 
 **☕ Pausa (10 min)**
 
 ### Esercizi Blocco 1 (1:00 - 1:45)
 
-- [Esercizio 1: JQL fondamentali](esercizi/esercizio-02-jql-fondamentali.md)
+- [Esercizio 1: JQL fondamentali](./esercizi/esercizio-0201-jql-fondamentali.md)
 
 ---
 
@@ -93,7 +93,7 @@ Demo incrementale:
 - Funzioni di testo: `text ~ "keyword"` (ricerca full-text)
 - Funzioni di spazio: `spacesLeadByUser()`, `spacesWhereUserHasRole()`
 - Combinazioni avanzate:
-  - `space = "FACILITY" AND created >= startOfMonth() AND priority IN (High, Critical)`
+  - `space = "FACILITY" AND created >= startOfMonth() AND priority IN (High, Highest)`
   - `assignee WAS currentUser() AND status CHANGED TO "Done" AFTER -7d`
   - `text ~ "satellite" AND space IN ("MISSIONI", "R&D")`
 
@@ -101,7 +101,7 @@ Demo incrementale:
 
 - Salvare un filtro: nome, descrizione
 - Filtri personali vs filtri condivisi
-- Condivisione: con utenti, gruppi, spazi (space)
+- Condivisione: con utenti, gruppi, spazi (o progetti)
 - Filtri come segnalibri: stella per accesso rapido
 - Best practice per la denominazione dei filtri
 
@@ -116,7 +116,7 @@ Demo incrementale:
 
 ### Esercizi Blocco 2 (2:45 - 3:30)
 
-- [Esercizio 2: JQL avanzato e filtri condivisi](esercizi/esercizio-02-jql-avanzato.md)
+- [Esercizio 2: JQL avanzato e filtri condivisi](./esercizi/esercizio-0202-jql-avanzato.md)
 
 ### Recap e Q&A (3:30 - 4:00)
 
@@ -128,6 +128,6 @@ Demo incrementale:
 
 ## Materiali di riferimento
 
-- [Slide sessione 2](slides/)
+- [Slide sessione 2](./slides/)
 - [JQL Cheatsheet](../cheatsheet/jql-cheatsheet.md)
 - [Glossario Jira](../glossario.md)
