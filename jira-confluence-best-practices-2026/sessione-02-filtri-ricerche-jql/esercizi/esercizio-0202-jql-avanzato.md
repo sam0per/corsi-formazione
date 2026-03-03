@@ -1,6 +1,6 @@
-# Esercizio 3 — JQL avanzato e filtri condivisi
+# Sessione 2 Blocco 2 Esercizio — JQL avanzato e filtri condivisi
 
-> ⏱ Tempo stimato: 25 minuti | 👥 Individuale + condivisione
+> ⏱ Tempo stimato: 30 minuti | 👥 Individuale + condivisione
 
 ## Obiettivo
 
@@ -8,33 +8,53 @@ Utilizzare funzioni JQL avanzate, salvare filtri e configurare sottoscrizioni.
 
 ## Istruzioni
 
-### Parte A — Query avanzate (10 min)
+### Parte A — Query avanzate
 
 Scrivi le seguenti query usando funzioni JQL avanzate:
 
 1. **Elementi di lavoro (work item) modificati oggi**:
+   <details>
+   <summary>Soluzione</summary>
+
    ```
    updated >= startOfDay()
    ```
 
+   </details>
+
 2. **Elementi di lavoro il cui status è cambiato nell'ultima settimana**:
+   <details>
+   <summary>Soluzione</summary>
+
    ```
    status CHANGED AFTER -1w
    ```
 
+   </details>
+
 3. **Ricerca full-text**: trova elementi di lavoro che contengono la parola "satellite" nella descrizione o nel titolo:
+   <details>
+   <summary>Soluzione</summary>
+
    ```
    text ~ "satellite"
    ```
 
+   </details>
+
 4. **Elementi di lavoro creati da te ma assegnati ad altri**:
+   <details>
+   <summary>Soluzione</summary>
+
    ```
    reporter = currentUser() AND assignee != currentUser()
    ```
 
+   </details>
+
 5. **Query personalizzata per il tuo ruolo**: scrivi una query utile per il tuo lavoro quotidiano (discussione di gruppo)
 
-### Parte B — Salva e condividi filtri (10 min)
+### Parte B — Salva e condividi filtri
 
 1. Prendi la query più utile che hai scritto e **salvala come filtro**:
    - Clicca "Save as" nella ricerca avanzata
@@ -44,7 +64,7 @@ Scrivi le seguenti query usando funzioni JQL avanzate:
    - Dettagli filtro → Modifica permessi → Aggiungi gruppo o spazio (space)
 3. **Aggiungi il filtro ai preferiti** (stella)
 
-### Parte C — Sottoscrizione (5 min)
+### Parte C — Sottoscrizione
 
 1. Sul filtro appena creato, configura una **sottoscrizione email**:
    - Clicca su "Sottoscrizioni" nelle opzioni del filtro

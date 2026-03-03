@@ -8,9 +8,9 @@ Scrivere query JQL corrette usando campi, operatori e ordinamento.
 
 ## Istruzioni
 
-Vai su **Filters → Advanced issue search** e passa alla modalità JQL. Scrivi le seguenti query, verifica i risultati e annotali.
+Vai su **Filtri → Ricerca** e passa alla modalità JQL. Scrivi le seguenti query, verifica i risultati e annotali.
 
-> ℹ️ In Jira Cloud 2025 la UI usa "Space" al posto di "Project" e "Work Type" al posto di "Issue Type". In JQL entrambe le forme sono valide: `space` e `project` sono alias, così come `type` e `issuetype`.
+> ℹ️ In Jira Cloud 2025 la UI usa "Space" al posto di "Project" e "Work Type" al posto di "Issue Type". In JQL entrambe le forme sono valide: `spaceJira` e `project` sono alias, così come `type` e `workType`.
 
 ### Query da completare
 
@@ -21,7 +21,7 @@ Vai su **Filters → Advanced issue search** e passa alla modalità JQL. Scrivi 
    <summary>Suggerimento</summary>
 
    ```
-   space ? "___"
+   spaceJira ? "___" OR project ? "___"
    ```
    
    </details>
@@ -73,7 +73,7 @@ Vai su **Filters → Advanced issue search** e passa alla modalità JQL. Scrivi 
    <summary>Suggerimento</summary>
 
    ```
-   space ? "___" AND type ? (___) AND created ? startOfMonth()
+   (spaceJira ? "___" OR project ? "___") AND type ? (___) AND created ? startOfMonth()
    ```
 
    </details>
@@ -89,7 +89,7 @@ Vai su **Filters → Advanced issue search** e passa alla modalità JQL. Scrivi 
    <summary>Suggerimento</summary>
 
     ```
-    space ? "___" AND parent ? ___ ? status ? "Done"
+    (spaceJira ? "___" OR project ? "___") AND parent ? ___ ? status ? "Done"
     ```
 
    </details>
@@ -108,7 +108,7 @@ Vai su **Filters → Advanced issue search** e passa alla modalità JQL. Scrivi 
       <summary>Suggerimento</summary>
 
     ```
-    space ? "___" AND (___ ? Highest ___ due ? ___) AND status ? Done ORDER BY ___ ASC
+    spaceJira ? "___" AND (___ ? Highest ___ due ? ___) AND status ? Done ORDER BY ___ ASC
     ```
 
       </details>
