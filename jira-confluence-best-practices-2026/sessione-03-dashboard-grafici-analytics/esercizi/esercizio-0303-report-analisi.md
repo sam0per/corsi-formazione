@@ -17,9 +17,12 @@ Lavorate insieme per creare una **dashboard condivisa "Tyvak — Panoramica oper
    - Dopo la creazione: **Edit → Change layout** → 2 colonne
 2. L'IT Manager condivide la dashboard con il gruppo:
    - Clicca **⋯** (More actions) → **Share dashboard**
-   - Nella sezione **Editors**, aggiungi i partecipanti del gruppo (per nome o email)
+   - Nella sezione **Editors**, aggiungi 3 partecipanti del gruppo (per nome o email)
+   - Aggiungi il 4° partecipante come **Viewer** (non Editor)
+   - Osservate la differenza: il Viewer può visualizzare la dashboard ma **non può** aggiungere/modificare gadget né cancellare la dashboard
    - ⚠️ **Importante**: condividi anche i filtri JQL usati dai tuoi gadget — altrimenti gli altri vedranno gadget vuoti. Per ogni filtro: **Filters** → trova il filtro → **⋯** → **Share**
-3. Ogni partecipante aggiunge **1 gadget** rappresentativo del proprio dipartimento:
+   - 💡 Nota: per condividere dashboard e filtri, l'utente necessita dei permessi globali "Share dashboards and filters" e "Browse users and groups"
+3. Ogni partecipante (con permesso Editor) aggiunge **1 gadget** rappresentativo del proprio dipartimento:
    - **IT Manager**: gadget con conteggio work item aperti per priorità
    - **Admin & Finance**: gadget con **elementi di lavoro** (work item) in corso su ordini/fatture
    - **HR Generalist**: gadget con stato onboarding attivi
@@ -33,8 +36,10 @@ Lavorate insieme per creare una **dashboard condivisa "Tyvak — Panoramica oper
 > Per spazi company-managed con più board, assicurati di visualizzare la board corretta prima di aprire i report.
 
 1. Andate in uno spazio e navigate su **Reports** (sidebar dello spazio)
-2. Esplorate almeno 2 dei seguenti report (sono report a livello di board, non gadget dashboard):
+2. Esplorate almeno 3 dei seguenti report (sono report a livello di board, non gadget dashboard):
    - Burndown Chart (se la board usa Scrum)
+   - Velocity Chart (richiede almeno uno sprint completato)
+   - Sprint Report (completamento sprint e work item spostati nel backlog)
    - Cumulative Flow Diagram
    - Control Chart (tempo di ciclo dei work item)
 3. Per ogni report, discutete:
@@ -48,14 +53,16 @@ Lavorate insieme per creare una **dashboard condivisa "Tyvak — Panoramica oper
 2. Clicca **⋯** (More actions) → **View as wallboard**
 3. Osservate come la dashboard appare a schermo intero senza menu di navigazione
 4. Premete **Esc** per tornare alla vista normale
-5. Discutete: in quale contesto usereste il wallboard mode? (riunioni di team, monitor condiviso in ufficio?)
+5. Sapevate che è possibile configurare un **wallboard slideshow**? Permette di ruotare automaticamente tra più dashboard con intervalli configurabili — ideale per monitor condivisi che mostrano dashboard diverse a rotazione
+6. Verificate il **refresh automatico** dei gadget: ogni gadget ha un intervallo di aggiornamento configurabile (icona ⚙️ del gadget). Per un wallboard su schermo condiviso, un refresh frequente mantiene i dati aggiornati
+7. Discutete: in quale contesto usereste il wallboard mode? (riunioni di team, monitor condiviso in ufficio, stand-up meeting?)
 
 ## Risultato atteso
 
 - 1 dashboard condivisa con 5+ gadget, visibile a tutto il gruppo
-- Comprensione pratica della meccanica di condivisione (Editors, filtri)
-- Comprensione di almeno 2 report nativi di Jira
-- Esperienza pratica con wallboard mode
+- Comprensione pratica della meccanica di condivisione (Editors vs Viewers, filtri, permessi)
+- Comprensione di almeno 3 report nativi di Jira
+- Esperienza pratica con wallboard mode e conoscenza del wallboard slideshow
 - Discussione di gruppo su come usare i dati per migliorare i processi
 
 ## Sfida extra

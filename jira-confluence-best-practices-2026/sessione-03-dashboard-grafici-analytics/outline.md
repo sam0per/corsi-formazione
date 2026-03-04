@@ -25,7 +25,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Contrassegnare con stella (star) le dashboard per accesso rapido
 - Cercare dashboard esistenti e copiare dashboard come template
 - Best practice: una dashboard per ruolo, una per direzione
-- Esempio Tyvak: dashboard del Facility Manager per i work item aperti
+- Esempio Tyvak: dashboard per tracciamento ordini in scadenza e persone coinvolte
 
 #### 3.2 Creare e configurare una dashboard (15 min)
 
@@ -33,7 +33,10 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Dopo la creazione: **Edit → Change layout** (1 colonna, 2 colonne, 3 colonne)
 - Aggiungere gadget alla dashboard
 - Posizionamento e ridimensionamento dei gadget
-- Demo live: creazione guidata di una dashboard + contrassegno con stella
+- 3 esempi di dashboard:
+  - Dashboard personale: focus sui work item assegnati e attività del giorno
+  - Dashboard di team: focus su andamento del lavoro e blocchi
+  - Dashboard per la direzione: focus su KPI e trend
 
 #### 3.3 Gadget per la dashboard personale (20 min)
 
@@ -61,8 +64,8 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 1 (1:10 – 2:00)
 
-- [Esercizio 1: Crea la tua dashboard personale](esercizi/esercizio-03-dashboard-personale.md) (25 min)
-- [Esercizio 2: Gadget e grafici](esercizi/esercizio-03-gadget-grafici.md) (25 min)
+- [Esercizio 1: Crea la tua dashboard personale](./esercizi/esercizio-0301-dashboard-personale.md) (25 min)
+- [Esercizio 2: Gadget e grafici](./esercizi/esercizio-0302-gadget-grafici.md) (25 min)
 
 ---
 
@@ -106,7 +109,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 2 (3:10 – 3:45)
 
-- [Esercizio 3: Report e dashboard condivisa](esercizi/esercizio-03-report-analisi.md) (35 min)
+- [Esercizio 3: Report e dashboard condivisa](./esercizi/esercizio-0303-report-analisi.md) (35 min)
 
 ### Recap e Q&A (3:45 – 4:00)
 
@@ -118,6 +121,6 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ## Materiali di riferimento
 
-- [Slide sessione 3](slides/)
+- [Slide sessione 3](./slides/)
 - [Dashboard Cheatsheet](../cheatsheet/dashboard-cheatsheet.md)
 - [JQL Cheatsheet](../cheatsheet/jql-cheatsheet.md)
