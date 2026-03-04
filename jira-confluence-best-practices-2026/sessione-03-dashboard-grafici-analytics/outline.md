@@ -30,10 +30,10 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 #### 3.2 Creare e configurare una dashboard (15 min)
 
 - Creazione di una nuova dashboard: nome e descrizione
-- Dopo la creazione: **Edit → Change layout** (1 colonna, 2 colonne, 3 colonne)
+- Dopo la creazione: **Modifica → Cambia layout** (1 colonna, 2 colonne, 3 colonne)
 - Aggiungere gadget alla dashboard
 - Posizionamento e ridimensionamento dei gadget
-- 3 esempi di dashboard:
+- 3 esempi concreti di dashboard:
   - Dashboard personale: focus sui work item assegnati e attività del giorno
   - Dashboard di team: focus su andamento del lavoro e blocchi
   - Dashboard per la direzione: focus su KPI e trend
@@ -73,14 +73,13 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 #### 3.5 Report integrati di Jira (15 min)
 
-- Report dello **spazio** (space): dove trovarli (sezione Reports nella sidebar)
+- Report dello **spazio** (space): dove trovarli (sezione Reports nella sidebar oppure toolbar in alto)
 - Nota: per spazi company-managed con più board, assicurarsi di visualizzare la board corretta prima di generare report
-- **Burndown Chart** (board Scrum): report a livello di board, non gadget dashboard
-- **Velocity Chart**: report a livello di board — richiede almeno uno sprint completato
+- **Velocity**: report a livello di board — richiede almeno uno sprint completato
 - **Cumulative Flow Diagram**: report a livello di board — disponibile per Scrum e Kanban
-- **Control Chart**: report a livello di board, tempo di ciclo (cycle time) oppure lead time dei work item, a seconda della configurazione
-- **Sprint Report**: completamento sprint e work item rimossi dallo sprint — fondamentale per le sprint retrospective
-- **Burnup Chart**: complementare al burndown — mostra scope e completamento, generalmente considerato più leggibile per stakeholder non tecnici
+- **Cycle Time**: report a livello di board, tempo di ciclo (cycle time) oppure lead time dei work item, a seconda della configurazione
+- **Sprint Burndown**: completamento sprint e work item rimossi dallo sprint — fondamentale per le sprint retrospective
+- **Burnup**: complementare al burndown — mostra scope e completamento, generalmente considerato più leggibile per stakeholder non tecnici
 - **Epic Report**: progresso di un epic attraverso più sprint (disponibile solo per board Scrum)
 - Interpretazione pratica: cosa ci dicono questi report?
 
@@ -103,7 +102,6 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Permessi globali necessari: "Share dashboards and filters" e "Browse users and groups". Senza questi permessi, l'utente vedrà solo l'opzione "Private".
 - Dashboard come strumento di reporting per la direzione
 - Best practice: chi dovrebbe vedere cosa?
-- Esempio Tyvak: dashboard per il management con KPI cross-dipartimento
 
 **☕ Pausa (10 min)**
 
