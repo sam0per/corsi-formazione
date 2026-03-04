@@ -6,7 +6,7 @@
 
 1. **Dashboards** → **Create dashboard**
 2. Nome descrittivo: `[Team/Ruolo] — [Scopo]`
-3. Scegliere il layout (1, 2, o 3 colonne)
+3. Dopo la creazione: **Edit** → **Change layout** (1, 2, o 3 colonne)
 4. Aggiungere gadget con **"Add gadget"**
 
 ## Gadget principali
@@ -18,13 +18,13 @@
 | **Created vs Resolved** | Andamento creazione/risoluzione | Monitorare il carico di lavoro nel tempo |
 | **Two Dimensional Filter Statistics** | Matrice campo × campo | Panoramica priorità × status |
 | **Activity Stream** | Feed attività recenti | Monitorare l'attività del team |
-| **Average Age** | Età media degli elementi di lavoro | Identificare work item stagnanti |
+| **Average Age** | Età media (in giorni) dei work item non risolti | Identificare work item stagnanti |
 | **Recently Created Work Items** | Elementi di lavoro creati di recente | Monitorare il volume di nuovo lavoro |
 | **Introduzione** (Introduction) | Testo libero (wiki) | Note, link, istruzioni |
 | **Assigned to Me** | I tuoi elementi di lavoro | Dashboard personale |
 
-> ⚠️ **Gadget in fase di rimozione** (rimozione sospesa, ma potrebbero non essere disponibili):
-> Heat Map, Resolution Time, Time Since Chart, Time to First Response, Workload Pie Chart
+> ⚠️ **Gadget con rimozione annunciata** (rimozione sospesa ad aprile 2025 — attualmente ancora disponibili, ma non più mantenuti):
+> Heat Map, Road Map, Bubble Chart, Spaces (ex Projects), Labels
 
 ## Configurazione gadget — Impostazioni chiave
 
@@ -98,11 +98,15 @@ Ogni gadget che usa dati richiede:
 
 **Come condividere**: Dashboard → ⋯ → Edit → Share → Aggiungi utenti/gruppi
 
+> **Viewers vs Editors**: i Viewer possono solo visualizzare; gli Editor possono modificare
+> gadget e cancellare la dashboard. Condividi anche i filtri JQL sottostanti ai gadget!
+
 ## Wallboard mode
 
 Per visualizzare la dashboard su uno schermo condiviso:
-- Aggiungi `?wallboard` all'URL della dashboard
-- Esempio: `https://tyvak.atlassian.net/jira/dashboards/10001?wallboard`
+- **Via menu** (consigliato): Dashboard → **⋯** → **View as wallboard**
+- **Via URL** (alternativa): aggiungi `?wallboard` all'URL della dashboard
+- Wallboard slideshow: rotazione automatica tra più dashboard con intervalli configurabili
 - I gadget si aggiornano automaticamente
 
 ## Best practice
