@@ -38,9 +38,20 @@ In coppia, analizzate i grafici creati e rispondete:
 2. Guardando la matrice "Due dimensioni": ci sono pattern problematici? (es. molti work item Critical in "To Do")
 3. Se doveste presentare questi dati alla direzione, quale gadget scegliereste come il più comunicativo?
 
+### Parte C — Modifica le impostazioni di un gadget (5 min)
+
+1. Scegli un gadget esistente sulla tua dashboard (es. Pie Chart o Created vs Resolved)
+2. Clicca sui tre puntini (**⋯**) del gadget e seleziona **"Edit"**
+3. Cambia una impostazione:
+   - Per **Pie Chart**: cambia il campo di raggruppamento (es. da Status a Priority)
+   - Per **Created vs Resolved**: cambia il periodo temporale (es. da 30 a 90 giorni)
+4. Salva e osserva come cambia la visualizzazione
+5. Domanda: come cambiano le informazioni mostrate? Quale configurazione è più utile per il tuo ruolo?
+
 ## Risultato atteso
 
 - 3 nuovi gadget aggiunti alla dashboard
+- 1 modifica alle impostazioni di un gadget esistente
 - Capacità di interpretare i grafici con occhio critico
 - Discussione in coppia completata
 
