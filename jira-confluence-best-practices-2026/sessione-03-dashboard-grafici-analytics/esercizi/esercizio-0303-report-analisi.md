@@ -1,55 +1,51 @@
-# Esercizio 3 — Report e dashboard condivisa
+# Sessione 3 Blocco 2 Esercizio 3 — Report e dashboard condivisa
 
-> ⏱ Tempo stimato: 35 minuti | 👥 Di gruppo (tutti e 4 i partecipanti)
+> ⏱ Tempo stimato: 35 minuti
 
 ## Obiettivo
 
-Creare una dashboard condivisa cross-dipartimento e analizzare i report dello **spazio** (space).
+Creare una dashboard condivisa cross-dipartimento e analizzare i report dello **spazio** o **progetto**.
 
 ## Istruzioni
 
-### Parte A — Dashboard di gruppo (15 min)
+### Parte A: Dashboard di gruppo
 
-Lavorate insieme per creare una **dashboard condivisa "Tyvak — Panoramica operativa"**:
+Lavorate insieme per creare una **dashboard condivisa "Tyvak — Panoramica training"**:
 
-1. L'IT Manager crea la dashboard:
-   - Nome: `Tyvak — Panoramica operativa`
-   - Dopo la creazione: **Edit → Change layout** → 2 colonne
-2. L'IT Manager condivide la dashboard con il gruppo:
-   - Clicca **⋯** (More actions) → **Rinomina o condividi** (Rename or share)
-   - Nella sezione **Editors**, aggiungi 3 partecipanti del gruppo (per nome o email)
-   - Aggiungi il 4° partecipante come **Viewer** (non Editor)
-   - Osservate la differenza: il Viewer può visualizzare la dashboard ma **non può** aggiungere/modificare gadget né cancellare la dashboard. Nota: chi ha permesso Editor vede automaticamente la dashboard — non serve aggiungerlo anche come Viewer
-   - ⚠️ **Importante**: condividi anche i filtri JQL usati dai tuoi gadget — altrimenti gli altri vedranno gadget con errore o senza dati. Per ogni filtro: **Filters** → trova il filtro → **⋯** → **Share**
-   - 💡 Nota: per condividere dashboard e filtri, l'utente necessita dei permessi globali "Share dashboards and filters" e "Browse users and groups"
-3. Ogni partecipante (con permesso Editor) aggiunge **1 gadget** rappresentativo del proprio dipartimento:
-   - **IT Manager**: gadget con conteggio work item aperti per priorità
+1. Una persona crea la dashboard:
+   - Nome: `Tyvak — Panoramica training`
+   - Nella sezione **Editors**, aggiungi i partecipanti del gruppo (per nome o email)
+   - Dopo la creazione: **Modifica → Cambia layout** → 2 colonne
+   - ⚠️ **Importante**: condividi anche i filtri JQL usati dai tuoi gadget — altrimenti gli altri vedranno gadget con errore o senza dati. Per ogni filtro: **Filters** → trova il filtro → **⋯** → **Condividi**
+   - 💡 Nota: per condividere dashboard e filtri, l'utente necessita dei permessi globali "Condividi dashboard e filtri" e "Visualizza utenti e gruppi"
+2. Ogni partecipante (con permesso Editor) aggiunge **1 gadget** rappresentativo del proprio dipartimento. Esempi (ma sentitevi liberi di scegliere altri gadget rilevanti):
+   - **IT**: gadget con conteggio work item aperti per status
    - **Admin & Finance**: gadget con **elementi di lavoro** (work item) in corso su ordini/fatture
-   - **HR Generalist**: gadget con stato onboarding attivi
-   - **Facility Manager**: gadget con reclami e manutenzioni aperte
-4. Aggiungete un gadget comune: **"Creati vs Risolti"** (Created vs Resolved) su tutti gli spazi
-5. Posizionate i gadget in modo ordinato e leggibile
+   - **HR**: gadget con stato onboarding attivi
+   - **Facility**: gadget con reclami e manutenzioni aperte
+3. Aggiungete un gadget comune: **"Creati vs Risolti"** (Created vs Resolved) su tutti gli spazi
+4. Posizionate i gadget in modo ordinato e leggibile
 
-### Parte B — Esplorazione report (10 min)
+### Parte B: Esplorazione report
 
-> Per trovare i report: dalla sidebar, seleziona il tuo spazio → **Reports**.
+> Per trovare i report: dalla sidebar oppure toolbar (+), seleziona il tuo spazio → **Reports**.
 > Per spazi company-managed con più board, assicurati di visualizzare la board corretta prima di aprire i report.
 
-1. Andate in uno spazio e navigate su **Reports** (sidebar dello spazio)
+1. Andate in uno spazio e navigate su **Reports** (sidebar o toolbar dello spazio)
 2. Esplorate almeno 3 dei seguenti report (sono report a livello di board, non gadget dashboard):
-   - Burndown Chart (se la board usa Scrum)
-   - Velocity Chart (richiede almeno uno sprint completato)
-   - Sprint Report (completamento sprint e work item rimossi dallo sprint)
+   - Burnup (se la board usa Scrum)
+   - Velocity (richiede almeno uno sprint completato)
+   - Sprint burndown (completamento sprint e work item rimossi dallo sprint)
    - Cumulative Flow Diagram
-   - Control Chart (tempo di ciclo dei work item)
+   - Cycle Time (tempo di ciclo dei work item)
 3. Per ogni report, discutete:
    - Cosa ci dice questo report?
    - Come potremmo usarlo per migliorare i nostri processi?
    - Quali azioni concrete potremmo intraprendere basandoci su questi dati?
 
-### Parte C — Wallboard mode (5 min)
+### Parte C: Wallboard mode
 
-1. Tornate alla dashboard condivisa "Tyvak — Panoramica operativa"
+1. Tornate alla dashboard condivisa "Tyvak — Panoramica training"
 2. Clicca **⋯** (More actions) → **View as wallboard**
 3. Osservate come la dashboard appare a schermo intero senza menu di navigazione
 4. Premete **Esc** per tornare alla vista normale
