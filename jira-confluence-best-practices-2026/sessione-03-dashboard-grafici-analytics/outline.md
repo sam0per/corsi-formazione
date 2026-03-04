@@ -99,7 +99,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Condividere con gruppi — ⚠️ su Jira Cloud si può condividere solo con gruppi di cui si è membri
 - Condividere con l'intera organizzazione (opzione "Any logged-in user")
 - Distinzione Viewers vs Editors: chi ha permessi di Editor può aggiungere/modificare gadget e cancellare la dashboard; i Viewer possono solo visualizzare
-- ⚠️ Condividere anche i filtri JQL sottostanti ai gadget — senza condivisione dei filtri, gli altri utenti vedranno gadget vuoti. Questo è il problema di supporto più comune con le dashboard condivise.
+- ⚠️ Condividere anche i filtri JQL sottostanti ai gadget — senza condivisione dei filtri, gli altri utenti vedranno gadget con errore o senza dati. Questo è il problema di supporto più comune con le dashboard condivise.
 - Permessi globali necessari: "Share dashboards and filters" e "Browse users and groups". Senza questi permessi, l'utente vedrà solo l'opzione "Private".
 - Dashboard come strumento di reporting per la direzione
 - Best practice: chi dovrebbe vedere cosa?

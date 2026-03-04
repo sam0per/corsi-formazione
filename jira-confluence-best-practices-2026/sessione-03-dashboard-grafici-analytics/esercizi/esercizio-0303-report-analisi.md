@@ -39,7 +39,7 @@ Lavorate insieme per creare una **dashboard condivisa "Tyvak — Panoramica oper
 2. Esplorate almeno 3 dei seguenti report (sono report a livello di board, non gadget dashboard):
    - Burndown Chart (se la board usa Scrum)
    - Velocity Chart (richiede almeno uno sprint completato)
-   - Sprint Report (completamento sprint e work item spostati nel backlog)
+   - Sprint Report (completamento sprint e work item rimossi dallo sprint)
    - Cumulative Flow Diagram
    - Control Chart (tempo di ciclo dei work item)
 3. Per ogni report, discutete:

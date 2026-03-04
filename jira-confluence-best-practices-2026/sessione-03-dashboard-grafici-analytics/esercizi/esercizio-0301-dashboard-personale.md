@@ -28,14 +28,14 @@ Aggiungi almeno **5 gadget** utili per il tuo lavoro quotidiano. Se ti serve isp
 1. **I miei work item** (Assigned to Me): i tuoi work item IT assegnati
 2. **Risultati filtro** (Filter Results): **elementi di lavoro** (work item) IT aperti (usa filtro JQL dalla sessione 2)
 3. **Grafico a torta** (Pie Chart): distribuzione work item per status o priorità
-4. **Work item creati di recente** (Recently Created Work Items): nuovi work item IT — utile per monitorare il volume di nuovo lavoro
+4. **Work item creati di recente** (Recently Created Chart): grafico con il trend di creazione di work item IT — utile per monitorare il volume di nuovo lavoro
 5. **Quick Links**: scorciatoie ai work item e filtri usati più spesso
 
 **💼 Admin & Finance:**
 1. **I miei work item** (Assigned to Me): i tuoi elementi di lavoro assegnati
 2. **Risultati filtro** (Filter Results): ordini e fatture in corso
 3. **Grafico a torta** (Pie Chart): distribuzione per etichetta (acquisti/fatturazione)
-4. **Introduzione** (Introduction): note con scadenze importanti
+4. **Introduzione** (Introduction): note e istruzioni (⚠️ il testo è configurato globalmente dall'admin di sistema)
 5. **Attività recente** (Activity Stream): feed delle attività recenti nel tuo **spazio** (space)
 
 **👥 HR:**
@@ -43,16 +43,16 @@ Aggiungi almeno **5 gadget** utili per il tuo lavoro quotidiano. Se ti serve isp
 2. **Risultati filtro** (Filter Results): task onboarding attivi
 3. **Grafico a torta** (Pie Chart): distribuzione per status
 4. **Attività recente** (Activity Stream): ultime modifiche nello **spazio** (space) HR
-5. **Work item creati di recente** (Recently Created Work Items): nuovi task HR — utile per monitorare il volume di richieste
+5. **Work item creati di recente** (Recently Created Chart): grafico con il trend di creazione di task HR — utile per monitorare il volume di richieste
 
 **🏢 Facility:**
 1. **I miei work item** (Assigned to Me): i tuoi work item facility assegnati
 2. **Risultati filtro** (Filter Results): work item facility aperti
 3. **Grafico a torta** (Pie Chart): distribuzione per componente o labels (manutenzione/reclami/sicurezza)
 4. **Quick Links**: scorciatoie a filtri e board facility usati più spesso
-5. **Work item creati di recente** (Recently Created Work Items): nuovi reclami e richieste di manutenzione
+5. **Work item creati di recente** (Recently Created Chart): grafico con il trend di nuovi reclami e richieste di manutenzione
 
-> **💡 Nota**: non tutti i gadget richiedono un filtro JQL salvato. Gadget come **Assigned to Me**, **Activity Stream** e **Quick Links** funzionano senza filtro, mentre **Filter Results**, **Pie Chart** e **Recently Created Work Items** si basano su un filtro salvato.
+> **💡 Nota**: non tutti i gadget richiedono un filtro JQL salvato. Gadget come **Assigned to Me**, **Activity Stream** e **Quick Links** funzionano senza filtro, mentre **Filter Results**, **Pie Chart** e **Recently Created Chart** si basano su un filtro salvato.
 
 ## Risultato atteso
 
