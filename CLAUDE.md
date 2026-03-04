@@ -1,7 +1,3 @@
-# CLAUDE.md
-
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 ## Project Overview
 
 Training materials repository ("corsi-formazione") for professional courses by Kinetikon. All content is written in **Italian**. The repository contains no executable code — it is purely documentation and educational materials.
