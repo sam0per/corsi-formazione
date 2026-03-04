@@ -16,11 +16,11 @@ Lavorate insieme per creare una **dashboard condivisa "Tyvak — Panoramica oper
    - Nome: `Tyvak — Panoramica operativa`
    - Dopo la creazione: **Edit → Change layout** → 2 colonne
 2. L'IT Manager condivide la dashboard con il gruppo:
-   - Clicca **⋯** (More actions) → **Share dashboard**
+   - Clicca **⋯** (More actions) → **Rinomina o condividi** (Rename or share)
    - Nella sezione **Editors**, aggiungi 3 partecipanti del gruppo (per nome o email)
    - Aggiungi il 4° partecipante come **Viewer** (non Editor)
-   - Osservate la differenza: il Viewer può visualizzare la dashboard ma **non può** aggiungere/modificare gadget né cancellare la dashboard
-   - ⚠️ **Importante**: condividi anche i filtri JQL usati dai tuoi gadget — altrimenti gli altri vedranno gadget vuoti. Per ogni filtro: **Filters** → trova il filtro → **⋯** → **Share**
+   - Osservate la differenza: il Viewer può visualizzare la dashboard ma **non può** aggiungere/modificare gadget né cancellare la dashboard. Nota: chi ha permesso Editor vede automaticamente la dashboard — non serve aggiungerlo anche come Viewer
+   - ⚠️ **Importante**: condividi anche i filtri JQL usati dai tuoi gadget — altrimenti gli altri vedranno gadget con errore o senza dati. Per ogni filtro: **Filters** → trova il filtro → **⋯** → **Share**
    - 💡 Nota: per condividere dashboard e filtri, l'utente necessita dei permessi globali "Share dashboards and filters" e "Browse users and groups"
 3. Ogni partecipante (con permesso Editor) aggiunge **1 gadget** rappresentativo del proprio dipartimento:
    - **IT Manager**: gadget con conteggio work item aperti per priorità

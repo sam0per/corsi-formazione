@@ -8,13 +8,13 @@ Creare una dashboard personale con almeno 5 gadget utili per il proprio ruolo.
 
 ## Prerequisiti
 
-Avere almeno 2 filtri JQL salvati dalla [sessione 2](../../sessione-02-filtri-ricerche-jql/).
+Avere almeno 3 filtri JQL salvati dalla [sessione 2](../../sessione-02-filtri-ricerche-jql/).
 
 ## Istruzioni
 
 ### Step 1: Crea la dashboard
 
-1. Dalla sidebar, vai su **Dashboards → Crea dashboard**
+1. Dalla sidebar, clicca su **Dashboards**. Nella pagina che si apre, clicca su **Crea dashboard**
 2. Nome: `[Tuo ruolo] — Dashboard training`
 3. Descrizione: breve spiegazione dello scopo
 4. Dopo la creazione: clicca **Modifica** → **Cambia layout** → seleziona **2 colonne**

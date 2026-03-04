@@ -45,19 +45,19 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - **Grafico a torta** (Pie Chart): distribuzione per campo (status, priority, assignee)
 - **Attività recente** (Activity Stream): feed delle attività — non richiede un filtro salvato
 - **Quick Links**: scorciatoie di navigazione ai work item dell'utente
-- **Work item creati di recente** (Recently Created Work Items): elementi di lavoro creati di recente — utile per monitorare il volume di nuovo lavoro
+- **Work item creati di recente** (Recently Created Chart): grafico che mostra il trend di creazione di work item nel tempo — utile per monitorare il volume di nuovo lavoro
 - **Introduzione** (Introduction): note e istruzioni in formato wiki — ⚠️ il testo è configurato globalmente nelle impostazioni di sistema Jira; per testo personalizzato per singola dashboard servono app di terze parti
 - Collegamento gadget ↔ filtro salvato: molti gadget si basano su un filtro JQL salvato (ma non tutti lo richiedono, es. Assigned to Me, Activity Stream, Quick Links)
 
 #### 3.4 Gadget per il team e la direzione (20 min)
 
-- **Creati vs Risolti** (Created vs Resolved): andamento nel tempo — nota: "risolto" dipende dal campo Resolution, non solo dallo status
+- **Creati vs Risolti** (Created vs Resolved): andamento nel tempo — nota: "risolto" dipende dal campo Resolution, non dallo status
 - **Grafico a due dimensioni** (Two Dimensional Filter Statistics): matrice campo × campo (es. priorità × status)
 - **Età media** (Average Age): età media (in giorni) dei work item non risolti dalla data di creazione — non è il tempo in uno status specifico
 - **Sprint Health**: snapshot dello stato dello sprint corrente, scope changes e carico per membro del team
 - **Sprint Burndown** (gadget dashboard): lavoro rimanente nello sprint — distinto dal report Burndown a livello di board (sezione 3.5)
 - **Work item sotto osservazione** (Watched Work Items): per stakeholder che monitorano work item senza essere assegnatari
-- **Mappa di calore** (Heat Map) — ⚠️ Atlassian ha annunciato la rimozione di questo gadget (insieme a Road Map, Bubble Chart, Spaces, Labels), ma la rimozione è stata sospesa ad aprile 2025. Attualmente ancora disponibile, ma non più mantenuto attivamente e potrebbe essere rimosso in futuro.
+- **Mappa di calore** (Heat Map) — ⚠️ Atlassian ha annunciato la rimozione di questo gadget (insieme a Road Map, Bubble Chart, Projects, Labels), ma la rimozione è stata sospesa ad aprile 2025. Attualmente ancora disponibile, ma non più mantenuto attivamente e potrebbe essere rimosso in futuro.
 - Collegamento gadget ↔ filtro salvato: anche per questi gadget, la maggior parte richiede un filtro JQL salvato
 
 **☕ Pausa (10 min)**
@@ -78,10 +78,10 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - **Burndown Chart** (board Scrum): report a livello di board, non gadget dashboard
 - **Velocity Chart**: report a livello di board — richiede almeno uno sprint completato
 - **Cumulative Flow Diagram**: report a livello di board — disponibile per Scrum e Kanban
-- **Control Chart**: report a livello di board, tempo di ciclo (cycle time) e lead time dei work item
-- **Sprint Report**: completamento sprint e work item spostati nel backlog — fondamentale per le sprint review
-- **Burnup Chart**: complementare al burndown — mostra scope e completamento, più leggibile per stakeholder non tecnici
-- **Epic Report**: progresso di un epic attraverso più sprint
+- **Control Chart**: report a livello di board, tempo di ciclo (cycle time) oppure lead time dei work item, a seconda della configurazione
+- **Sprint Report**: completamento sprint e work item rimossi dallo sprint — fondamentale per le sprint retrospective
+- **Burnup Chart**: complementare al burndown — mostra scope e completamento, generalmente considerato più leggibile per stakeholder non tecnici
+- **Epic Report**: progresso di un epic attraverso più sprint (disponibile solo per board Scrum)
 - Interpretazione pratica: cosa ci dicono questi report?
 
 #### 3.6 Dashboard avanzate e trucchi (15 min)
@@ -91,7 +91,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Dashboard "operativa": focus sulle attività del giorno
 - Wallboard mode: dashboard su schermo condiviso
 - Wallboard slideshow: rotazione automatica tra più dashboard con intervalli configurabili
-- Refresh automatico dei gadget (configurabile a livello di dashboard e di singolo gadget)
+- Refresh automatico dei gadget (configurabile a livello di singolo gadget)
 
 #### 3.7 Condivisione e permessi dashboard (20 min)
 

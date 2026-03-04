@@ -25,13 +25,12 @@ Nell'esercizio precedente hai configurato gadget personali. Ora aggiungi alla st
    - Domanda: ci sono work item ad alta priorità bloccate in uno status?
 
 3. **Gadget "Introduzione"** (Introduction):
-   - Aggiungi un gadget Introduction con:
-     - Titolo del team/ruolo
-     - KPI target (es. "Obiettivo: risolvere work item critici entro 24h")
-     - Link utili
+   - Aggiungi un gadget Introduction alla dashboard
+   - ⚠️ **Nota**: su Jira Cloud, il testo del gadget Introduction è configurato globalmente dall'amministratore di sistema. Non è possibile personalizzare il testo per singola dashboard senza app di terze parti
+   - Osserva il contenuto predefinito del gadget e discuti: quali informazioni sarebbero utili se l'admin configurasse il testo per il vostro team? (es. titolo del team/ruolo, KPI target, link utili)
 
 4. **Scegli uno** tra i seguenti gadget (in base al tuo spazio):
-   - **Sprint Health** (se il tuo spazio usa Scrum): snapshot dello sprint corrente, scope changes e carico per membro del team
+   - **Sprint Health** (se il tuo spazio usa Scrum): snapshot dello sprint corrente, scope changes e carico per membro del team — nota: questo gadget richiede la selezione di una **board**, non di un filtro JQL
    - **Età media** (Average Age) (se il tuo spazio non usa Scrum): età media in giorni dei work item non risolti — utile per identificare work item "dimenticati"
 
 ### Parte B: Interpretazione grafici
@@ -50,7 +49,7 @@ Riflettete sulle azioni suggerite.
 ### Parte C: Modifica le impostazioni di un gadget
 
 1. Scegli un gadget esistente sulla tua dashboard (es. Pie Chart o Created vs Resolved)
-2. Clicca sui tre puntini (**⋯**) del gadget e seleziona **"Modifica"**
+2. Assicurati che la dashboard sia in modalità modifica (clicca **Modifica** nella barra superiore). Poi clicca sui tre puntini (**⋯**) del gadget e seleziona **"Modifica"**
 3. Cambia una impostazione:
    - Per **Pie Chart**: cambia il campo di raggruppamento (es. da Status a Priority)
    - Per **Created vs Resolved**: cambia il periodo temporale (es. da 30 a 90 giorni)
