@@ -32,11 +32,15 @@ Sulla dashboard creata nell'esercizio precedente, aggiungi:
 
 ### Parte B — Interpretazione grafici (10 min)
 
-In coppia, analizzate i grafici creati e rispondete:
+In coppia, usate questa scheda per analizzare i grafici creati:
 
-1. Guardando "Creati vs Risolti": il team riesce a gestire il carico di lavoro?
-2. Guardando la matrice "Due dimensioni": ci sono pattern problematici? (es. molti work item Critical in "To Do")
-3. Se doveste presentare questi dati alla direzione, quale gadget scegliereste come il più comunicativo?
+| Gadget | Cosa osservi? | Segnale positivo o negativo? | Azione suggerita |
+|--------|---------------|------------------------------|------------------|
+| **Creati vs Risolti** | La linea "Risolti" sta sopra o sotto "Creati"? | Sopra = positivo (il team smaltisce) / Sotto = negativo (accumulo) | _es. ridistribuire il carico, rivedere le priorità_ |
+| **Due dimensioni** | Ci sono celle con numeri alti in rosso/arancione? Quale incrocio priorità×status è critico? | Celle alte in "Critical + To Do" = negativo | _es. escalation, sprint planning mirato_ |
+| **Il gadget più comunicativo** | Quale gadget scegliereste per una presentazione alla direzione? Perché? | — | _es. Pie Chart per immediatezza, Created vs Resolved per trend_ |
+
+Compilate la tabella insieme e discutete le azioni suggerite (2 minuti per gadget).
 
 ### Parte C — Modifica le impostazioni di un gadget (5 min)
 

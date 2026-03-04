@@ -148,30 +148,30 @@ Sezione 3.4 copre 4 report. Report importanti non menzionati:
 ### 6.1 Esercizio 1 — "Crea la tua dashboard personale"
 
 - **File**: `esercizi/esercizio-03-dashboard-personale.md`
-- [ ] **Aggiungere gadget "Assigned to Me"** nelle raccomandazioni per TUTTI i ruoli — è il
+- [x] **Aggiungere gadget "Assigned to Me"** nelle raccomandazioni per TUTTI i ruoli — è il
   gadget personale più fondamentale
-- [ ] **Aggiungere step "Contrassegna con stella"** — senza questo, i partecipanti non
+- [x] **Aggiungere step "Contrassegna con stella"** — senza questo, i partecipanti non
   ritroveranno la dashboard dopo aver navigato altrove
-- [ ] Valutare se 20 minuti bastano per 4 gadget con utenti non tecnici (considerare 25 min
+- [x] Valutare se 20 minuti bastano per 4 gadget con utenti non tecnici (considerare 25 min
   o ridurre a 3 gadget)
 
 ### 6.2 Esercizio 2 — "Gadget e grafici"
 
 - **File**: `esercizi/esercizio-03-gadget-grafici.md`
-- [ ] Nessun esercizio sulla **modifica delle impostazioni** di un gadget dopo la creazione
+- [x] Nessun esercizio sulla **modifica delle impostazioni** di un gadget dopo la creazione
   (cambiare filtro, periodo temporale). Gli utenti devono sapere che i gadget sono editabili.
-- [ ] La Parte B (interpretazione, 10 min) beneficerebbe di un framework di analisi strutturato
+- [x] La Parte B (interpretazione, 10 min) beneficerebbe di un framework di analisi strutturato
   anziché domande aperte per utenti non tecnici.
 
 ### 6.3 Esercizio 3 — "Report e dashboard condivisa"
 
 - **File**: `esercizi/esercizio-03-report-analisi.md`
-- [ ] **Gap critico**: Lo Step 1 dice "L'IT Manager crea la dashboard e la condivide con il
+- [x] **Gap critico**: Lo Step 1 dice "L'IT Manager crea la dashboard e la condivide con il
   gruppo" ma **non spiega la meccanica della condivisione** (Viewers/Editors, percorso menu,
   requisito condivisione filtri). Aggiungere Step 1b con istruzioni esplicite.
-- [ ] **Manca esercizio wallboard**: Nonostante il wallboard mode sia coperto nella sezione 3.5,
+- [x] **Manca esercizio wallboard**: Nonostante il wallboard mode sia coperto nella sezione 3.5,
   non c'è nessun "prova ora" negli esercizi. Aggiungere un mini-step.
-- [ ] **Manca navigazione report**: La Parte B chiede di esplorare i report ma non chiarisce
+- [x] **Manca navigazione report**: La Parte B chiede di esplorare i report ma non chiarisce
   come navigare alla sezione Reports per space team-managed vs company-managed.
 
 ### 6.4 Copertura complessiva esercizi
@@ -180,14 +180,14 @@ Sezione 3.4 copre 4 report. Report importanti non menzionati:
 |---|---|---|
 | Creare dashboard | Sì (Es 1) | OK |
 | Aggiungere gadget | Sì (Es 1, 2) | OK |
-| Configurare impostazioni gadget | Parziale (Es 2) | Solo creazione, non modifica |
+| Configurare impostazioni gadget | Sì (Es 2C) | Creazione + modifica impostazioni |
 | Interpretare grafici | Sì (Es 2) | OK |
-| Condividere dashboard | Nominato ma non insegnato (Es 3) | **Gap critico** |
-| Wallboard mode | No | Da aggiungere |
-| Stella/preferiti dashboard | No | Da aggiungere |
-| Copiare dashboard | No | Da aggiungere |
-| Report a livello di board | Parziale (Es 3B) | Solo esplorazione, nessuna analisi strutturata |
-| Viewer vs Editor | No | Da aggiungere |
+| Condividere dashboard | Sì (Es 3A) | Istruzioni dettagliate con Editors + filtri |
+| Wallboard mode | Sì (Es 3C) | Step-by-step con wallboard mode |
+| Stella/preferiti dashboard | Sì (Es 1) | Step 1.5 + risultato atteso |
+| Copiare dashboard | No | Non esercitato (menzionato in outline 3.1) |
+| Report a livello di board | Sì (Es 3B) | Esplorazione con istruzioni di navigazione |
+| Viewer vs Editor | Sì (Es 3A) | Coperto nella meccanica di condivisione |
 
 ---
 

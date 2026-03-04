@@ -42,6 +42,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - **Grafico a torta** (Pie Chart): distribuzione per campo (status, priority, assignee)
 - **Attività recente** (Activity Stream): feed delle attività — non richiede un filtro salvato
 - **Quick Links**: scorciatoie di navigazione ai work item dell'utente
+- **Work item creati di recente** (Recently Created Work Items): elementi di lavoro creati di recente — utile per monitorare il volume di nuovo lavoro
 - **Introduzione** (Introduction): note e istruzioni in formato wiki — ⚠️ il testo è configurato globalmente nelle impostazioni di sistema Jira; per testo personalizzato per singola dashboard servono app di terze parti
 - Collegamento gadget ↔ filtro salvato: molti gadget si basano su un filtro JQL salvato (ma non tutti lo richiedono, es. Assigned to Me, Activity Stream, Quick Links)
 
