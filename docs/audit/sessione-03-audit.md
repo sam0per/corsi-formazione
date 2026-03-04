@@ -2,7 +2,7 @@
 
 > Data audit: 2026-03-04
 > Validato contro: documentazione ufficiale Atlassian (Jira Cloud, marzo 2026)
-> Stato: **da correggere** — 6 errori di accuratezza, 13 gap di completezza, 5 problemi esercizi
+> Stato: **corretto** — tutti i must-fix e should-fix risolti (2026-03-04)
 
 ---
 
@@ -225,32 +225,32 @@ funzionano, ma il menu è più user-friendly per utenti non tecnici.
 
 ### Priorità ALTA (errori di accuratezza)
 
-- [ ] Correggere descrizione Average Age (`outline.md:43`)
-- [ ] Aggiornare warning Heat Map (`outline.md:44`)
-- [ ] Completare descrizione Control Chart con lead time (`outline.md:65`)
-- [ ] Chiarire sequenza creazione layout (`outline.md:31-32`)
-- [ ] Aggiornare terminologia "dashboard di sistema" (`outline.md:23`)
-- [ ] Aggiungere caveat gadget Introduction (`outline.md:45`)
+- [x] Correggere descrizione Average Age (`outline.md:43`)
+- [x] Aggiornare warning Heat Map (`outline.md:44`)
+- [x] Completare descrizione Control Chart con lead time (`outline.md:65`)
+- [x] Chiarire sequenza creazione layout (`outline.md:31-32`)
+- [x] Aggiornare terminologia "dashboard di sistema" (`outline.md:23`)
+- [x] Aggiungere caveat gadget Introduction (`outline.md:45`)
 
 ### Priorità MEDIA (completezza contenuti)
 
-- [ ] Aggiungere gadget Assigned to Me, Sprint Health, Sprint Burndown, Quick Links, Watched
+- [x] Aggiungere gadget Assigned to Me, Sprint Health, Sprint Burndown, Quick Links, Watched
   Work Items alla sezione 3.3
-- [ ] Aggiungere requisito condivisione filtri alla sezione 3.6
-- [ ] Aggiungere distinzione Viewers vs Editors alla sezione 3.6
-- [ ] Aggiungere restrizione condivisione gruppi alla sezione 3.6
-- [ ] Aggiungere permessi globali necessari alla sezione 3.6
-- [ ] Aggiungere starring, copiare, cercare dashboard alla sezione 3.2
-- [ ] Aggiungere wallboard slideshow alla sezione 3.5
-- [ ] Aggiungere Sprint Report, Burnup Chart, Epic Report alla sezione 3.4
+- [x] Aggiungere requisito condivisione filtri alla sezione 3.6
+- [x] Aggiungere distinzione Viewers vs Editors alla sezione 3.6
+- [x] Aggiungere restrizione condivisione gruppi alla sezione 3.6
+- [x] Aggiungere permessi globali necessari alla sezione 3.6
+- [x] Aggiungere starring, copiare, cercare dashboard alla sezione 3.2
+- [x] Aggiungere wallboard slideshow alla sezione 3.5
+- [x] Aggiungere Sprint Report, Burnup Chart, Epic Report alla sezione 3.4
 
 ### Priorità MEDIA (esercizi)
 
-- [ ] Aggiungere "Assigned to Me" all'esercizio 1 per tutti i ruoli
-- [ ] Aggiungere step "Contrassegna con stella" all'esercizio 1
-- [ ] Aggiungere meccanica condivisione esplicita all'esercizio 3
-- [ ] Aggiungere mini-step wallboard all'esercizio 3
-- [ ] Aggiungere istruzioni navigazione report per space team/company-managed all'esercizio 3
+- [x] Aggiungere "Assigned to Me" all'esercizio 1 per tutti i ruoli
+- [x] Aggiungere step "Contrassegna con stella" all'esercizio 1
+- [x] Aggiungere meccanica condivisione esplicita all'esercizio 3
+- [x] Aggiungere mini-step wallboard all'esercizio 3
+- [x] Aggiungere istruzioni navigazione report per space team/company-managed all'esercizio 3
 
 ### Priorità BASSA (arricchimenti)
 
