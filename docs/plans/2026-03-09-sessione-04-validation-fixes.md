@@ -2,9 +2,9 @@
 
 > **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
 
-**Goal:** Fix all critical errors, important issues, and missing content identified by the 5-agent validation audit of sessione-04 materials.
+**Goal:** Fix all technical errors, content gaps, and polish items identified by the 5-agent validation audit of sessione-04 materials against official Atlassian documentation (March 2026).
 
-**Architecture:** Each task targets a single file, enabling full parallel execution. Tasks are grouped by severity: critical errors first, then important issues, then missing content additions. Within each file, all fixes are applied in a single task to avoid merge conflicts.
+**Architecture:** Each task targets a single file, enabling full parallel execution. Tasks are grouped by severity within each file: high-priority technical errors first, then medium-priority content accuracy, then low-priority polish. Every step specifies exact line numbers and replacement text.
 
 **Tech Stack:** Markdown editing only — no executable code in this repository.
 
@@ -14,64 +14,37 @@
 
 | Severity | Count | Description |
 |----------|-------|-------------|
-| Critical | 3 | Smart values syntax, branch smart values, "Publish" terminology |
-| Important | 6 | Automation model, JQL quoting, limits, navigation paths, admin hierarchy, company-managed flags |
-| Missing content | 6 | Rule actor, audit log in theory, status categories, workflow editor rule types, issue security schemes, automation template library |
+| HIGH | 3 | Admin & Finance exercise flawed, automation limits missing key fact, outdated terminology |
+| MEDIUM | 12 | Trigger/condition/action names, workflow editor claims, admin clarifications, time allocation |
+| LOW | 14 | Missing topics, measurable outcomes, glossary links, fallback instructions, troubleshooting |
 
-**Files affected (7):**
+**Files affected (5):**
 
 | # | File | Task |
 |---|------|------|
-| 1 | `sessione-04-.../outline.md` | Task 1 |
-| 2 | `sessione-04-.../esercizi/esercizio-0401-regole-automazione.md` | Task 2 |
-| 3 | `sessione-04-.../esercizi/esercizio-0402-workflow-personalizzato.md` | Task 3 |
-| 4 | `sessione-04-.../esercizi/esercizio-0403-admin-permessi.md` | Task 4 |
-| 5 | `sessione-04-.../esercizi/esercizio-0404-tipi-space-workflow.md` | Task 5 |
-| 6 | `glossario.md` | Task 6 |
-| 7 | `cheatsheet/automazioni-cheatsheet.md` | Task 7 |
+| 1 | `sessione-04-.../outline.md` | Task 1 (16 edits) |
+| 2 | `sessione-04-.../esercizi/esercizio-0401-regole-automazione.md` | Task 2 (8 edits) |
+| 3 | `sessione-04-.../esercizi/esercizio-0402-workflow-personalizzato.md` | Task 3 (5 edits) |
+| 4 | `sessione-04-.../esercizi/esercizio-0403-admin-permessi.md` | Task 4 (5 edits) |
+| 5 | `sessione-04-.../esercizi/esercizio-0404-tipi-space-workflow.md` | Task 5 (3 edits) |
 
 All file paths below are relative to:
-`jira-confluence-best-practices-2026/`
+`jira-confluence-best-practices-2026/sessione-04-automazioni-workflow-admin/`
 
 ---
 
-## Task 1: Fix outline.md (all issues)
+## Task 1: Fix outline.md
 
 **File:**
-- Modify: `sessione-04-automazioni-workflow-admin/outline.md`
+- Modify: `outline.md`
 
-This is the largest task. It addresses critical errors, important issues, and adds missing content.
+This is the largest task. It addresses 3 high/medium technical errors, several content gaps, and polish items.
 
-**Step 1: Fix smart values syntax (CRITICAL) — line 51**
+### Step 1: Add "single-space rules unlimited" to execution limits (HIGH) — lines 26-30
 
-Replace line 51:
-```
-- **Smart values**: `{{workItem.key}}`, `{{workItem.summary}}`, `{{now.plusDays(7)}}`, `{{workItem.assignee.displayName}}`
-```
-With:
-```
-- **Smart values**: `{{issue.key}}`, `{{issue.summary}}`, `{{now.plusDays(7)}}`, `{{issue.assignee.displayName}}`
-- > **Nota terminologia**: nonostante la UI mostri "work item", gli smart values usano ancora la sintassi `{{issue.*}}`. La forma `{{workItem.*}}` non è supportata e causerebbe errori.
-```
+The limits are correct for global rules but critically omit that **single-space rules are unlimited on all plans**.
 
-**Step 2: Fix core automation model (IMPORTANT) — line 24**
-
-Replace line 24:
-```
-- Concetto chiave: **Trigger → Condizioni → Azioni**
-```
-With:
-```
-- Concetto chiave: **Trigger → Condizioni → Azioni** (+ **Branch** per work item collegati)
-```
-
-**Step 3: Fix automation limits (IMPORTANT) — line 26**
-
-Replace line 26:
-```
-- Limiti del piano Cloud per aziende con <250 utenti (eg, numero di esecuzioni mensili)
-```
-With:
+Replace lines 26-30:
 ```
 - Limiti di esecuzione mensili per piano Cloud:
   - Free: ~100 esecuzioni globali/mese
@@ -79,90 +52,166 @@ With:
   - Premium: 1.000 per utente/mese (pool condiviso)
   - Enterprise: illimitato
 ```
-
-**Step 4: Add missing content to section 4.3 (MISSING) — after line 50**
-
-After the existing "Branch rule" bullet (line 50), add three new bullets before smart values:
-
+With:
 ```
-- **Rule actor**: l'utente virtuale che esegue le azioni dell'automazione. Se il rule actor non ha i permessi necessari, la regola fallisce silenziosamente. Verificare sempre i permessi del rule actor.
-- **Template di automazione**: Jira offre una libreria di regole predefinite (Automation templates). Punto di partenza consigliato prima di creare regole da zero.
-- **Debug e audit log**: Space settings → Automation → Audit log. Ogni esecuzione mostra trigger, condizioni valutate e azioni eseguite. Strumento fondamentale per il troubleshooting.
-```
-
-**Step 5: Add status categories to section 4.4 (MISSING) — after line 61**
-
-After "Aggiungere stati personalizzati" (line 61), add:
-
-```
-- **Categorie di status**: ogni stato deve appartenere a una delle tre categorie obbligatorie: *To Do*, *In Progress*, *Done*. Le categorie determinano il comportamento di board, report e sprint insights.
+- Limiti di esecuzione mensili per piano Cloud (regole globali/multi-spazio):
+  - Free: ~100 esecuzioni/mese
+  - Standard: ~1.700 totali/mese (500 globali)
+  - Premium: 1.000 per utente/mese (pool condiviso)
+  - Enterprise: illimitato
+  - > **Nota**: le regole di singolo spazio sono **illimitate** su tutti i piani. I limiti sopra si applicano solo alle regole globali e multi-spazio.
 ```
 
-**Step 6: Add workflow editor rule types to section 4.4 (MISSING) — replace line 62**
+### Step 2: Fix trigger name "Comment added" (MEDIUM) — line 37
 
-Replace line 62:
+Replace line 37:
 ```
-- Configurare transizioni: regole (rules) nel nuovo editor
+- **Comment added**: quando viene aggiunto un commento con specifiche parole chiave
 ```
 With:
+```
+- **Work item commented**: quando viene aggiunto un commento (con possibilità di filtrare per parole chiave)
+```
+
+### Step 3: Add missing commonly-used triggers (LOW) — after line 39
+
+After the "Manual trigger" line, add before the Tyvak examples:
+```
+- **Work item updated**: quando un work item viene modificato (più ampio di "Field value changed")
+- **Webhook**: per integrazioni con sistemi esterni
+```
+
+### Step 4: Fix "User condition" — doesn't exist (MEDIUM) — line 46
+
+Replace line 46:
+```
+- **Condizioni**: Work item fields condition, JQL condition, User condition, Related work items condition
+```
+With:
+```
+- **Condizioni**: Work item fields condition, JQL condition, If/else block, Advanced compare condition, Related work items condition
+```
+
+### Step 5: Fix "Modifica campo" action name (MEDIUM) — line 49
+
+Replace line 49:
+```
+  - Modifica campo (assegna, cambia data di scadenza, aggiungi etichetta)
+```
+With:
+```
+  - Edit work item (modifica campo: assegna, cambia data di scadenza, aggiungi etichetta)
+```
+
+### Step 6: Add missing commonly-used actions (LOW) — after line 53
+
+After "Link work items", add:
+```
+  - Create work item (crea un nuovo elemento di lavoro, non solo sotto-attività)
+  - Send web request (invio richiesta HTTP a sistemi esterni)
+  - Log action (utile per il debug delle regole)
+```
+
+### Step 7: Clarify audit log access and retention (MEDIUM) — line 57
+
+Replace line 57:
+```
+- **Debug e audit log**: Space settings → Automation → Audit log. Ogni esecuzione mostra trigger, condizioni valutate e azioni eseguite. Strumento fondamentale per il troubleshooting.
+```
+With:
+```
+- **Debug e audit log**: Space settings → Automation → [seleziona regola] → scheda Audit log. Ogni esecuzione mostra trigger, condizioni valutate e azioni eseguite. Le voci vengono conservate per 90 giorni. Strumento fondamentale per il troubleshooting.
+```
+
+### Step 8: Add global automation path (LOW) — after line 25
+
+After "Automazioni di spazio (space) vs automazioni globali", add:
+```
+  - Spazio: Space settings → Automation
+  - Globali: Settings (ingranaggio) → System → Automation rules
+```
+
+### Step 9: Add "Request input" as 4th workflow rule type (MEDIUM) — lines 71-74
+
+Replace lines 71-74:
 ```
 - Configurare transizioni nel nuovo editor — tre tipi di regole:
   - **Restrict transition**: chi può eseguire la transizione (es. solo l'assegnatario, un ruolo specifico)
   - **Validate details**: cosa deve essere vero prima della transizione (es. campo obbligatorio compilato)
   - **Perform action**: cosa succede dopo la transizione (es. assegnazione automatica, aggiornamento campo)
 ```
-
-**Step 7: Add admin hierarchy clarification (IMPORTANT) — replace lines 86-87**
-
-Replace lines 86-87:
+With:
 ```
-- **Gestione utenti e gruppi**: invitare utenti, creare gruppi, assegnare ruoli
-  - Esempio concreto di come creare un gruppo "Data Analisi", invitare i membri e assegnare ruoli specifici.
+- Configurare transizioni nel nuovo editor — quattro tipi di regole (in ordine di esecuzione):
+  - **Restrict transition**: chi può eseguire la transizione (es. solo l'assegnatario, un ruolo specifico)
+  - **Request input**: quali campi/schermate mostrare all'utente durante la transizione
+  - **Validate details**: cosa deve essere vero prima della transizione (es. campo obbligatorio compilato)
+  - **Perform action**: cosa succede dopo la transizione (es. assegnazione automatica, aggiornamento campo)
+```
+
+### Step 10: Tighten best practice from "6-7" to "max 6" (LOW) — line 76
+
+Replace line 76:
+```
+- Best practice: semplicità, chiarezza, non più di 6-7 stati
 ```
 With:
+```
+- Best practice: semplicità, chiarezza, non più di 6 stati (il consenso della community Atlassian indica 4-6 come intervallo ottimale)
+```
+
+### Step 11: Rename "Issue security schemes" to current term (HIGH) — line 113
+
+Replace line 113:
+```
+- **Issue security schemes**: controllano la *visibilità* dei singoli work item (chi può vedere cosa). Complementari ai permission schemes, che controllano le *azioni*. Particolarmente rilevanti per dati sensibili o riservati.
+```
+With:
+```
+- **Work item security schemes**: controllano la *visibilità* dei singoli work item (chi può vedere cosa). Complementari ai permission schemes, che controllano le *azioni*. Particolarmente rilevanti per dati sensibili o riservati.
+```
+
+### Step 12: Clarify scheme configuration tiers (MEDIUM) — lines 98-102
+
+The current text mixes org-level and Jira-admin-level configuration without distinguishing them clearly. Replace lines 98-102:
 ```
 - **Gestione utenti e gruppi**:
   - *Livello organizzazione* (admin.atlassian.com): invitare utenti, creare gruppi, gestire licenze
   - *Livello spazio* (Space settings → People): assegnare ruoli di spazio ai gruppi/utenti
   - Esempio concreto di come creare un gruppo "Data Analisi", invitare i membri e assegnare ruoli specifici.
-```
-
-**Step 8: Flag company-managed-only features (IMPORTANT) — lines 88-95**
-
-Add a note before the scheme list. After the "Gestione utenti e gruppi" block (after the replacement in Step 7), add:
-
-```
 - > **Nota**: i seguenti schemi (permission, notification, work type, screen) si applicano solo a spazi **Company-managed**. Gli spazi Team-managed usano configurazioni semplificate integrate.
 ```
-
-**Step 9: Add issue security schemes (MISSING) — after line 98**
-
-After "Configurazione spazio" (line 96-97), before the best practice bullet, add:
-
+With:
 ```
-- **Issue security schemes**: controllano la *visibilità* dei singoli work item (chi può vedere cosa). Complementari ai permission schemes, che controllano le *azioni*. Particolarmente rilevanti per dati sensibili o riservati.
+- **Gestione utenti e gruppi** — tre livelli di amministrazione:
+  - *Livello organizzazione* (admin.atlassian.com): invitare utenti, creare gruppi, gestire licenze
+  - *Livello prodotto Jira* (Settings → Work items): configurare schemi (permission, notification, work type, screen)
+  - *Livello spazio* (Space settings → People): assegnare ruoli di spazio ai gruppi/utenti
+  - Esempio concreto di come creare un gruppo "Data Analisi", invitare i membri e assegnare ruoli specifici.
+- > **Nota**: i seguenti schemi (permission, notification, work type, screen) si applicano solo a spazi **Company-managed**. Gli spazi Team-managed usano configurazioni semplificate integrate (es. permessi via Space settings → Access, notifiche via Space settings → Notifications).
 ```
 
-**Step 10: Verify the file reads correctly end-to-end**
+### Step 13: Verify the file reads correctly end-to-end
 
 Read the full file to confirm all edits are coherent, no lines are duplicated, and the flow is natural.
 
-**Step 11: Commit**
+### Step 14: Commit
 
 ```bash
-git add sessione-04-automazioni-workflow-admin/outline.md
-git commit -m "docs: fix critical errors and add missing content to sessione-04 outline
+cd jira-confluence-best-practices-2026/sessione-04-automazioni-workflow-admin
+git add outline.md
+git commit -m "docs: fix technical errors and content gaps in sessione-04 outline
 
-- Fix smart values syntax ({{issue.*}} not {{workItem.*}})
-- Add Branches to core automation model
-- Replace vague limits with per-plan execution numbers
-- Add rule actor, automation templates, audit log to section 4.3
-- Add status categories and workflow editor rule types to section 4.4
-- Clarify admin hierarchy (org-level vs space-level)
-- Flag company-managed-only features
-- Add issue security schemes to section 4.5
-
-Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+- Add unlimited single-space rules note to execution limits
+- Rename 'Comment added' trigger to 'Work item commented'
+- Replace non-existent 'User condition' with actual conditions
+- Rename 'Modifica campo' action to official 'Edit work item'
+- Clarify audit log is per-rule with 90-day retention
+- Add 'Request input' as 4th workflow transition rule type
+- Rename 'Issue security schemes' to 'Work item security schemes'
+- Clarify three-tier admin hierarchy (org/Jira/space)
+- Add commonly-used triggers, conditions, and actions
+- Tighten state count best practice from 6-7 to max 6"
 ```
 
 ---
@@ -170,83 +219,102 @@ Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
 ## Task 2: Fix esercizio-0401-regole-automazione.md
 
 **File:**
-- Modify: `sessione-04-automazioni-workflow-admin/esercizi/esercizio-0401-regole-automazione.md`
+- Modify: `esercizi/esercizio-0401-regole-automazione.md`
 
-**Step 1: Fix smart values in Finance example (CRITICAL) — line 39**
+### Step 1: Rewrite Admin & Finance example — flawed trigger and condition (HIGH) — lines 36-40
 
-Replace line 39:
+The current example uses "Field value changed (Due date)" + "Due date <= {{now.plusDays(3)}}" which is wrong: (1) the trigger fires on manual field edit, not approaching deadline; (2) the condition syntax is invalid for Jira Automation.
+
+Replace lines 36-40:
 ```
-- **Azione**: Notifica (email o chat) al responsabile del work item → "Il work item {{workItem.key}} - {{workItem.summary}} scade tra 3 giorni. Verifica lo stato."
-```
-With:
-```
+**💼 Admin & Finance — Notifica scadenza:**
+- **Trigger**: Field value changed (Due date)
+- **Condizione**: Due date <= `{{now.plusDays(3)}}`
 - **Azione**: Notifica (email o chat) al responsabile del work item → "Il work item {{issue.key}} - {{issue.summary}} scade tra 3 giorni. Verifica lo stato."
-```
-
-**Step 2: Fix smart values in Facility example (CRITICAL) — line 55**
-
-Replace line 55:
-```
-- **Azione**: Send email to reporter → "Il tuo reclamo {{workItem.key}} - {{workItem.summary}} è stato risolto. Ti preghiamo di verificare e confermare."
+- **Azione**: Transition work item → "Urgente" (se lo status esiste)
 ```
 With:
 ```
-- **Azione**: Send email to reporter → "Il tuo reclamo {{issue.key}} - {{issue.summary}} è stato risolto. Ti preghiamo di verificare e confermare."
+**💼 Admin & Finance — Notifica scadenza:**
+- **Trigger**: Scheduled (ogni giorno alle 9:00)
+- **Condizione**: JQL `project = "ADMIN-FINANCE" AND duedate <= startOfDay("+3d") AND duedate >= startOfDay() AND statusCategory != Done`
+- **Azione**: Notifica (email o chat) all'assegnatario → "Il work item {{issue.key}} - {{issue.summary}} scade entro 3 giorni. Verifica lo stato."
+- **Azione aggiuntiva**: Transition work item → "Urgente" (se lo status esiste)
 ```
 
-**Step 3: Invert the alias note (CRITICAL) — line 57**
+### Step 2: Add note about adapting priority name (MEDIUM) — after line 32
 
-Replace line 57:
+The IT example uses `priority = Critical` which may not exist on all instances. After line 32 (the JQL line), add:
+
 ```
-> ℹ️ Lo smart value `{{issue.key}}` funziona ancora come alias, ma `{{workItem.key}}` è il nome canonico.
+  > Adattate il nome della priorità alla vostra istanza (es. `Critical`, `Highest` o `Critica`).
+```
+
+### Step 3: Fix JQL date quoting style (LOW) — line 32
+
+Replace in the JQL on line 32:
+```
+created <= "-24h"
 ```
 With:
 ```
-> ℹ️ Nonostante la UI dica "work item", gli smart values usano la sintassi `{{issue.*}}` (es. `{{issue.key}}`). La forma `{{workItem.*}}` non è attualmente supportata.
+created <= -24h
 ```
+This matches standard Atlassian documentation style (unquoted).
 
-**Step 4: Fix JQL quoting (IMPORTANT) — line 32**
+### Step 4: Clarify training space in preparation (MEDIUM) — line 13
 
-Replace line 32:
+Replace line 13:
 ```
-- **Condizione**: JQL `project = "IT-HELPDESK" AND priority = Critical AND status != Done AND created <= -24h`
+Vai su **Space settings → Automation → Create rule** nello **spazio** (space) di training (oppure in un progetto dell'istanza Tyvak in cui è sicuro sperimentare).
 ```
 With:
 ```
-- **Condizione**: JQL `project = "IT-HELPDESK" AND priority = Critical AND status != Done AND created <= "-24h"`
+Vai su **Space settings → Automation → Create rule** nello **spazio** (space) di training assegnato dal formatore.
 ```
 
-**Step 5: Fix branch smart values (CRITICAL) — line 73**
+### Step 5: Make "Risultato atteso" measurable (LOW) — line 62
 
-Replace line 73:
+Replace line 62:
 ```
-- **Azione nel branch**: Aggiungi commento con il nome del reporter del work item bloccante → "@{{linkedIssue.reporter.displayName}} Il work item {{issue.key}} è in review ma è bloccato da {{linkedIssue.key}}. Verifica lo stato del blocco."
+- Comprensione del pattern Trigger → Condizione → Azione
 ```
 With:
 ```
-- **Azione nel branch**: Aggiungi commento → "@{{issue.reporter.displayName}} Il work item {{triggerIssue.key}} è in review ma è bloccato da {{issue.key}}. Verifica lo stato del blocco."
-- > **Nota branch**: dentro un branch, `{{issue.*}}` si riferisce al work item collegato (contesto del branch), mentre `{{triggerIssue.*}}` si riferisce al work item che ha attivato la regola.
+- Saper descrivere a voce il pattern Trigger → Condizione → Azione della propria regola
 ```
 
-**Step 6: Fix typo "opionale" — line 69**
+### Step 6: Add glossary reference (LOW) — after line 67
 
-Replace `(opionale)` with `(opzionale)`.
+After the "Consiglio" section, add:
+```
 
-**Step 7: Verify and commit**
+> Per la terminologia, consulta il [glossario](../../glossario.md).
+```
+
+### Step 7: Add "stuck" guidance (LOW) — after line 67
+
+After the "Consiglio" section (and after the glossary reference added in Step 6), add:
+```
+
+> Se non riesci a completare un passaggio entro 3 minuti, chiedi aiuto al formatore.
+```
+
+### Step 8: Verify and commit
 
 Read the full file to confirm coherence.
 
 ```bash
-git add sessione-04-automazioni-workflow-admin/esercizi/esercizio-0401-regole-automazione.md
-git commit -m "docs: fix smart values, branch syntax, and JQL quoting in exercise 0401
+cd jira-confluence-best-practices-2026/sessione-04-automazioni-workflow-admin
+git add esercizi/esercizio-0401-regole-automazione.md
+git commit -m "docs: fix flawed Admin/Finance example and improve exercise 0401
 
-- Replace {{workItem.*}} with {{issue.*}} throughout
-- Invert alias note: {{issue.*}} is canonical, not an alias
-- Fix branch smart values: use {{issue.*}} for branch context, {{triggerIssue.*}} for trigger
-- Quote relative JQL date: created <= \"-24h\"
-- Fix typo: opionale → opzionale
-
-Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+- Rewrite Admin & Finance example: use Scheduled trigger + JQL condition
+- Add note about adapting priority name to instance
+- Fix JQL date quoting to match Atlassian documentation style
+- Clarify training space in preparation section
+- Make 'Risultato atteso' items measurable
+- Add glossary reference and 'stuck' guidance"
 ```
 
 ---
@@ -254,72 +322,64 @@ Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
 ## Task 3: Fix esercizio-0402-workflow-personalizzato.md
 
 **File:**
-- Modify: `sessione-04-automazioni-workflow-admin/esercizi/esercizio-0402-workflow-personalizzato.md`
+- Modify: `esercizi/esercizio-0402-workflow-personalizzato.md`
 
-**Step 1: Fix double `#` in title — line 1**
+### Step 1: Fix misleading "immediate changes" claim (MEDIUM) — line 46
 
-Replace line 1:
-```
-# # Sessione 4 Blocco 1 Esercizio 2 — Workflow personalizzato
-```
-With:
-```
-# Sessione 4 Blocco 1 Esercizio 2 — Workflow personalizzato
-```
-
-**Step 2: Fix "Publish" terminology (CRITICAL) — line 45**
-
-Replace line 45:
-```
-4. Pubblicate il workflow (se in ambiente di test)
-```
-With:
+Replace line 46:
 ```
 4. Cliccate **Update workflow** per applicare le modifiche (nel nuovo editor non esiste il concetto di bozza: le modifiche diventano attive immediatamente)
 ```
-
-**Step 3: Fix "in bozza" in results — line 50**
-
-Replace line 50:
+With:
 ```
-- 1 workflow implementato (o in bozza) nell'editor di Jira
+4. Cliccate **Update workflow** per applicare le modifiche (nel nuovo editor non esiste il concetto di bozza: le modifiche si applicano in un unico passaggio cliccando "Update workflow", senza bisogno di una pubblicazione separata)
+```
+
+### Step 2: Add March 30 milestone to deprecation warning (MEDIUM) — line 5
+
+Replace line 5:
+```
+> ⚠️ Il vecchio editor di workflow sarà rimosso a giugno 2026. Questo esercizio usa il nuovo editor.
 ```
 With:
 ```
-- 1 workflow implementato nell'editor di Jira
+> ⚠️ Dal 30 marzo 2026 il vecchio editor non sarà più impostabile come default; dal 26 giugno 2026 sarà rimosso completamente. Questo esercizio usa il nuovo editor.
 ```
 
-**Step 4: Add status categories note — after line 24, inside "Definite:" list**
+### Step 3: Tighten state count recommendation (LOW) — line 24
 
-After line 26 (the existing three "Definite" items), add a fourth:
+Replace in line 24:
 ```
-   - Ogni stato appartiene a una **categoria** (To Do, In Progress, Done): a quale categoria appartiene ciascuno dei vostri stati?
-```
-
-**Step 5: Add navigation path clarification — replace line 39**
-
-Replace line 39:
-```
-1. Andate su **Space settings → Workflows**
+   - Quali **stati** servono? (massimo 6-7)
 ```
 With:
 ```
-1. Andate su **Space settings → Workflows** (spazi Company-managed) oppure **Space settings → Work types → [tipo] → Edit workflow** (spazi Team-managed)
+   - Quali **stati** servono? (massimo 6)
 ```
 
-**Step 6: Verify and commit**
+### Step 4: Add glossary reference, "stuck" guidance, and improve time allocation (LOW) — after line 58
+
+After the last "Domande di riflessione" line, add:
+```
+
+> Per la terminologia, consulta il [glossario](../../glossario.md).
+
+> Se non riesci a completare un passaggio entro 3 minuti, chiedi aiuto al formatore. Se il tempo per la Parte B non è sufficiente, concentratevi su aggiungere 2-3 stati e 2 transizioni piuttosto che l'intero workflow.
+```
+
+### Step 5: Verify and commit
+
+Read the full file to confirm coherence.
 
 ```bash
-git add sessione-04-automazioni-workflow-admin/esercizi/esercizio-0402-workflow-personalizzato.md
-git commit -m "docs: fix workflow editor terminology and add navigation paths in exercise 0402
+cd jira-confluence-best-practices-2026/sessione-04-automazioni-workflow-admin
+git add esercizi/esercizio-0402-workflow-personalizzato.md
+git commit -m "docs: fix workflow editor claims and add guidance in exercise 0402
 
-- Fix 'Pubblicate' to 'Update workflow' (new editor has no draft/publish)
-- Remove 'in bozza' from expected results
-- Add status categories question to design checklist
-- Clarify navigation path for team-managed vs company-managed
-- Fix double # in title
-
-Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+- Clarify that 'Update workflow' click is required (not automatic)
+- Add March 30 2026 milestone to deprecation warning
+- Tighten state count recommendation from 6-7 to max 6
+- Add glossary reference, stuck guidance, and scope fallback for Part B"
 ```
 
 ---
@@ -327,34 +387,72 @@ Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
 ## Task 4: Fix esercizio-0403-admin-permessi.md
 
 **File:**
-- Modify: `sessione-04-automazioni-workflow-admin/esercizi/esercizio-0403-admin-permessi.md`
+- Modify: `esercizi/esercizio-0403-admin-permessi.md`
 
-**Step 1: Add company-managed note (IMPORTANT) — after line 11**
+### Step 1: Fix "progetto (project)" reference in objective (MEDIUM) — line 7
 
-After "### Parte A — Esplorazione permessi (10 min)" (line 11), before step 1, add:
-
+Replace line 7:
 ```
-> ℹ️ I permission scheme sono disponibili solo per spazi **Company-managed**. Per spazi Team-managed, i permessi si gestiscono da Space settings → Access.
+Comprendere la gestione dei permessi, degli schemi e delle configurazioni di **spazio** (space) o progetto (project).
+```
+With:
+```
+Comprendere la gestione dei permessi, degli schemi e delle configurazioni di **spazio** (space).
 ```
 
-**Step 2: Clarify admin levels in Parte B (IMPORTANT) — after line 25**
+### Step 2: Fix admin.atlassian.com error for notification schemes (MEDIUM) — line 29
 
-After "Esplorare le seguenti configurazioni:" (line 25), add:
-
+Replace line 29:
 ```
 > ℹ️ Alcune configurazioni (work type scheme, notification scheme) sono gestite a livello di **Jira admin** (admin.atlassian.com o Jira settings), non dallo spazio. Dallo spazio si vede quale schema è associato ma per modificarlo serve accesso admin.
 ```
+With:
+```
+> ℹ️ Alcune configurazioni (work type scheme, notification scheme) sono gestite a livello di **Jira admin** (Settings → Work items), non dallo spazio. Dallo spazio si vede quale schema è associato ma per modificarlo serve accesso admin Jira. Nota: admin.atlassian.com è per la gestione utenti/gruppi a livello organizzazione, non per gli schemi di prodotto.
+```
 
-**Step 3: Verify and commit**
+### Step 3: Add fallback for single-space access (LOW) — after line 23
+
+After step 5 ("Confrontate con un secondo spazio..."), add:
+```
+   > Se avete accesso a un solo spazio, annotate le configurazioni e confrontatele con un collega.
+```
+
+### Step 4: Fix "progetti" terminology in Part C (LOW) — line 42
+
+Replace line 42:
+```
+Identificare le **convenzioni di base** per i progetti a cui fate parte nell'istanza Tyvak:
+```
+With:
+```
+Identificare le **convenzioni di base** per gli spazi a cui fate parte nell'istanza Tyvak:
+```
+
+### Step 5: Add glossary reference and "stuck" guidance (LOW) — after line 62
+
+After the last checkbox in the Extra section, add:
+```
+
+> Per la terminologia, consulta il [glossario](../../glossario.md).
+
+> Se non riesci a completare un passaggio entro 3 minuti, chiedi aiuto al formatore.
+```
+
+### Step 6: Verify and commit
+
+Read the full file to confirm coherence.
 
 ```bash
-git add sessione-04-automazioni-workflow-admin/esercizi/esercizio-0403-admin-permessi.md
-git commit -m "docs: clarify admin levels and company-managed scope in exercise 0403
+cd jira-confluence-best-practices-2026/sessione-04-automazioni-workflow-admin
+git add esercizi/esercizio-0403-admin-permessi.md
+git commit -m "docs: fix admin paths and terminology in exercise 0403
 
-- Add note that permission schemes are company-managed only
-- Clarify that some schemes require Jira admin access, not space admin
-
-Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+- Remove legacy 'progetto (project)' reference
+- Fix admin.atlassian.com error: notification schemes are at Jira Settings
+- Add fallback for single-space access scenario
+- Fix 'progetti' to 'spazi' in Part C
+- Add glossary reference and stuck guidance"
 ```
 
 ---
@@ -362,159 +460,48 @@ Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
 ## Task 5: Fix esercizio-0404-tipi-space-workflow.md
 
 **File:**
-- Modify: `sessione-04-automazioni-workflow-admin/esercizi/esercizio-0404-tipi-space-workflow.md`
+- Modify: `esercizi/esercizio-0404-tipi-space-workflow.md`
 
-**Step 1: Add navigation path for both space types (IMPORTANT) — after line 13**
+### Step 1: Add fallback if Team-managed space unavailable (LOW) — after line 13
 
-After "Apri uno **spazio** Team-managed (se disponibile) e uno Company-managed" (line 13), add:
-
+After "Apri uno **spazio** Team-managed (se disponibile) e uno Company-managed", add:
 ```
-   > **Percorsi di navigazione:**
-   > - Company-managed: **Space settings → Workflows**
-   > - Team-managed: **Space settings → Work types → [seleziona tipo] → Edit workflow**
+   > Se non è disponibile uno spazio Team-managed nell'istanza di training, utilizzate le informazioni della lezione per compilare la colonna Team-managed della tabella e concentrate la Parte B sullo spazio Company-managed.
 ```
 
-**Step 2: Add row to comparison table (IMPORTANT) — after line 26**
+### Step 2: Add glossary reference and "stuck" guidance (LOW) — after line 50
 
-After the last table row, add a new row:
-
-```
-| Limite campi personalizzati? | | |
+After the last reflection question, add:
 ```
 
-**Step 3: Verify and commit**
+> Per la terminologia, consulta il [glossario](../../glossario.md).
+
+> Se non riesci a completare un passaggio entro 3 minuti, chiedi aiuto al formatore.
+```
+
+### Step 3: Verify and commit
+
+Read the full file to confirm coherence.
 
 ```bash
-git add sessione-04-automazioni-workflow-admin/esercizi/esercizio-0404-tipi-space-workflow.md
-git commit -m "docs: add navigation paths and field limit row to exercise 0404
+cd jira-confluence-best-practices-2026/sessione-04-automazioni-workflow-admin
+git add esercizi/esercizio-0404-tipi-space-workflow.md
+git commit -m "docs: add fallback instructions and guidance to exercise 0404
 
-- Add explicit navigation paths for both space types
-- Add custom field limit comparison row to table
-
-Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
-```
-
----
-
-## Task 6: Fix glossario.md
-
-**File:**
-- Modify: `glossario.md`
-
-**Step 1: Fix smart values entry (CRITICAL) — line 117**
-
-Replace line 117:
-```
-**Smart values**: Variabili dinamiche usate nelle automazioni (es. `{{workItem.key}}`, `{{now}}`). Nota: `{{issue.key}}` funziona ancora come alias.
-```
-With:
-```
-**Smart values**: Variabili dinamiche usate nelle automazioni (es. `{{issue.key}}`, `{{issue.summary}}`, `{{now}}`). Nota: nonostante la UI dica "work item", la sintassi degli smart values usa `{{issue.*}}`. La forma `{{workItem.*}}` non è attualmente supportata.
-```
-
-**Step 2: Verify and commit**
-
-```bash
-git add glossario.md
-git commit -m "docs: fix smart values syntax in glossary — {{issue.*}} is canonical
-
-Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
-```
-
----
-
-## Task 7: Fix cheatsheet/automazioni-cheatsheet.md
-
-**File:**
-- Modify: `cheatsheet/automazioni-cheatsheet.md`
-
-**Step 1: Fix core concept (IMPORTANT) — lines 7-9**
-
-Replace lines 7-9:
-```
-```
-TRIGGER (quando) → CONDIZIONE (se) → AZIONE (allora)
-```
-```
-With:
-```
-```
-TRIGGER (quando) → CONDIZIONE (se) → AZIONE (allora)
-                                    ↘ BRANCH (per work item collegati)
-```
-```
-
-**Step 2: Fix ALL smart values in the table (CRITICAL) — lines 55-61, 67**
-
-Replace the smart values table rows (lines 55-61):
-
-| Old | New |
-|-----|-----|
-| `{{workItem.key}}` | `{{issue.key}}` |
-| `{{workItem.summary}}` | `{{issue.summary}}` |
-| `{{workItem.status.name}}` | `{{issue.status.name}}` |
-| `{{workItem.priority.name}}` | `{{issue.priority.name}}` |
-| `{{workItem.assignee.displayName}}` | `{{issue.assignee.displayName}}` |
-| `{{workItem.reporter.displayName}}` | `{{issue.reporter.displayName}}` |
-| `{{workItem.url}}` | `{{issue.url}}` |
-
-Also update the description column to remove "(alias: ...)" references and instead show the Italian label.
-
-Replace the note on line 67:
-```
-> **Nota**: Gli smart value `{{issue.*}}` restano funzionanti come alias retrocompatibile. La forma canonica è `{{workItem.*}}`.
-```
-With:
-```
-> **Nota**: nonostante la UI dica "work item", la sintassi degli smart values usa `{{issue.*}}`. La forma `{{workItem.*}}` non è attualmente supportata da Jira Automation.
-```
-
-**Step 3: Fix JQL quoting in escalation recipe (IMPORTANT) — line 93**
-
-Replace line 93:
-```
-Condizione: JQL → priority = Critical AND status != Done AND created <= -24h
-```
-With:
-```
-Condizione: JQL → priority = Critical AND status != Done AND created <= "-24h"
-```
-
-**Step 4: Fix smart value in notification recipe — line 111**
-
-Replace line 111:
-```
-         Oggetto: "⏰ {{workItem.key}} scade tra meno di 2 giorni"
-```
-With:
-```
-         Oggetto: "⏰ {{issue.key}} scade tra meno di 2 giorni"
-```
-
-**Step 5: Verify and commit**
-
-```bash
-git add cheatsheet/automazioni-cheatsheet.md
-git commit -m "docs: fix smart values syntax and core model in automazioni cheatsheet
-
-- Replace all {{workItem.*}} with {{issue.*}}
-- Invert alias note: {{issue.*}} is canonical
-- Add Branch to core concept diagram
-- Quote relative JQL date
-
-Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+- Add fallback if Team-managed space is unavailable
+- Add glossary reference and stuck guidance"
 ```
 
 ---
 
 ## Execution Order
 
-Tasks 1-7 are **fully independent** (each touches a different file) and can be executed in parallel.
+Tasks 1-5 are **fully independent** (each touches a different file) and can be executed in parallel.
 
-Recommended grouping for parallel dispatch:
+Recommended grouping:
 
-- **Wave 1** (all 7 tasks in parallel): Tasks 1, 2, 3, 4, 5, 6, 7
-- **Wave 2** (sequential): Final review — read all 7 modified files end-to-end, then squash or rebase commits if desired
+- **Wave 1** (all 5 tasks in parallel): Tasks 1, 2, 3, 4, 5
+- **Wave 2** (sequential): Final review — read all 5 modified files end-to-end, run verification checklist
 
 ---
 
@@ -522,9 +509,16 @@ Recommended grouping for parallel dispatch:
 
 After all tasks complete, verify:
 
-- [ ] `grep -r "workItem\." jira-confluence-best-practices-2026/` returns zero matches
-- [ ] `grep -r "linkedIssue\." jira-confluence-best-practices-2026/` returns zero matches
-- [ ] `grep -r "Pubblicate" jira-confluence-best-practices-2026/` returns zero matches
-- [ ] `grep -r "opionale" jira-confluence-best-practices-2026/` returns zero matches
-- [ ] All 7 files read coherently with no duplicate lines or broken formatting
-- [ ] Git log shows 7 clean commits with conventional `docs:` prefix
+- [ ] `grep -rn "Issue security scheme" sessione-04-automazioni-workflow-admin/` → zero matches (should be "Work item security schemes")
+- [ ] `grep -rn "Comment added" sessione-04-automazioni-workflow-admin/outline.md` → zero matches (should be "Work item commented")
+- [ ] `grep -rn "User condition" sessione-04-automazioni-workflow-admin/outline.md` → zero matches
+- [ ] `grep -rn "Modifica campo" sessione-04-automazioni-workflow-admin/outline.md` → zero matches (should be "Edit work item")
+- [ ] `grep -rn "Field value changed (Due date)" sessione-04-automazioni-workflow-admin/esercizi/esercizio-0401` → zero matches (replaced with Scheduled trigger)
+- [ ] `grep -rn "progetto (project)" sessione-04-automazioni-workflow-admin/esercizi/esercizio-0403` → zero matches
+- [ ] `grep -rn "admin.atlassian.com o Jira settings" sessione-04-automazioni-workflow-admin/esercizi/esercizio-0403` → zero matches
+- [ ] `grep -rn "6-7 stati" sessione-04-automazioni-workflow-admin/` → zero matches (should be "max 6" or "4-6")
+- [ ] `grep -rn "diventano attive immediatamente" sessione-04-automazioni-workflow-admin/esercizi/esercizio-0402` → zero matches
+- [ ] Every exercise file contains a glossary link (`glossario.md`)
+- [ ] Every exercise file contains stuck guidance ("chiedi aiuto al formatore")
+- [ ] All 5 files read coherently with no duplicate lines or broken formatting
+- [ ] Git log shows 5 clean commits with conventional `docs:` prefix
