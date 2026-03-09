@@ -15,7 +15,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ## Programma dettagliato
 
-### Blocco 1 — Automazioni in Jira Cloud (0:00 - 1:00)
+### Blocco 1 — Automazioni in Jira Cloud (0:00 - 1:15)
 
 #### 4.1 Introduzione alle automazioni (15 min)
 
@@ -54,17 +54,6 @@ Al termine di questa sessione i partecipanti saranno in grado di:
   - Facility: quando un reclamo passa a "Risolto" → invia email di conferma al reporter
   - IT: se un work item Critical resta aperto > 24h → notifica automatica al manager
 
-**☕ Pausa (10 min)**
-
-### Esercizi Blocco 1 (1:00 - 1:45)
-
-- [Esercizio 1: Crea le tue regole di automazione](esercizi/esercizio-0401-regole-automazione.md)
-- [Esercizio 2: Workflow personalizzato](esercizi/esercizio-0402-workflow-personalizzato.md)
-
----
-
-### Blocco 2 — Workflow e Amministrazione (1:45 - 2:45)
-
 #### 4.4 Workflow personalizzati (25 min)
 
 - Ripasso: stati e transizioni
@@ -80,7 +69,18 @@ Al termine di questa sessione i partecipanti saranno in grado di:
   - Facility: `Segnalato → Preso in carico → In intervento → Verifica → Chiuso`
   - Finance: `Richiesto → Approvato → In elaborazione → Completato`
 
-#### 4.5 Amministrazione Jira — Focus IT Manager (20 min)
+**☕ Pausa (10 min)**
+
+### Esercizi Blocco 1 (1:20 - 2:05)
+
+- [Esercizio 1: Crea le tue regole di automazione](esercizi/esercizio-0401-regole-automazione.md)
+- [Esercizio 2: Workflow personalizzato](esercizi/esercizio-0402-workflow-personalizzato.md)
+
+---
+
+### Blocco 2 — Workflow e Amministrazione (2:05 - 2:50)
+
+#### 4.5 Amministrazione Jira — Focus IT Manager (30 min)
 
 - **Gestione utenti e gruppi**: invitare utenti, creare gruppi, assegnare ruoli
   - Esempio concreto di come creare un gruppo "Data Analisi", invitare i membri e assegnare ruoli specifici.
@@ -106,12 +106,12 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 **☕ Pausa (10 min)**
 
-### Esercizi Blocco 2 (2:45 - 3:40)
+### Esercizi Blocco 2 (2:50 - 3:45)
 
 - [Esercizio 3: Amministrazione e permessi](esercizi/esercizio-0403-admin-permessi.md)
 - [Esercizio 4: Tipi di spazio e workflow](esercizi/esercizio-0404-tipi-space-workflow.md)
 
-### Recap e Q&A (3:40 - 4:00)
+### Recap e Q&A (3:45 - 4:00)
 
 - Riepilogo: automazione + workflow + governance = Jira efficiente
 - Checklist di configurazione per nuovi spazi e team

@@ -37,21 +37,6 @@ I 4 partecipanti dovranno passare da un uso quotidiano non strutturato a un util
 | 4 | [Automazioni, Workflow e Amministrazione](sessione-04-automazioni-workflow-admin/outline.md) | 4h | Regole di automazione, workflow personalizzati, permessi, configurazione **spazi** (space) |
 | 5 | [Confluence + Integrazione + Knowledge Transfer](sessione-05-confluence-integrazione-knowledge/outline.md) | 4h | Confluence essenziali, integrazione Jira-Confluence, piano di knowledge sharing |
 
-## Struttura di ogni sessione
-
-Ogni sessione da 4 ore segue questa struttura:
-
-```
-[0:00 - 0:50]   Blocco teorico 1
-[0:50 - 1:00]   ☕ Pausa (10 min)
-[1:00 - 1:45]   Esercizi pratici blocco 1
-[1:45 - 2:35]   Blocco teorico 2
-[2:35 - 2:45]   ☕ Pausa (10 min)
-[2:45 - 3:30]   Esercizi pratici blocco 2
-[3:30 - 3:55]   Recap, Q&A, anteprima sessione successiva
-[3:55 - 4:00]   Chiusura
-```
-
 ## Contenuto del repository
 
 ```
