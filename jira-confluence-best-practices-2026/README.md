@@ -84,25 +84,18 @@ jira-confluence-best-practices-2026/
 │   ├── esercizi/                      ← 3 esercizi (confluence-pagine, integrazione-jira, knowledge-sharing-plan)
 │   └── slides/
 │
-└── risorse/
-    ├── jql-cheatsheet.md              ← Riferimento rapido JQL
-    ├── dashboard-cheatsheet.md        ← Guida rapida dashboard e gadget
-    ├── automazioni-cheatsheet.md      ← Guida rapida automazioni
-    └── glossario.md                   ← Glossario termini Jira/Confluence
+├── cheatsheet/
+│   ├── jql-cheatsheet.md              ← Riferimento rapido JQL
+│   ├── dashboard-cheatsheet.md        ← Guida rapida dashboard e gadget
+│   └── automazioni-cheatsheet.md      ← Guida rapida automazioni
+└── glossario.md                       ← Glossario termini Jira/Confluence
 ```
-
-## Prerequisiti
-
-- Account Jira Cloud attivo (istanza Tyvak)
-- Browser aggiornato (Chrome, Firefox, Edge)
-- Connessione internet stabile
-- Accesso a videoconferenza (Zoom/Teams/Meet)
 
 ## Come usare questo materiale
 
 1. **Prima della sessione**: leggere l'`outline.md` della sessione corrispondente
 2. **Durante la sessione**: seguire le slide e completare gli esercizi
-3. **Dopo la sessione**: consultare i cheatsheet nella cartella `risorse/`
+3. **Dopo la sessione**: consultare i cheatsheet nella cartella `cheatsheet/`
 4. **Per il knowledge transfer**: utilizzare il piano creato nella sessione 5
 
 ## Licenza
