@@ -114,7 +114,7 @@
 
 **Sidebar di navigazione**: La barra di navigazione laterale sinistra di Jira Cloud, introdotta nel 2025. Sostituisce la precedente barra di navigazione superiore. Consente l'accesso rapido a spazi recenti, board, backlog, e impostazioni.
 
-**Smart values**: Variabili dinamiche usate nelle automazioni (es. `{{workItem.key}}`, `{{now}}`). Nota: `{{issue.key}}` funziona ancora come alias.
+**Smart values**: Variabili dinamiche usate nelle automazioni (es. `{{issue.key}}`, `{{issue.summary}}`, `{{now}}`). Nota: nonostante la UI dica "work item", la sintassi degli smart values usa `{{issue.*}}`. La forma `{{workItem.*}}` non è attualmente supportata.
 
 **Sotto-attività (Sub-task)**: Work item figlio che dipende da un work item padre.
 

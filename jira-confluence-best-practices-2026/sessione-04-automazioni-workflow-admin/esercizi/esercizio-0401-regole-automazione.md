@@ -29,14 +29,14 @@ Crea una regola personalizzata per il tuo ruolo. Ecco alcuni esempi come ispiraz
 
 **🔧 IT — Escalation automatica:**
 - **Trigger**: Scheduled (ogni giorno alle 9:00)
-- **Condizione**: JQL `project = "IT-HELPDESK" AND priority = Critical AND status != Done AND created <= -24h`
+- **Condizione**: JQL `project = "IT-HELPDESK" AND priority = Critical AND status != Done AND created <= "-24h"`
 - **Azione**: Add comment "⚠️ Attenzione: questo elemento di lavoro critico è aperto da più di 24h. Richiesta escalation."
 - **Azione aggiuntiva**: Send email to IT Manager
 
 **💼 Admin & Finance — Notifica scadenza:**
 - **Trigger**: Field value changed (Due date)
 - **Condizione**: Due date <= `{{now.plusDays(3)}}`
-- **Azione**: Notifica (email o chat) al responsabile del work item → "Il work item {{workItem.key}} - {{workItem.summary}} scade tra 3 giorni. Verifica lo stato."
+- **Azione**: Notifica (email o chat) al responsabile del work item → "Il work item {{issue.key}} - {{issue.summary}} scade tra 3 giorni. Verifica lo stato."
 - **Azione**: Transition work item → "Urgente" (se lo status esiste)
 
 **👥 HR — Creazione checklist onboarding:**
@@ -52,9 +52,9 @@ Crea una regola personalizzata per il tuo ruolo. Ecco alcuni esempi come ispiraz
 **🏢 Facility — Conferma risoluzione:**
 - **Trigger**: Work item transitioned → status = "Risolto"
 - **Condizione**: Work type = Task AND labels contains "reclamo"
-- **Azione**: Send email to reporter → "Il tuo reclamo {{workItem.key}} - {{workItem.summary}} è stato risolto. Ti preghiamo di verificare e confermare."
+- **Azione**: Send email to reporter → "Il tuo reclamo {{issue.key}} - {{issue.summary}} è stato risolto. Ti preghiamo di verificare e confermare."
 
-> ℹ️ Lo smart value `{{issue.key}}` funziona ancora come alias, ma `{{workItem.key}}` è il nome canonico.
+> ℹ️ Nonostante la UI dica "work item", gli smart values usano la sintassi `{{issue.*}}` (es. `{{issue.key}}`). La forma `{{workItem.*}}` non è attualmente supportata.
 
 ## Risultato atteso
 
@@ -66,8 +66,9 @@ Crea una regola personalizzata per il tuo ruolo. Ecco alcuni esempi come ispiraz
 
 Usa il **log di esecuzione** dell'automazione (Audit log) per verificare che la regola funzioni correttamente e per debuggare eventuali errori.
 
-## Extra - Regola Branch (opionale)
+## Extra - Regola Branch (opzionale)
 Per chi vuole sperimentare di più, provate a creare una regola con un **branch**. È necessario avere una struttura di work item collegati per testarla. Ecco un esempio:
 - **Trigger**: Work item transitioned → status = "In Review"
 - **Branch**: For work items linked (type: "is blocked by")
-- **Azione nel branch**: Aggiungi commento con il nome del reporter del work item bloccante → "@{{linkedIssue.reporter.displayName}} Il work item {{issue.key}} è in review ma è bloccato da {{linkedIssue.key}}. Verifica lo stato del blocco."
+- **Azione nel branch**: Aggiungi commento → "@{{issue.reporter.displayName}} Il work item {{triggerIssue.key}} è in review ma è bloccato da {{issue.key}}. Verifica lo stato del blocco."
+- > **Nota branch**: dentro un branch, `{{issue.*}}` si riferisce al work item collegato (contesto del branch), mentre `{{triggerIssue.*}}` si riferisce al work item che ha attivato la regola.

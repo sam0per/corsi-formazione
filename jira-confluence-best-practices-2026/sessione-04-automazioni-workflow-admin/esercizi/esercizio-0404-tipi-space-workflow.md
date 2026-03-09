@@ -11,6 +11,9 @@ Comprendere le differenze tra **spazi** (space) Team-managed e Company-managed e
 ### Parte A — Confronto tipi di spazio (10 min)
 
 1. Apri uno **spazio** Team-managed (se disponibile) e uno Company-managed
+   > **Percorsi di navigazione:**
+   > - Company-managed: **Space settings → Workflows**
+   > - Team-managed: **Space settings → Work types → [seleziona tipo] → Edit workflow**
 2. Per ciascuno, annota:
    - Dove si trovano le impostazioni dello spazio
    - Se puoi modificare gli status del workflow
@@ -24,6 +27,7 @@ Comprendere le differenze tra **spazi** (space) Team-managed e Company-managed e
 | Si possono aggiungere tipi di lavoro? | | |
 | I campi sono condivisi con altri spazi? | | |
 | Ideale per quale scenario Tyvak? | | |
+| Limite campi personalizzati? | | |
 
 ### Parte B — Analisi workflow (15 min)
 

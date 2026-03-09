@@ -10,6 +10,8 @@ Comprendere la gestione dei permessi, degli schemi e delle configurazioni di **s
 
 ### Parte A — Esplorazione permessi (10 min)
 
+> ℹ️ I permission scheme sono disponibili solo per spazi **Company-managed**. Per spazi Team-managed, i permessi si gestiscono da Space settings → Access.
+
 1. Andate su **Space settings → Permissions** di uno spazio
 2. Analizzate il **Permission scheme** associato:
    - Chi può creare **elementi di lavoro** (work item)?
@@ -23,6 +25,8 @@ Comprendere la gestione dei permessi, degli schemi e delle configurazioni di **s
 ### Parte B — Configurazione spazio (10 min)
 
 Esplorare le seguenti configurazioni:
+
+> ℹ️ Alcune configurazioni (work type scheme, notification scheme) sono gestite a livello di **Jira admin** (admin.atlassian.com o Jira settings), non dallo spazio. Dallo spazio si vede quale schema è associato ma per modificarlo serve accesso admin.
 
 1. **Work type scheme**: quali work type sono disponibili nello spazio
 2. **Notification scheme**: chi riceve notifiche per quali eventi

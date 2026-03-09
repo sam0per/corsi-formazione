@@ -1,4 +1,4 @@
-# # Sessione 4 Blocco 1 Esercizio 2 — Workflow personalizzato
+# Sessione 4 Blocco 1 Esercizio 2 — Workflow personalizzato
 
 > ⏱ Tempo stimato: 25 minuti
 
@@ -24,6 +24,7 @@ Prima di toccare Jira, disegnate il workflow su carta o digitale (Es. Miro, Luci
    - Quali **stati** servono? (massimo 6-7)
    - Quali **transizioni** sono permesse? (non tutte le combinazioni hanno senso)
    - Ci sono **regole** (rules) nelle transizioni? (es. solo il manager può approvare, assegnazione automatica)
+   - Ogni stato appartiene a una **categoria** (To Do, In Progress, Done): a quale categoria appartiene ciascuno dei vostri stati?
 
 Formato suggerito:
 ```
@@ -36,18 +37,18 @@ Formato suggerito:
 
 > ⚠️ Questo esercizio richiede permessi di amministratore di **spazio** (space). Raccomandazione: usate l'istanza training in cui avete pieno accesso.
 
-1. Andate su **Space settings → Workflows**
+1. Andate su **Space settings → Workflows** (spazi Company-managed) oppure **Space settings → Work types → [tipo] → Edit workflow** (spazi Team-managed)
 2. Copiate un workflow esistente (non modificare l'originale). Se non c'è un workflow adatto, create un nuovo workflow da zero.
 3. Nell'editor visuale:
    - Aggiungete gli stati progettati durante la Parte A
    - Create le transizioni
    - Per almeno una transizione, aggiungete una **regola** (rule) (es. "Only assignee")
-4. Pubblicate il workflow (se in ambiente di test)
+4. Cliccate **Update workflow** per applicare le modifiche (nel nuovo editor non esiste il concetto di bozza: le modifiche diventano attive immediatamente)
 
 ## Risultato atteso
 
 - 1 diagramma workflow su carta con stati e transizioni chiari
-- 1 workflow implementato (o in bozza) nell'editor di Jira
+- 1 workflow implementato nell'editor di Jira
 - Comprensione delle implicazioni di ogni scelta di design
 
 ## Domande di riflessione

@@ -6,6 +6,7 @@
 
 ```
 TRIGGER (quando) → CONDIZIONE (se) → AZIONE (allora)
+                                    ↘ BRANCH (per work item collegati)
 ```
 
 ## Trigger principali
@@ -52,19 +53,19 @@ TRIGGER (quando) → CONDIZIONE (se) → AZIONE (allora)
 
 | Smart value | Restituisce | Esempio output |
 |------------|-------------|----------------|
-| `{{workItem.key}}` | Chiave elemento di lavoro (alias: `{{issue.key}}`) | `IT-123` |
-| `{{workItem.summary}}` | Titolo elemento di lavoro (alias: `{{issue.summary}}`) | `Fix stampante` |
-| `{{workItem.status.name}}` | Status attuale | `In Progress` |
-| `{{workItem.priority.name}}` | Priorità | `High` |
-| `{{workItem.assignee.displayName}}` | Nome assegnatario | `Marco Bianchi` |
-| `{{workItem.reporter.displayName}}` | Nome reporter | `Laura Verdi` |
-| `{{workItem.url}}` | URL dell'elemento di lavoro | `https://tyvak.atlassian.net/browse/IT-123` |
+| `{{issue.key}}` | Chiave elemento di lavoro | `IT-123` |
+| `{{issue.summary}}` | Titolo elemento di lavoro | `Fix stampante` |
+| `{{issue.status.name}}` | Status attuale | `In Progress` |
+| `{{issue.priority.name}}` | Priorità | `High` |
+| `{{issue.assignee.displayName}}` | Nome assegnatario | `Marco Bianchi` |
+| `{{issue.reporter.displayName}}` | Nome reporter | `Laura Verdi` |
+| `{{issue.url}}` | URL dell'elemento di lavoro | `https://tyvak.atlassian.net/browse/IT-123` |
 | `{{now}}` | Data/ora attuale | `2026-02-19T10:30:00` |
 | `{{now.plusDays(7)}}` | Tra 7 giorni | `2026-02-26T10:30:00` |
 | `{{now.minusDays(1)}}` | Ieri | `2026-02-18T10:30:00` |
 | `{{trigger.user.displayName}}` | Chi ha attivato il trigger | `Admin Tyvak` |
 
-> **Nota**: Gli smart value `{{issue.*}}` restano funzionanti come alias retrocompatibile. La forma canonica è `{{workItem.*}}`.
+> **Nota**: nonostante la UI dica "work item", la sintassi degli smart values usa `{{issue.*}}`. La forma `{{workItem.*}}` non è attualmente supportata da Jira Automation.
 
 ## Ricette per Tyvak
 
@@ -90,7 +91,7 @@ Azione:  Create sub-tasks:
 ### Escalation work item critici
 ```
 Trigger:  Scheduled (ogni giorno ore 9:00)
-Condizione: JQL → priority = Critical AND status != Done AND created <= -24h
+Condizione: JQL → priority = Critical AND status != Done AND created <= "-24h"
 Azione:  Add comment → "⚠️ Work item critico aperto da >24h"
 Azione:  Send email → IT Manager
 ```
@@ -108,7 +109,7 @@ Azione:  Add comment → "Chiuso automaticamente dopo 7 giorni in stato Risolto"
 Trigger:  Scheduled (ogni giorno ore 8:00)
 Condizione: JQL → due <= 2d AND due >= now() AND status != Done
 Azione:  Send email → Assignee
-         Oggetto: "⏰ {{workItem.key}} scade tra meno di 2 giorni"
+         Oggetto: "⏰ {{issue.key}} scade tra meno di 2 giorni"
 ```
 
 ## Validazione regole e assistenza AI
