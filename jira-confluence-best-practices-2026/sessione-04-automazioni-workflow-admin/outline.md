@@ -82,6 +82,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 #### 4.5 Amministrazione Jira — Focus IT Manager (30 min)
 
+- Recap: differenze tra spazi Team-managed e Company-managed
 - **Gestione utenti e gruppi**: invitare utenti, creare gruppi, assegnare ruoli
   - Esempio concreto di come creare un gruppo "Data Analisi", invitare i membri e assegnare ruoli specifici.
 - **Permission schemes**: chi può fare cosa nello spazio

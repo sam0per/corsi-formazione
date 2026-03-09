@@ -65,3 +65,9 @@ Crea una regola personalizzata per il tuo ruolo. Ecco alcuni esempi come ispiraz
 ## Consiglio
 
 Usa il **log di esecuzione** dell'automazione (Audit log) per verificare che la regola funzioni correttamente e per debuggare eventuali errori.
+
+## Extra - Regola Branch (opionale)
+Per chi vuole sperimentare di più, provate a creare una regola con un **branch**. È necessario avere una struttura di work item collegati per testarla. Ecco un esempio:
+- **Trigger**: Work item transitioned → status = "In Review"
+- **Branch**: For work items linked (type: "is blocked by")
+- **Azione nel branch**: Aggiungi commento con il nome del reporter del work item bloccante → "@{{linkedIssue.reporter.displayName}} Il work item {{issue.key}} è in review ma è bloccato da {{linkedIssue.key}}. Verifica lo stato del blocco."
