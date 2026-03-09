@@ -2,7 +2,7 @@
 
 > ⏱ Tempo stimato: 25 minuti
 
-> ⚠️ Il vecchio editor di workflow sarà rimosso a giugno 2026. Questo esercizio usa il nuovo editor.
+> ⚠️ Dal 30 marzo 2026 il vecchio editor non sarà più impostabile come default; dal 26 giugno 2026 sarà rimosso completamente. Questo esercizio usa il nuovo editor.
 
 ## Obiettivo
 
@@ -21,7 +21,7 @@ Prima di toccare Jira, disegnate il workflow su carta o digitale (Es. Miro, Luci
    - **Reclamo facility**: dalla segnalazione alla verifica
 
 2. Definite:
-   - Quali **stati** servono? (massimo 6-7)
+   - Quali **stati** servono? (massimo 6)
    - Quali **transizioni** sono permesse? (non tutte le combinazioni hanno senso)
    - Ci sono **regole** (rules) nelle transizioni? (es. solo il manager può approvare, assegnazione automatica)
    - Ogni stato appartiene a una **categoria** (To Do, In Progress, Done): a quale categoria appartiene ciascuno dei vostri stati?
@@ -43,7 +43,7 @@ Formato suggerito:
    - Aggiungete gli stati progettati durante la Parte A
    - Create le transizioni
    - Per almeno una transizione, aggiungete una **regola** (rule) (es. "Only assignee")
-4. Cliccate **Update workflow** per applicare le modifiche (nel nuovo editor non esiste il concetto di bozza: le modifiche diventano attive immediatamente)
+4. Cliccate **Update workflow** per applicare le modifiche (nel nuovo editor non esiste il concetto di bozza: le modifiche si applicano in un unico passaggio cliccando "Update workflow", senza bisogno di una pubblicazione separata)
 
 ## Risultato atteso
 
@@ -56,3 +56,7 @@ Formato suggerito:
 - Il workflow è abbastanza semplice da essere compreso da un nuovo utente?
 - Ci sono colli di bottiglia prevedibili (stati dove gli **elementi di lavoro** si accumulano)?
 - Come potreste monitorare l'efficacia del workflow con una dashboard?
+
+> Per la terminologia, consulta il [glossario](../../glossario.md).
+
+> Se non riesci a completare un passaggio entro 3 minuti, chiedi aiuto al formatore. Se il tempo per la Parte B non è sufficiente, concentratevi su aggiungere 2-3 stati e 2 transizioni piuttosto che l'intero workflow.

@@ -10,7 +10,7 @@ Creare almeno 2 regole di automazione utili per il proprio ruolo.
 
 ### Preparazione
 
-Vai su **Space settings → Automation → Create rule** nello **spazio** (space) di training (oppure in un progetto dell'istanza Tyvak in cui è sicuro sperimentare).
+Vai su **Space settings → Automation → Create rule** nello **spazio** (space) di training assegnato dal formatore.
 
 ### Regola 1
 
@@ -29,15 +29,16 @@ Crea una regola personalizzata per il tuo ruolo. Ecco alcuni esempi come ispiraz
 
 **🔧 IT — Escalation automatica:**
 - **Trigger**: Scheduled (ogni giorno alle 9:00)
-- **Condizione**: JQL `project = "IT-HELPDESK" AND priority = Critical AND status != Done AND created <= "-24h"`
+- **Condizione**: JQL `project = "IT-HELPDESK" AND priority = Critical AND status != Done AND created <= -24h`
+  > Adattate il nome della priorità alla vostra istanza (es. `Critical`, `Highest` o `Critica`).
 - **Azione**: Add comment "⚠️ Attenzione: questo elemento di lavoro critico è aperto da più di 24h. Richiesta escalation."
 - **Azione aggiuntiva**: Send email to IT Manager
 
 **💼 Admin & Finance — Notifica scadenza:**
-- **Trigger**: Field value changed (Due date)
-- **Condizione**: Due date <= `{{now.plusDays(3)}}`
-- **Azione**: Notifica (email o chat) al responsabile del work item → "Il work item {{issue.key}} - {{issue.summary}} scade tra 3 giorni. Verifica lo stato."
-- **Azione**: Transition work item → "Urgente" (se lo status esiste)
+- **Trigger**: Scheduled (ogni giorno alle 9:00)
+- **Condizione**: JQL `project = "ADMIN-FINANCE" AND duedate <= startOfDay("+3d") AND duedate >= startOfDay() AND statusCategory != Done`
+- **Azione**: Notifica (email o chat) all'assegnatario → "Il work item {{issue.key}} - {{issue.summary}} scade entro 3 giorni. Verifica lo stato."
+- **Azione aggiuntiva**: Transition work item → "Urgente" (se lo status esiste)
 
 **👥 HR — Creazione checklist onboarding:**
 - **Trigger**: Work item created
@@ -59,12 +60,16 @@ Crea una regola personalizzata per il tuo ruolo. Ecco alcuni esempi come ispiraz
 ## Risultato atteso
 
 - 2 regole di automazione attive e funzionanti
-- Comprensione del pattern Trigger → Condizione → Azione
+- Saper descrivere a voce il pattern Trigger → Condizione → Azione della propria regola
 - Test eseguito con successo
 
 ## Consiglio
 
 Usa il **log di esecuzione** dell'automazione (Audit log) per verificare che la regola funzioni correttamente e per debuggare eventuali errori.
+
+> Per la terminologia, consulta il [glossario](../../glossario.md).
+
+> Se non riesci a completare un passaggio entro 3 minuti, chiedi aiuto al formatore.
 
 ## Extra - Regola Branch (opzionale)
 Per chi vuole sperimentare di più, provate a creare una regola con un **branch**. È necessario avere una struttura di work item collegati per testarla. Ecco un esempio:

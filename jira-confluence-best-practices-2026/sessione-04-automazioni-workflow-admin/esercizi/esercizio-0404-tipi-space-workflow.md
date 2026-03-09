@@ -11,6 +11,7 @@ Comprendere le differenze tra **spazi** (space) Team-managed e Company-managed e
 ### Parte A — Confronto tipi di spazio (10 min)
 
 1. Apri uno **spazio** Team-managed (se disponibile) e uno Company-managed
+   > Se non è disponibile uno spazio Team-managed nell'istanza di training, utilizzate le informazioni della lezione per compilare la colonna Team-managed della tabella e concentrate la Parte B sullo spazio Company-managed.
    > **Percorsi di navigazione:**
    > - Company-managed: **Space settings → Workflows**
    > - Team-managed: **Space settings → Work types → [seleziona tipo] → Edit workflow**
@@ -48,3 +49,7 @@ Comprendere le differenze tra **spazi** (space) Team-managed e Company-managed e
 
 - Per il vostro team, quale **tipo di spazio** (space type) sarebbe più appropriato?
 - Quali stati mancano nei workflow attuali per gestire meglio il vostro lavoro?
+
+> Per la terminologia, consulta il [glossario](../../glossario.md).
+
+> Se non riesci a completare un passaggio entro 3 minuti, chiedi aiuto al formatore.

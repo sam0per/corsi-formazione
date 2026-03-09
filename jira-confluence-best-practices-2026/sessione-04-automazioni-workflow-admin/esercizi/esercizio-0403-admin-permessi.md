@@ -4,7 +4,7 @@
 
 ## Obiettivo
 
-Comprendere la gestione dei permessi, degli schemi e delle configurazioni di **spazio** (space) o progetto (project).
+Comprendere la gestione dei permessi, degli schemi e delle configurazioni di **spazio** (space).
 
 ## Istruzioni
 
@@ -21,12 +21,13 @@ Comprendere la gestione dei permessi, degli schemi e delle configurazioni di **s
 3. Verificate: i permessi attuali corrispondono a quello che vi aspettavate?
 4. Viene applicato il principio del minimo privilegio? Cioè, gli utenti hanno solo i permessi di cui hanno bisogno per svolgere il loro lavoro, e non di più?
 5. Confrontate con un secondo spazio: usano lo stesso scheme o uno diverso?
+   > Se avete accesso a un solo spazio, annotate le configurazioni e confrontatele con un collega.
 
 ### Parte B — Configurazione spazio (10 min)
 
 Esplorare le seguenti configurazioni:
 
-> ℹ️ Alcune configurazioni (work type scheme, notification scheme) sono gestite a livello di **Jira admin** (admin.atlassian.com o Jira settings), non dallo spazio. Dallo spazio si vede quale schema è associato ma per modificarlo serve accesso admin.
+> ℹ️ Alcune configurazioni (work type scheme, notification scheme) sono gestite a livello di **Jira admin** (Settings → Work items), non dallo spazio. Dallo spazio si vede quale schema è associato ma per modificarlo serve accesso admin Jira. Nota: admin.atlassian.com è per la gestione utenti/gruppi a livello organizzazione, non per gli schemi di prodotto.
 
 1. **Work type scheme**: quali work type sono disponibili nello spazio
 2. **Notification scheme**: chi riceve notifiche per quali eventi
@@ -39,7 +40,7 @@ Ogni partecipante annota:
 
 ### Parte C — Piano di governance (5 min)
 
-Identificare le **convenzioni di base** per i progetti a cui fate parte nell'istanza Tyvak:
+Identificare le **convenzioni di base** per gli spazi a cui fate parte nell'istanza Tyvak:
 
 1. **Nomenclatura spazi**: come sono stati chiamati i progetti, es. `DEPT-NOME` (IT-HELPDESK, HR-ONBOARDING, FAC-TICKETS)
 2. **Etichette comuni**: quali sono le 5-10 etichette standard condivise, sono chiare e coerenti?
@@ -60,3 +61,7 @@ Dopo il corso/esercizio, valuta di implementare una checklist di configurazione 
 - [ ] Creazione di un template di spazio per nuovi team
 - [ ] Documentazione delle configurazioni su Confluence
 - [ ] Calendario di revisione trimestrale
+
+> Per la terminologia, consulta il [glossario](../../glossario.md).
+
+> Se non riesci a completare un passaggio entro 3 minuti, chiedi aiuto al formatore.
