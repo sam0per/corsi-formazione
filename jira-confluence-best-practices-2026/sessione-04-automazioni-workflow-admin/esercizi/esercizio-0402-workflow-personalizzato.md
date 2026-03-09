@@ -1,6 +1,6 @@
 # # Sessione 4 Blocco 1 Esercizio 2 — Workflow personalizzato
 
-> ⏱ Tempo stimato: 30 minuti
+> ⏱ Tempo stimato: 25 minuti
 
 > ⚠️ Il vecchio editor di workflow sarà rimosso a giugno 2026. Questo esercizio usa il nuovo editor.
 
@@ -32,7 +32,7 @@ Formato suggerito:
                                   +--rifiuto--> [Stato A]
 ```
 
-### Parte B — Implementazione in Jira (18 min)
+### Parte B — Implementazione in Jira (13 min)
 
 > ⚠️ Questo esercizio richiede permessi di amministratore di **spazio** (space). Raccomandazione: usate l'istanza training in cui avete pieno accesso.
 

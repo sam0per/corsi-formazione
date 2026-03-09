@@ -71,14 +71,14 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 **☕ Pausa (10 min)**
 
-### Esercizi Blocco 1 (1:20 - 2:05)
+### Esercizi Blocco 1 (1:20 - 2:10)
 
 - [Esercizio 1: Crea le tue regole di automazione](esercizi/esercizio-0401-regole-automazione.md)
 - [Esercizio 2: Workflow personalizzato](esercizi/esercizio-0402-workflow-personalizzato.md)
 
 ---
 
-### Blocco 2 — Workflow e Amministrazione (2:05 - 2:50)
+### Blocco 2 — Workflow e Amministrazione (2:10 - 2:55)
 
 #### 4.5 Amministrazione Jira — Focus IT Manager (30 min)
 
@@ -106,7 +106,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 **☕ Pausa (10 min)**
 
-### Esercizi Blocco 2 (2:50 - 3:45)
+### Esercizi Blocco 2 (2:55 - 3:45)
 
 - [Esercizio 3: Amministrazione e permessi](esercizi/esercizio-0403-admin-permessi.md)
 - [Esercizio 4: Tipi di spazio e workflow](esercizi/esercizio-0404-tipi-space-workflow.md)
