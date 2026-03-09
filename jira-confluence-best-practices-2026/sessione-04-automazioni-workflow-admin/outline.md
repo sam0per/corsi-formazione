@@ -94,8 +94,8 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 1 (1:20 - 2:10)
 
-- [Esercizio 1: Crea le tue regole di automazione](esercizi/esercizio-0401-regole-automazione.md)
-- [Esercizio 2: Workflow personalizzato](esercizi/esercizio-0402-workflow-personalizzato.md)
+- [Esercizio 1: Crea le tue regole di automazione](./esercizi/esercizio-0401-regole-automazione.md)
+- [Esercizio 2: Workflow personalizzato](./esercizi/esercizio-0402-workflow-personalizzato.md)
 
 ---
 
@@ -135,8 +135,8 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ### Esercizi Blocco 2 (2:55 - 3:45)
 
-- [Esercizio 3: Amministrazione e permessi](esercizi/esercizio-0403-admin-permessi.md)
-- [Esercizio 4: Tipi di spazio e workflow](esercizi/esercizio-0404-tipi-space-workflow.md)
+- [Esercizio 3: Amministrazione e permessi](./esercizi/esercizio-0403-admin-permessi.md)
+- [Esercizio 4: Tipi di spazio e workflow](./esercizi/esercizio-0404-tipi-space-workflow.md)
 
 ### Recap e Q&A (3:45 - 4:00)
 
