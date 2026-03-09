@@ -17,7 +17,8 @@ Comprendere la gestione dei permessi, degli schemi e delle configurazioni di **s
    - Chi può modificare il workflow?
    - Chi può eliminare elementi di lavoro?
 3. Verificate: i permessi attuali corrispondono a quello che vi aspettavate?
-4. Confrontate con un secondo spazio: usano lo stesso scheme o uno diverso?
+4. Viene applicato il principio del minimo privilegio? Cioè, gli utenti hanno solo i permessi di cui hanno bisogno per svolgere il loro lavoro, e non di più?
+5. Confrontate con un secondo spazio: usano lo stesso scheme o uno diverso?
 
 ### Parte B — Configurazione spazio (10 min)
 
