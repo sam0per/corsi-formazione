@@ -1,6 +1,6 @@
-# Esercizio 4 — Tipi di spazio e workflow
+# Sessione 4 Blocco 2 Esercizio 4 — Tipi di spazio e workflow
 
-> ⏱ Tempo stimato: 25 minuti | 👥 In coppia, poi discussione di gruppo
+> ⏱ Tempo stimato: 25 minuti
 
 ## Obiettivo
 
@@ -33,17 +33,12 @@ Comprendere le differenze tra **spazi** (space) Team-managed e Company-managed e
    - Quali sono gli stati?
    - Quali transizioni sono possibili?
    - Ci sono **regole** (rules) associate alle transizioni?
-4. Confronta con il workflow di uno spazio Team-managed
-
-**Sfida extra per l'IT Manager:**
-- Identifica quale workflow sarebbe ideale per gli elementi di lavoro IT dell'helpdesk
-- Bozza uno schema con gli stati: `Nuovo → In analisi → In lavorazione → In attesa di feedback → Risolto → Chiuso`
+4. Confronta con il workflow di uno spazio Team-managed (es. istanza training)
 
 ## Risultato atteso
 
 - Tabella di confronto compilata
 - Diagramma di almeno un workflow esistente
-- (IT Manager) Bozza del workflow ideale per helpdesk IT
 
 ## Domande di riflessione
 

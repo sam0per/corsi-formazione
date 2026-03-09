@@ -1,16 +1,14 @@
-# Esercizio 3 — Amministrazione e permessi
+# Sessione 4 Blocco 2 Esercizio 3 — Amministrazione e permessi
 
-> ⏱ Tempo stimato: 25 minuti | 👥 Guidato dall'IT Manager, tutti partecipano
+> ⏱ Tempo stimato: 25 minuti
 
 ## Obiettivo
 
-Comprendere la gestione dei permessi, degli schemi e delle configurazioni di **spazio** (space).
+Comprendere la gestione dei permessi, degli schemi e delle configurazioni di **spazio** (space) o progetto (project).
 
 ## Istruzioni
 
 ### Parte A — Esplorazione permessi (10 min)
-
-> L'IT Manager condivide lo schermo e guida il gruppo.
 
 1. Andate su **Space settings → Permissions** di uno spazio
 2. Analizzate il **Permission scheme** associato:
@@ -23,7 +21,7 @@ Comprendere la gestione dei permessi, degli schemi e delle configurazioni di **s
 
 ### Parte B — Configurazione spazio (10 min)
 
-L'IT Manager mostra e spiega le seguenti configurazioni:
+Esplorare le seguenti configurazioni:
 
 1. **Work type scheme**: quali work type sono disponibili nello spazio
 2. **Notification scheme**: chi riceve notifiche per quali eventi
@@ -36,10 +34,10 @@ Ogni partecipante annota:
 
 ### Parte C — Piano di governance (5 min)
 
-In gruppo, definite le **convenzioni di base** per l'istanza Tyvak:
+Identificare le **convenzioni di base** per i progetti a cui fate parte nell'istanza Tyvak:
 
-1. **Nomenclatura spazi**: es. `DEPT-NOME` (IT-HELPDESK, HR-ONBOARDING, FAC-TICKETS)
-2. **Etichette comuni**: definite 5-10 etichette standard condivise
+1. **Nomenclatura spazi**: come sono stati chiamati i progetti, es. `DEPT-NOME` (IT-HELPDESK, HR-ONBOARDING, FAC-TICKETS)
+2. **Etichette comuni**: quali sono le 5-10 etichette standard condivise, sono chiare e coerenti?
 3. **Componenti standard**: per spazio, quali componenti hanno senso?
 4. **Revisione periodica**: ogni quanto fare pulizia? (suggerimento: trimestrale)
 
@@ -49,9 +47,9 @@ In gruppo, definite le **convenzioni di base** per l'istanza Tyvak:
 - Lista di componenti ed etichette proposti per ciascuno spazio
 - Bozza di convenzioni di governance per l'istanza Tyvak
 
-## Per l'IT Manager — Checklist post-corso
+## Extra IT Manager — Checklist IT admin (opzionale)
 
-Dopo il corso, valuta di implementare:
+Dopo il corso/esercizio, valuta di implementare una checklist di configurazione e governance per i progetti IT. Se esiste già, rivedila provando a capire come migliorarla. Esempio di voci da includere:
 - [ ] Revisione permission scheme per ogni spazio
 - [ ] Standardizzazione etichette e componenti
 - [ ] Creazione di un template di spazio per nuovi team

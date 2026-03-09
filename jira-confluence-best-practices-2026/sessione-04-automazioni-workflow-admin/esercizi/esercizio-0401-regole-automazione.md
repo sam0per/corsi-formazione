@@ -1,6 +1,6 @@
-# Esercizio 1 — Crea le tue regole di automazione
+# Sessione 4 Blocco 1 Esercizio 1 — Crea le tue regole di automazione
 
-> ⏱ Tempo stimato: 25 minuti | 👥 Individuale, poi condivisione
+> ⏱ Tempo stimato: 25 minuti
 
 ## Obiettivo
 
@@ -8,35 +8,35 @@ Creare almeno 2 regole di automazione utili per il proprio ruolo.
 
 ## Istruzioni
 
-### Preparazione (2 min)
+### Preparazione
 
-Vai su **Space settings → Automation → Create rule** nello **spazio** (space) di training.
+Vai su **Space settings → Automation → Create rule** nello **spazio** (space) di training (oppure in un progetto dell'istanza Tyvak in cui è sicuro sperimentare).
 
-### Regola 1 — Comune a tutti (10 min)
+### Regola 1
 
 Crea una regola di **auto-assegnazione**:
 
 - **Trigger**: Work item created
-- **Condizione**: Work type = Task
+- **Condizione**: Work type = Task (o un altro tipo rilevante per il tuo ruolo)
 - **Azione**: Assign work item to → Current user (o un utente specifico)
-- **Nome regola**: `Auto-assegnazione task`
+- **Nome regola**: `Auto-assegnazione [TIPO]` dove [TIPO] è il tipo di work item (es. Auto-assegnazione Bug)
 
-Testa la regola creando un nuovo **elemento di lavoro** (work item) di tipo Task.
+Testa la regola creando un nuovo **elemento di lavoro** (work item) del tipo scelto.
 
-### Regola 2 — Specifica per ruolo (13 min)
+### Regola 2
 
-Crea una regola personalizzata per il tuo ruolo:
+Crea una regola personalizzata per il tuo ruolo. Ecco alcuni esempi come ispirazione:
 
-**🔧 IT Manager — Escalation automatica:**
+**🔧 IT — Escalation automatica:**
 - **Trigger**: Scheduled (ogni giorno alle 9:00)
-- **Condizione**: JQL → `space = "IT-HELPDESK" AND priority = Critical AND status != Done AND created <= -24h`
-- **Azione**: Add comment → "⚠️ Attenzione: questo elemento di lavoro critico è aperto da più di 24h. Richiesta escalation."
-- **Azione aggiuntiva**: Send email → IT Manager
+- **Condizione**: JQL `project = "IT-HELPDESK" AND priority = Critical AND status != Done AND created <= -24h`
+- **Azione**: Add comment "⚠️ Attenzione: questo elemento di lavoro critico è aperto da più di 24h. Richiesta escalation."
+- **Azione aggiuntiva**: Send email to IT Manager
 
 **💼 Admin & Finance — Notifica scadenza:**
 - **Trigger**: Field value changed (Due date)
 - **Condizione**: Due date <= `{{now.plusDays(3)}}`
-- **Azione**: Add comment → "📅 Questa attività scade tra 3 giorni o meno."
+- **Azione**: Notifica (email o chat) al responsabile del work item → "Il work item {{workItem.key}} - {{workItem.summary}} scade tra 3 giorni. Verifica lo stato."
 - **Azione**: Transition work item → "Urgente" (se lo status esiste)
 
 **👥 HR — Creazione checklist onboarding:**

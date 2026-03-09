@@ -1,6 +1,6 @@
-# Esercizio 2 — Workflow personalizzato
+# # Sessione 4 Blocco 1 Esercizio 2 — Workflow personalizzato
 
-> ⏱ Tempo stimato: 20 minuti | 👥 In coppia (IT Manager + un collega)
+> ⏱ Tempo stimato: 30 minuti
 
 > ⚠️ Il vecchio editor di workflow sarà rimosso a giugno 2026. Questo esercizio usa il nuovo editor.
 
@@ -10,9 +10,9 @@ Progettare e implementare un workflow personalizzato per un caso d'uso reale.
 
 ## Istruzioni
 
-### Parte A — Progettazione su carta (8 min)
+### Parte A — Progettazione su carta o digitale (12 min)
 
-Prima di toccare Jira, disegnate il workflow su carta o lavagna virtuale:
+Prima di toccare Jira, disegnate il workflow su carta o digitale (Es. Miro, Lucidchart, draw.io):
 
 1. Scegliete uno dei seguenti scenari (o create il vostro):
    - **Elemento di lavoro IT Helpdesk**: dalla segnalazione alla risoluzione
@@ -32,14 +32,14 @@ Formato suggerito:
                                   +--rifiuto--> [Stato A]
 ```
 
-### Parte B — Implementazione in Jira (12 min)
+### Parte B — Implementazione in Jira (18 min)
 
-> ⚠️ Questo esercizio richiede permessi di amministratore di **spazio** (space). L'IT Manager guida, gli altri osservano e partecipano.
+> ⚠️ Questo esercizio richiede permessi di amministratore di **spazio** (space). Raccomandazione: usate l'istanza training in cui avete pieno accesso.
 
 1. Andate su **Space settings → Workflows**
-2. Copiate un workflow esistente (non modificare l'originale)
+2. Copiate un workflow esistente (non modificare l'originale). Se non c'è un workflow adatto, create un nuovo workflow da zero.
 3. Nell'editor visuale:
-   - Aggiungete gli stati progettati
+   - Aggiungete gli stati progettati durante la Parte A
    - Create le transizioni
    - Per almeno una transizione, aggiungete una **regola** (rule) (es. "Only assignee")
 4. Pubblicate il workflow (se in ambiente di test)
