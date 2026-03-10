@@ -8,11 +8,11 @@ Comprendere la gestione dei permessi, degli schemi e delle configurazioni di **s
 
 ## Istruzioni
 
-### Parte A — Esplorazione permessi (10 min)
+### Parte A — Esplorazione permessi
 
 > ℹ️ I permission scheme sono disponibili solo per spazi **Company-managed**. Per spazi Team-managed, i permessi si gestiscono da Space settings → Access.
 
-1. Andate su **Space settings → Permissions** di uno spazio
+1. Andate su **Space settings → Access → Space permissions** di uno spazio Company-managed a cui avete accesso.
 2. Analizzate il **Permission scheme** associato:
    - Chi può creare **elementi di lavoro** (work item)?
    - Chi può assegnare elementi di lavoro?
@@ -23,22 +23,22 @@ Comprendere la gestione dei permessi, degli schemi e delle configurazioni di **s
 5. Confrontate con un secondo spazio: usano lo stesso scheme o uno diverso?
    > Se avete accesso a un solo spazio, annotate le configurazioni e confrontatele con un collega.
 
-### Parte B — Configurazione spazio (10 min)
+### Parte B — Configurazione spazio
 
 Esplorare le seguenti configurazioni:
 
-> ℹ️ Alcune configurazioni (work type scheme, notification scheme) sono gestite a livello di **Jira admin** (Settings → Work items), non dallo spazio. Dallo spazio si vede quale schema è associato ma per modificarlo serve accesso admin Jira. Nota: admin.atlassian.com è per la gestione utenti/gruppi a livello organizzazione, non per gli schemi di prodotto.
+> ℹ️ Alcune configurazioni (work item types scheme, notification scheme) sono gestite a livello di **Jira admin** (Settings → Work items), non dallo spazio. Dallo spazio si vede quale schema è associato ma per modificarlo serve accesso admin Jira. Nota: admin.atlassian.com è per la gestione utenti/gruppi a livello organizzazione, non per gli schemi di prodotto.
 
-1. **Work type scheme**: quali work type sono disponibili nello spazio
+1. **Work item types scheme**: quali work types sono disponibili nello spazio
 2. **Notification scheme**: chi riceve notifiche per quali eventi
 3. **Componenti**: come organizzare gli elementi di lavoro per area (es. "Hardware", "Software", "Rete" per IT)
-4. **Categorie**: come raggruppare gli spazi a livello di sito
+4. **Fields o campi**: quali campi sono obbligatori, quali opzionali, e quanti/quali screens sono configurati
 
 Ogni partecipante annota:
 - Quali componenti sarebbero utili per il proprio spazio?
 - Quali notifiche vorreste ricevere (o non ricevere)?
 
-### Parte C — Piano di governance (5 min)
+### Parte C — Piano di governance
 
 Identificare le **convenzioni di base** per gli spazi a cui fate parte nell'istanza Tyvak:
 
@@ -53,7 +53,7 @@ Identificare le **convenzioni di base** per gli spazi a cui fate parte nell'ista
 - Lista di componenti ed etichette proposti per ciascuno spazio
 - Bozza di convenzioni di governance per l'istanza Tyvak
 
-## Extra IT Manager — Checklist IT admin (opzionale)
+## Extra IT — Checklist IT admin (opzionale)
 
 Dopo il corso/esercizio, valuta di implementare una checklist di configurazione e governance per i progetti IT. Se esiste già, rivedila provando a capire come migliorarla. Esempio di voci da includere:
 - [ ] Revisione permission scheme per ogni spazio
@@ -63,5 +63,3 @@ Dopo il corso/esercizio, valuta di implementare una checklist di configurazione 
 - [ ] Calendario di revisione trimestrale
 
 > Per la terminologia, consulta il [glossario](../../glossario.md).
-
-> Se non riesci a completare un passaggio entro 3 minuti, chiedi aiuto al formatore.

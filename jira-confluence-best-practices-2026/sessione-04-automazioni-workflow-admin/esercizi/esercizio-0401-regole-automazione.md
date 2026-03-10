@@ -10,7 +10,7 @@ Creare almeno 2 regole di automazione utili per il proprio ruolo.
 
 ### Preparazione
 
-Vai su **Space settings → Automation → Create rule** nello **spazio** (space) di training assegnato dal formatore.
+Vai su **Space settings → Automation → Create rule** nello **spazio** (space) di training.
 
 ### Regola 1
 
@@ -18,7 +18,7 @@ Crea una regola di **auto-assegnazione**:
 
 - **Trigger**: Work item created
 - **Condizione**: Work type = Task (o un altro tipo rilevante per il tuo ruolo)
-- **Azione**: Assign work item to → Current user (o un utente specifico)
+- **Azione**: Assign work item to Current user (o un utente specifico)
 - **Nome regola**: `Auto-assegnazione [TIPO]` dove [TIPO] è il tipo di work item (es. Auto-assegnazione Bug)
 
 Testa la regola creando un nuovo **elemento di lavoro** (work item) del tipo scelto.
@@ -68,8 +68,6 @@ Crea una regola personalizzata per il tuo ruolo. Ecco alcuni esempi come ispiraz
 Usa il **log di esecuzione** dell'automazione (Audit log) per verificare che la regola funzioni correttamente e per debuggare eventuali errori.
 
 > Per la terminologia, consulta il [glossario](../../glossario.md).
-
-> Se non riesci a completare un passaggio entro 3 minuti, chiedi aiuto al formatore.
 
 ## Extra - Regola Branch (opzionale)
 Per chi vuole sperimentare di più, provate a creare una regola con un **branch**. È necessario avere una struttura di work item collegati per testarla. Ecco un esempio:

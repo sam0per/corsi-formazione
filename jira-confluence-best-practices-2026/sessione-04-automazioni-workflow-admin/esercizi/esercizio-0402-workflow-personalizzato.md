@@ -2,17 +2,15 @@
 
 > ⏱ Tempo stimato: 25 minuti
 
-> ⚠️ Dal 30 marzo 2026 il vecchio editor non sarà più impostabile come default; dal 26 giugno 2026 sarà rimosso completamente. Questo esercizio usa il nuovo editor.
-
 ## Obiettivo
 
 Progettare e implementare un workflow personalizzato per un caso d'uso reale.
 
 ## Istruzioni
 
-### Parte A — Progettazione su carta o digitale (12 min)
+### Parte A — Progettazione su carta o digitale
 
-Prima di toccare Jira, disegnate il workflow su carta o digitale (Es. Miro, Lucidchart, draw.io):
+Prima di usare Jira, disegnate il workflow su carta o digitale (Es. Miro, Lucidchart, draw.io):
 
 1. Scegliete uno dei seguenti scenari (o create il vostro):
    - **Elemento di lavoro IT Helpdesk**: dalla segnalazione alla risoluzione
@@ -33,11 +31,11 @@ Formato suggerito:
                                   +--rifiuto--> [Stato A]
 ```
 
-### Parte B — Implementazione in Jira (13 min)
+### Parte B — Implementazione in Jira
 
 > ⚠️ Questo esercizio richiede permessi di amministratore di **spazio** (space). Raccomandazione: usate l'istanza training in cui avete pieno accesso.
 
-1. Andate su **Space settings → Workflows** (spazi Company-managed) oppure **Space settings → Work types → [tipo] → Edit workflow** (spazi Team-managed)
+1. Andate su **Space settings → Workflows** (spazi Company-managed) oppure **Space settings → Work types → [seleziona tipo] → Edit workflow** (spazi Team-managed)
 2. Copiate un workflow esistente (non modificare l'originale). Se non c'è un workflow adatto, create un nuovo workflow da zero.
 3. Nell'editor visuale:
    - Aggiungete gli stati progettati durante la Parte A
@@ -58,5 +56,3 @@ Formato suggerito:
 - Come potreste monitorare l'efficacia del workflow con una dashboard?
 
 > Per la terminologia, consulta il [glossario](../../glossario.md).
-
-> Se non riesci a completare un passaggio entro 3 minuti, chiedi aiuto al formatore. Se il tempo per la Parte B non è sufficiente, concentratevi su aggiungere 2-3 stati e 2 transizioni piuttosto che l'intero workflow.
