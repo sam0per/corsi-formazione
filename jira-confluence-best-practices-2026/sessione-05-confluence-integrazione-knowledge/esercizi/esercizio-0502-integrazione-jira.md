@@ -38,14 +38,19 @@ Nella pagina creata nell'esercizio precedente:
    - Aggiungi un link alla tua pagina Confluence come documentazione di riferimento
    - Formato: "📖 Documentazione: [link alla pagina Confluence]"
 
-### Parte C — Riflessione e discussione
+### Parte C — Runbook e best practice
 
-- Quali pagine Confluence sarebbero più utili da collegare ai vostri **spazi** (space) Jira?
-- Come potreste usare le macro Jira per creare report automatici su Confluence?
-- Chi dovrebbe essere responsabile di mantenere aggiornate le pagine?
+1. **Crea una pagina runbook** nel tuo spazio Confluence, per un processo ricorrente del tuo ruolo:
+   - Titolo: "Runbook — [nome processo]" (es. "Runbook — Reset password utente", "Runbook — Richiesta ferie")
+   - Contenuto minimo: 3-5 step operativi numerati
+   - Inserisci un link al workflow o al progetto Jira corrispondente
+   - Aggiungi l'etichetta `runbook`
+
+2. **Discussione** (5 min): chi dovrebbe essere responsabile di mantenere aggiornate le pagine Confluence collegate a Jira?
 
 ## Risultato atteso
 
 - 1 pagina Confluence con almeno una macro Jira Work Items funzionante
 - 1 elemento di lavoro Jira collegato a una pagina Confluence
+- 1 pagina runbook con link al workflow Jira
 - Comprensione del flusso bidirezionale Jira ↔ Confluence
