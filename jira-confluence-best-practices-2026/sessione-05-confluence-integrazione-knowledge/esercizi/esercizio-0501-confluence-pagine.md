@@ -1,6 +1,6 @@
 # Sessione 5 Blocco 1 Esercizio 1 — Creare pagine Confluence
 
-> ⏱ Tempo stimato: 40 minuti
+> ⏱ Tempo stimato: 45 minuti
 
 ## Obiettivo
 
@@ -15,7 +15,12 @@ Creare due pagine Confluence strutturate e utili per il proprio ruolo.
 
 ### Creazione pagine
 
-Ogni partecipante crea **2 pagine** Confluence adatte al proprio ruolo, prendendo spunto dagli esempi seguenti:
+Ogni partecipante crea **2 pagine** Confluence adatte al proprio ruolo:
+
+- **Pagina 1**: creata da zero (editor vuoto)
+- **Pagina 2**: creata partendo da un **template predefinito** (es. meeting notes, how-to, decision, retrospettiva) e personalizzata
+
+Prendi spunto dagli esempi seguenti:
 
 **🔧 IT — "Procedura gestione elementi di lavoro IT":**
 - Titolo chiaro e descrittivo
@@ -57,7 +62,20 @@ Ogni pagina deve includere almeno:
 - [ ] Un elenco (numerato o puntato)
 - [ ] Almeno un'etichetta
 
+**Nota:** delle 2 pagine create, almeno una deve partire da un template predefinito.
+
+### Ricerca e navigazione
+
+Dopo aver creato le pagine:
+
+1. **Ricerca per etichetta**: usa la ricerca di Confluence per trovare tutte le pagine con un'etichetta specifica (es. una delle etichette che hai appena usato)
+2. **Ricerca globale**: cerca una parola chiave presente in una pagina di un collega e verifica che appaia nei risultati
+3. **Preferiti**: aggiungi una pagina creata da un collega ai tuoi preferiti
+4. **Pagine recenti**: verifica che le tue pagine appaiano nella sezione "Recenti"
+5. **(Opzionale) Sidebar**: personalizza la sidebar dello spazio aggiungendo uno shortcut a una delle tue pagine
+
 ## Risultato atteso
 
-- 2 pagine Confluence complete, formattate e con etichette
+- 2 pagine Confluence complete, formattate e con etichette (di cui una da template)
+- Capacità di usare la ricerca e la navigazione in Confluence
 - Familiarità con l'editor di Confluence e gli elementi di formattazione
