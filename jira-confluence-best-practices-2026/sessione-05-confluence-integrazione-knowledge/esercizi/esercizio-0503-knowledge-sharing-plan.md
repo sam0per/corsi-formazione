@@ -1,6 +1,6 @@
 # Sessione 5 Blocco 2 Esercizio 3 — Piano di Knowledge Sharing
 
-> ⏱ Tempo stimato: 25 minuti
+> ⏱ Tempo stimato: 20 minuti
 
 ## Obiettivo
 
@@ -56,7 +56,9 @@ Definite un calendario realistico per le prossime 4-8 settimane:
 | Sett. 3 | | | | |
 | Sett. 4 | | | | |
 
-### Step 5 — Creare lo spazio Confluence
+### Step 5 (opzionale) — Creare lo spazio Confluence
+
+> Se il tempo non è sufficiente, completate questo step come attività post-corso.
 
 1. Create (o strutturate) uno spazio Confluence **"Formazione Jira — Tyvak"**
 2. Create la struttura delle pagine:
@@ -70,5 +72,5 @@ Definite un calendario realistico per le prossime 4-8 settimane:
 ## Risultato atteso
 
 - 1 piano di knowledge transfer completo con target, contenuti, formati e calendario
-- 1 spazio Confluence strutturato per la formazione interna
 - Ogni partecipante ha almeno 1 responsabilità specifica nel piano
+- (Opzionale) 1 spazio Confluence strutturato per la formazione interna
