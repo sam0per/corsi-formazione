@@ -25,24 +25,24 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Quando usare Confluence vs quando usare Jira
 - Esempio Tyvak: documentazione processi interni, procedure facility, manuale onboarding
 
-#### 5.2 Creare e organizzare contenuti (25 min)
+#### 5.2 Creare e organizzare contenuti (20 min)
 
-- Creare uno spazio: tipo, permessi, struttura
-- Creare pagine: editor moderno di Confluence
-- Formattazione: titoli, tabelle, elenchi, espansioni, pannelli informativi
+- Creare uno spazio: tipo (Collaboration, Knowledge base, Custom), struttura
+- Creare pagine con l'editor cloud (Atlassian cloud editor)
+  - Tipi di contenuto: pagine, live doc, blog post, whiteboard, cartelle (folder)
+- Formattazione: titoli, tabelle, elenchi, espansioni (expand), pannelli (panel element: info, note, warning, error, success)
 - Template predefiniti: meeting notes, decision, how-to, retrospettiva
-- Organizzazione: gerarchia pagine, etichette, albero di navigazione
-- Allegati e media
-- Commenti e menzioni
-- Collaborazione in tempo reale
-- Versioni e cronologia delle pagine
+- Organizzazione: gerarchia pagine, etichette (label), content tree
+- Panoramica rapida: allegati e media, commenti e menzioni (@), collaborazione simultanea (pagine vs live doc), versioni e cronologia
 
-#### 5.3 Ricerca e navigazione in Confluence (10 min)
+#### 5.3 Ricerca, navigazione e permessi base (15 min)
 
 - Ricerca globale Confluence
 - Ricerca per etichetta
-- Pagine recenti e preferite
-- Shortcuts e personalizzazione della sidebar dello spazio
+- Pagine recenti e Starred (preferiti)
+- Shortcuts e personalizzazione della sidebar dello spazio (richiede permessi di space admin)
+- Permessi Confluence: permessi di spazio, restrizioni di pagina, gruppi
+- Notifiche e watching: seguire pagine per ricevere aggiornamenti sulle modifiche
 
 **☕ Pausa (10 min)**
 
@@ -52,7 +52,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ---
 
-### Blocco 2 — Integrazione Jira-Confluence e Knowledge Transfer (1:55 - 2:55)
+### Blocco 2 — Integrazione Jira-Confluence e Knowledge Transfer (1:55 - 2:50)
 
 #### 5.4 Integrazione Jira ↔ Confluence (25 min)
 
@@ -63,39 +63,40 @@ Al termine di questa sessione i partecipanti saranno in grado di:
   - Smart links: incollare link Jira per preview automatica
 - **Da Jira a Confluence**:
   - Collegare pagine Confluence ai work item Jira
-  - Confluence come knowledge base per gli spazi Jira
+  - Confluence come knowledge base per gli spazi Jira (la knowledge base integrata richiede Jira Service Management)
   - Link nella descrizione dei work item
 - Casi d'uso Tyvak:
-  - Pagina Confluence "Stato ordini" con macro Jira che mostra le task in tempo reale
+  - Pagina Confluence "Stato ordini" con macro Jira che mostra i work item aggiornati dinamicamente
   - Documentazione procedure IT con link ai workflow Jira
   - Report mensile facility con grafici Jira incorporati
 
 #### 5.5 Best practice Jira + Confluence (15 min)
 
 - Documentare i workflow su Confluence
-- Creare runbook per processi ricorrenti
-- Template di spazio con link a Confluence
+- Creare runbook per processi ricorrenti (template Atlassian: DevOps Runbook, ITSM Runbook)
+- Template di spazio con shortcut bidirezionali tra Jira e Confluence
 - Dashboard Jira + pagine Confluence: il reporting completo
-- Mantenere la documentazione aggiornata: chi è responsabile?
+- Mantenere la documentazione aggiornata: page ownership in Confluence — chi è responsabile?
+- Ciclo di vita dei contenuti: archiviare pagine obsolete, revisione periodica
 
-#### 5.6 Piano di Knowledge Transfer (20 min)
+#### 5.6 Piano di Knowledge Transfer (15 min)
 
 - Perché il knowledge transfer è fondamentale
 - Struttura di un piano di knowledge transfer:
-  1. **Cosa insegnare**: argomenti prioritari per i colleghi
-  2. **A chi**: gruppi target (team lead, operativi, nuovi assunti)
+  1. **A chi**: gruppi target (team lead, operativi, nuovi assunti)
+  2. **Cosa insegnare**: argomenti prioritari per i colleghi
   3. **Come**: formati (sessioni live, video, documentazione, affiancamento)
   4. **Quando**: tempistiche e calendario
-  5. **Materiali**: cosa riutilizzare dal corso, cosa creare ex novo
+  5. **Come misurare il successo**: metriche e follow-up
 
 **☕ Pausa (10 min)**
 
-### Esercizi Blocco 2 (3:05 - 3:50)
+### Esercizi Blocco 2 (3:00 - 3:45)
 
 - [Esercizio 2: Integrazione Jira-Confluence](./esercizi/esercizio-0502-integrazione-jira.md)
 - [Esercizio 3: Piano di knowledge sharing](./esercizi/esercizio-0503-knowledge-sharing-plan.md)
 
-### Recap finale del corso e chiusura (3:50 - 4:00)
+### Recap finale del corso e chiusura (3:45 - 4:00)
 
 - Riepilogo delle 5 sessioni: il percorso completo
   - Sessione 1: Fondamenti → ora sapete come è strutturato Jira
@@ -105,8 +106,10 @@ Al termine di questa sessione i partecipanti saranno in grado di:
   - Sessione 5: Confluence e KT → ora sapete documentare e condividere
 - Risorse per continuare a imparare:
   - [Atlassian Community](https://community.atlassian.com/)
-  - [Atlassian University](https://university.atlassian.com/)
+  - [Atlassian University](https://university.atlassian.com/) — include la certificazione Confluence Essentials (ACA-920)
   - [Atlassian Documentation](https://support.atlassian.com/)
+  - [Confluence Resource Center](https://www.atlassian.com/software/confluence/resources)
+  - [Confluence Templates Gallery](https://www.atlassian.com/software/confluence/templates)
 - Prossimi passi concreti per ciascun partecipante
 - Feedback sul corso
 - Chiusura e ringraziamenti
