@@ -56,6 +56,8 @@ Definite un calendario realistico per le prossime 4-8 settimane:
 | Sett. 3 | | | | |
 | Sett. 4 | | | | |
 
+**Come misurerete il successo?** Definite almeno 1 metrica per il piano (es. riduzione dei ticket di supporto su Jira, numero di colleghi che usano Confluence attivamente, tempo di onboarding ridotto).
+
 ### Step 5 (opzionale) — Creare lo spazio Confluence
 
 > Se il tempo non è sufficiente, completate questo step come attività post-corso.
@@ -69,8 +71,14 @@ Definite un calendario realistico per le prossime 4-8 settimane:
    - Sotto-pagina: Cheat sheet
 3. Collegate i materiali del corso come punto di partenza
 
+### Se sei bloccato
+
+- **Non sapete da dove partire?** Iniziate dal gruppo target che conoscete meglio e procedete per analogia
+- **Il calendario sembra troppo ambizioso?** Meglio un piano realistico con meno attività che un piano completo che non verrà rispettato
+- **Non siete d'accordo sulle priorità?** Votate a maggioranza e annotate le alternative come nota
+
 ## Risultato atteso
 
-- 1 piano di knowledge transfer completo con target, contenuti, formati e calendario
+- 1 piano di knowledge transfer completo con target, contenuti, formati, calendario e almeno 1 metrica di successo
 - Ogni partecipante ha almeno 1 responsabilità specifica nel piano
 - (Opzionale) 1 spazio Confluence strutturato per la formazione interna
