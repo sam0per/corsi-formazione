@@ -1,6 +1,6 @@
-# Esercizio 2 — Integrazione Jira-Confluence
+# Sessione 5 Blocco 2 Esercizio 2 — Integrazione Jira-Confluence
 
-> ⏱ Tempo stimato: 25 minuti | 👥 Individuale, poi confronto
+> ⏱ Tempo stimato: 25 minuti
 
 ## Obiettivo
 
@@ -8,7 +8,7 @@ Integrare contenuti Jira nelle pagine Confluence e viceversa.
 
 ## Istruzioni
 
-### Parte A — Da Jira a Confluence (12 min)
+### Parte A — Da Jira a Confluence
 
 Nella pagina creata nell'esercizio precedente:
 
@@ -27,7 +27,7 @@ Nella pagina creata nell'esercizio precedente:
    - Usa la macro Jira Chart per incorporare un grafico a torta o "creati vs risolti"
    - Collegalo a un filtro salvato
 
-### Parte B — Da Confluence a Jira (8 min)
+### Parte B — Da Confluence a Jira
 
 1. Vai su un elemento di lavoro Jira creato durante il corso
 2. Nella sezione **"Confluence pages"** (pannello laterale del work item):
@@ -38,9 +38,8 @@ Nella pagina creata nell'esercizio precedente:
    - Aggiungi un link alla tua pagina Confluence come documentazione di riferimento
    - Formato: "📖 Documentazione: [link alla pagina Confluence]"
 
-### Parte C — Discussione (5 min)
+### Parte C — Riflessione e discussione
 
-In gruppo, discutete:
 - Quali pagine Confluence sarebbero più utili da collegare ai vostri **spazi** (space) Jira?
 - Come potreste usare le macro Jira per creare report automatici su Confluence?
 - Chi dovrebbe essere responsabile di mantenere aggiornate le pagine?

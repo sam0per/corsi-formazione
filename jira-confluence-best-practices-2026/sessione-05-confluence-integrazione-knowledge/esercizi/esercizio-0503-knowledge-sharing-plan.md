@@ -1,6 +1,6 @@
-# Esercizio 3 — Piano di Knowledge Sharing
+# Sessione 5 Blocco 2 Esercizio 3 — Piano di Knowledge Sharing
 
-> ⏱ Tempo stimato: 25 minuti | 👥 Di gruppo (tutti e 4 i partecipanti)
+> ⏱ Tempo stimato: 25 minuti
 
 ## Obiettivo
 
@@ -8,7 +8,7 @@ Preparare un piano concreto per trasferire le competenze acquisite ai colleghi T
 
 ## Istruzioni
 
-### Step 1 — Identificare il pubblico (5 min)
+### Step 1 — Identificare il pubblico
 
 In gruppo, compilate la tabella:
 
@@ -19,7 +19,7 @@ In gruppo, compilate la tabella:
 | Nuovi assunti | | | |
 | Direzione | | | |
 
-### Step 2 — Definire i contenuti prioritari (5 min)
+### Step 2 — Definire i contenuti prioritari
 
 Per ogni gruppo target, selezionate i **3 argomenti più importanti** da trasferire:
 
@@ -33,7 +33,7 @@ Scegliete tra:
 - Usare Confluence per documentazione
 - Best practice: etichette, componenti, commenti
 
-### Step 3 — Scegliere i formati (5 min)
+### Step 3 — Scegliere i formati
 
 Per ogni argomento, decidete il formato migliore:
 
@@ -45,7 +45,7 @@ Per ogni argomento, decidete il formato migliore:
 | **Affiancamento 1:1** | Personalizzato | Nuovi assunti, casi specifici |
 | **Cheat sheet (1 pagina)** | Rapido, stampabile | Sintassi JQL, shortcut |
 
-### Step 4 — Creare il calendario (5 min)
+### Step 4 — Creare il calendario
 
 Definite un calendario realistico per le prossime 4-8 settimane:
 
@@ -56,7 +56,7 @@ Definite un calendario realistico per le prossime 4-8 settimane:
 | Sett. 3 | | | | |
 | Sett. 4 | | | | |
 
-### Step 5 — Creare lo spazio Confluence (5 min)
+### Step 5 — Creare lo spazio Confluence
 
 1. Create (o strutturate) uno spazio Confluence **"Formazione Jira — Tyvak"**
 2. Create la struttura delle pagine:
@@ -72,11 +72,3 @@ Definite un calendario realistico per le prossime 4-8 settimane:
 - 1 piano di knowledge transfer completo con target, contenuti, formati e calendario
 - 1 spazio Confluence strutturato per la formazione interna
 - Ogni partecipante ha almeno 1 responsabilità specifica nel piano
-
-## Impegno post-corso
-
-Ogni partecipante si impegna a:
-- [ ] Completare la propria parte del piano entro la data concordata
-- [ ] Creare almeno 1 pagina Confluence di documentazione per i colleghi
-- [ ] Condurre almeno 1 sessione di knowledge transfer nelle prossime 4 settimane
-- [ ] Revisione del piano dopo 1 mese con il gruppo

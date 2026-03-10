@@ -1,51 +1,52 @@
-# Esercizio 1 — Creare pagine Confluence
+# Sessione 5 Blocco 1 Esercizio 1 — Creare pagine Confluence
 
-> ⏱ Tempo stimato: 20 minuti | 👥 Individuale
-
-> ℹ️ L'editor legacy di Confluence sarà rimosso ad aprile 2026. Questo esercizio usa l'editor moderno.
+> ⏱ Tempo stimato: 40 minuti
 
 ## Obiettivo
 
-Creare una pagina Confluence strutturata e utile per il proprio ruolo.
+Creare due pagine Confluence strutturate e utili per il proprio ruolo.
 
 ## Istruzioni
 
-### Preparazione (2 min)
+### Preparazione
 
-1. Accedi a Confluence Cloud
+1. Accedi a Confluence
 2. Identifica (o crea) uno spazio Confluence adatto al tuo ruolo
 
-### Creazione pagina (18 min)
+### Creazione pagine
 
-Ogni partecipante crea **1 pagina** seguendo il proprio scenario:
+Ogni partecipante crea **2 pagine** Confluence adatte al proprio ruolo, prendendo spunto dagli esempi seguenti:
 
-**🔧 IT Manager — "Procedura gestione elementi di lavoro IT":**
+**🔧 IT — "Procedura gestione elementi di lavoro IT":**
 - Titolo chiaro e descrittivo
+- Screenshot o diagramma del processo
 - Sezione "Come aprire un **elemento di lavoro** (work item)": istruzioni passo-passo
 - Sezione "Priorità e tempi di risposta": tabella con SLA
 - Sezione "Escalation": chi contattare per urgenze
-- Usa: pannello informativo, tabella, elenco numerato
+- Sezione "FAQ": domande frequenti con risposte
+- Usa: pannello informativo, tabella, elenco numerato, espansione (expand), etichette
 
 **💼 Admin & Finance — "Processo ordine forniture":**
 - Titolo e introduzione
-- Sezione "Flusso di approvazione": diagramma testuale del workflow
+- Sezione "Flusso di approvazione": diagramma testuale o immagine del workflow
 - Sezione "Documenti necessari": checklist
 - Sezione "Contatti fornitori": tabella
-- Usa: tabella, checklist (task list), pannello
+- Sezione "FAQ": domande frequenti con risposte
+- Usa: tabella, checklist (task list), pannello, espansione (expand), etichette
 
 **👥 HR — "Guida onboarding nuovo dipendente":**
 - Titolo e benvenuto
 - Sezione "Prima settimana": programma giorno per giorno
 - Sezione "Checklist documenti": lista con checkbox
 - Sezione "Contatti utili": tabella con nome, ruolo, email
-- Usa: tabella, espansione (expand), checklist
+- Usa: tabella, espansione (expand), checklist, etichette
 
 **🏢 Facility Manager — "Procedura segnalazione reclami":**
 - Titolo e scopo
 - Sezione "Come segnalare": istruzioni con screenshot/placeholder
 - Sezione "Tempi di gestione": tabella con categorie e tempistiche
 - Sezione "FAQ": domande frequenti con espansioni
-- Usa: espansione, pannello di avviso, tabella
+- Usa: espansione, pannello di avviso, tabella, etichette
 
 ### Elementi obbligatori per tutti
 
@@ -58,5 +59,5 @@ Ogni pagina deve includere almeno:
 
 ## Risultato atteso
 
-- 1 pagina Confluence completa, formattata e con etichette
+- 2 pagine Confluence complete, formattate e con etichette
 - Familiarità con l'editor di Confluence e gli elementi di formattazione

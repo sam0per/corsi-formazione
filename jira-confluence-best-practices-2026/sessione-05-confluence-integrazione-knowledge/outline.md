@@ -34,7 +34,8 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Organizzazione: gerarchia pagine, etichette, albero di navigazione
 - Allegati e media
 - Commenti e menzioni
-- Demo live: creare una pagina "Procedura richiesta IT" per Tyvak
+- Collaborazione in tempo reale
+- Versioni e cronologia delle pagine
 
 #### 5.3 Ricerca e navigazione in Confluence (10 min)
 
@@ -45,14 +46,13 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 **☕ Pausa (10 min)**
 
-### Esercizi Blocco 1 (1:00 - 1:45)
+### Esercizi Blocco 1 (1:10 - 1:55)
 
-- [Esercizio 1: Creare pagine Confluence](esercizi/esercizio-05-confluence-pagine.md)
-- [Esercizio 2: Integrazione Jira-Confluence](esercizi/esercizio-05-integrazione-jira.md)
+- [Esercizio 1: Creare pagine Confluence](./esercizi/esercizio-0501-confluence-pagine.md)
 
 ---
 
-### Blocco 2 — Integrazione Jira-Confluence e Knowledge Transfer (1:45 - 2:45)
+### Blocco 2 — Integrazione Jira-Confluence e Knowledge Transfer (1:55 - 2:55)
 
 #### 5.4 Integrazione Jira ↔ Confluence (25 min)
 
@@ -66,7 +66,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
   - Confluence come knowledge base per gli spazi Jira
   - Link nella descrizione dei work item
 - Casi d'uso Tyvak:
-  - Pagina Confluence "Stato onboarding" con macro Jira che mostra le task in tempo reale
+  - Pagina Confluence "Stato ordini" con macro Jira che mostra le task in tempo reale
   - Documentazione procedure IT con link ai workflow Jira
   - Report mensile facility con grafici Jira incorporati
 
@@ -87,16 +87,15 @@ Al termine di questa sessione i partecipanti saranno in grado di:
   3. **Come**: formati (sessioni live, video, documentazione, affiancamento)
   4. **Quando**: tempistiche e calendario
   5. **Materiali**: cosa riutilizzare dal corso, cosa creare ex novo
-- Workshop: ogni partecipante prepara il proprio piano
-- Creazione dello spazio Confluence "Formazione Jira Tyvak"
 
 **☕ Pausa (10 min)**
 
-### Esercizi Blocco 2 (2:45 - 3:30)
+### Esercizi Blocco 2 (3:05 - 3:50)
 
-- [Esercizio 3: Piano di knowledge sharing](esercizi/esercizio-05-knowledge-sharing-plan.md)
+- [Esercizio 2: Integrazione Jira-Confluence](./esercizi/esercizio-0502-integrazione-jira.md)
+- [Esercizio 3: Piano di knowledge sharing](./esercizi/esercizio-0503-knowledge-sharing-plan.md)
 
-### Recap finale del corso e chiusura (3:30 - 4:00)
+### Recap finale del corso e chiusura (3:50 - 4:00)
 
 - Riepilogo delle 5 sessioni: il percorso completo
   - Sessione 1: Fondamenti → ora sapete come è strutturato Jira
@@ -113,9 +112,3 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Chiusura e ringraziamenti
 
 ---
-
-## Materiali di riferimento
-
-- [Slide sessione 5](slides/)
-- [Tutti i cheatsheet](../cheatsheet/)
-- [Glossario](../glossario.md)
