@@ -72,7 +72,8 @@ jira-confluence-best-practices-2026/
 ├── cheatsheet/
 │   ├── jql-cheatsheet.md              ← Riferimento rapido JQL
 │   ├── dashboard-cheatsheet.md        ← Guida rapida dashboard e gadget
-│   └── automazioni-cheatsheet.md      ← Guida rapida automazioni
+│   ├── automazioni-cheatsheet.md      ← Guida rapida automazioni
+│   └── confluence-cheatsheet.md       ← Guida rapida Confluence
 └── glossario.md                       ← Glossario termini Jira/Confluence
 ```
 
