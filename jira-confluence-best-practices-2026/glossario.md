@@ -34,6 +34,8 @@
 
 **Confluence**: Piattaforma wiki di Atlassian per la documentazione e la collaborazione.
 
+**Content tree (Albero di navigazione)**: La sidebar di navigazione di uno spazio Confluence che mostra la gerarchia di pagine, live doc e cartelle. Supporta diverse viste: albero, visite recenti, ultimo aggiornamento, ordine alfabetico.
+
 ## D
 
 **Dashboard**: Pagina personalizzabile con gadget che visualizzano dati da Jira.
@@ -44,7 +46,9 @@
 
 **Epic**: Work item di alto livello che raggruppa altri work item correlati. Rappresenta una funzionalità o un obiettivo grande.
 
-**Etichetta (Label)**: Tag testuale libero per categorizzare i work item (es. "urgente", "onboarding").
+**Espansione (Expand macro)**: Elemento dell'editor Confluence che crea una sezione espandibile/richiudibile. Utile per contenuti opzionali o FAQ. Nota: nel cloud editor non è possibile annidare macro con corpo (bodied macro) all'interno di un'espansione.
+
+**Etichetta (Label)**: Tag testuale libero per categorizzare. In Jira: applicata ai work item (es. "urgente", "onboarding"). In Confluence: applicata a pagine e allegati per organizzare e facilitare la ricerca.
 
 ## F
 
@@ -76,6 +80,8 @@
 
 **Link (Collegamento)**: Relazione tra due work item (es. "blocks", "is blocked by", "relates to").
 
+**Live doc**: Tipo di contenuto Confluence per la collaborazione in tempo reale. A differenza delle pagine, i live doc non hanno un workflow di pubblicazione — le modifiche sono visibili istantaneamente a tutti. Supporta fino a 30 editor simultanei.
+
 ## M
 
 **Macro (Confluence)**: Componente inseribile in una pagina Confluence per mostrare contenuti dinamici (es. Jira Work Items macro).
@@ -91,6 +97,10 @@
 ## P
 
 **Pagina (Page)**: Unità di contenuto in Confluence, equivalente a un documento wiki.
+
+**Page ownership (Proprietario di pagina)**: Funzionalità Confluence che assegna un proprietario a ogni pagina. Di default è il creatore. Il proprietario può essere trasferito da owner, space admin o site admin.
+
+**Pannello (Panel element)**: Elemento dell'editor Confluence per evidenziare contenuti con un riquadro colorato. Tipi predefiniti: info (blu), note (viola), success (verde), warning (giallo), error (rosso).
 
 **Permission scheme**: Schema che definisce chi può fare cosa all'interno di uno spazio (space).
 
@@ -147,6 +157,8 @@
 ## W
 
 **Wallboard**: Modalità di visualizzazione a schermo intero di una dashboard.
+
+**Watching (Seguire)**: Funzionalità Confluence per ricevere notifiche quando una pagina o uno spazio viene modificato. Clicca "Watch" sulla pagina per attivarla.
 
 **Work Item (Elemento di lavoro)**: Unità di lavoro in Jira Cloud (in precedenza chiamata "issue"). Include Epic, Story, Task, Sub-task, Bug e tipi personalizzati.
 
