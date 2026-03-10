@@ -11,7 +11,7 @@ Creare due pagine Confluence strutturate e utili per il proprio ruolo.
 ### Preparazione
 
 1. Accedi a Confluence
-2. Identifica (o crea) uno spazio Confluence adatto al tuo ruolo
+2. Usa lo spazio Confluence predisposto dal docente per il tuo ruolo (oppure, se indicato, creane uno nuovo scegliendo tra i tipi: Collaboration, Knowledge base, Custom)
 
 ### Creazione pagine
 
@@ -70,9 +70,16 @@ Dopo aver creato le pagine:
 
 1. **Ricerca per etichetta**: usa la ricerca di Confluence per trovare tutte le pagine con un'etichetta specifica (es. una delle etichette che hai appena usato)
 2. **Ricerca globale**: cerca una parola chiave presente in una pagina di un collega e verifica che appaia nei risultati
-3. **Preferiti**: aggiungi una pagina creata da un collega ai tuoi preferiti
+3. **Starred (preferiti)**: aggiungi una pagina creata da un collega ai tuoi preferiti (icona stella)
 4. **Pagine recenti**: verifica che le tue pagine appaiano nella sezione "Recenti"
-5. **(Opzionale) Sidebar**: personalizza la sidebar dello spazio aggiungendo uno shortcut a una delle tue pagine
+5. **(Opzionale) Sidebar**: personalizza la sidebar dello spazio aggiungendo uno shortcut a una delle tue pagine (nota: richiede permessi di space admin)
+
+### Se sei bloccato
+
+- **Non trovi la macro o il pannello?** Nell'editor, digita `/` seguito dal nome (es. `/pannello`, `/espansione`, `/tabella`)
+- **Non riesci a creare o accedere allo spazio?** Chiedi al docente — potrebbe servire un permesso globale
+- **L'etichetta non appare nella ricerca?** Attendi qualche secondo e riprova — l'indicizzazione potrebbe richiedere un momento
+- **Non trovi "Starred"?** Nella barra di navigazione a sinistra, cerca la sezione con l'icona stella
 
 ## Risultato atteso
 
