@@ -14,7 +14,14 @@ Nella pagina creata nell'esercizio precedente:
 
 1. **Inserisci una macro Jira Work Items**:
    - Nell'editor Confluence, digita `/jira` per inserire la macro
-   - Inserisci una query JQL rilevante per il tuo ruolo (riusa i filtri della sessione 2, oppure usa: `project = "IT" AND status != Done ORDER BY priority DESC`)
+   - Inserisci una query JQL rilevante per il tuo ruolo (riusa i filtri della sessione 2, oppure scegli dalla tabella):
+
+   | Ruolo | Query JQL suggerita |
+   |-------|---------------------|
+   | **IT** | `project = "IT" AND status != Done ORDER BY priority DESC` |
+   | **Admin & Finance** | `project = "FIN" AND type = "Ordine" ORDER BY created DESC` |
+   | **HR** | `project = "HR" AND labels = "onboarding" ORDER BY priority DESC` |
+   | **Facility** | `project = "FAC" AND status != Done ORDER BY priority DESC` |
    - Configura le colonne visibili: Key, Summary, Status, Priority, Assignee
    - Verifica che la tabella si aggiorni dinamicamente ricaricando la pagina
 
@@ -42,18 +49,27 @@ Nella pagina creata nell'esercizio precedente:
 
 1. **Crea una pagina runbook** nel tuo spazio Confluence, per un processo ricorrente del tuo ruolo:
    - Usa il template **DevOps Runbook** o **ITSM Runbook** dalla galleria template (oppure crea una pagina vuota)
-   - Titolo: "Runbook — [nome processo]" (es. "Runbook — Reset password utente", "Runbook — Richiesta ferie")
+   - Scegli un titolo adatto al tuo ruolo:
+
+   | Ruolo | Esempio titolo runbook |
+   |-------|------------------------|
+   | **IT** | "Runbook — Reset password utente" oppure "Runbook — Provisioning nuovo laptop" |
+   | **Admin & Finance** | "Runbook — Processo approvazione ordine" oppure "Runbook — Chiusura trimestrale" |
+   | **HR** | "Runbook — Richiesta ferie" oppure "Runbook — Onboarding primo giorno" |
+   | **Facility** | "Runbook — Segnalazione guasto impianto" oppure "Runbook — Richiesta manutenzione" |
    - Contenuto minimo: 3-5 step operativi numerati
    - Inserisci un link al workflow o al progetto Jira corrispondente
    - Aggiungi l'etichetta `runbook`
    - *Per un runbook completo (post-corso), aggiungere anche: prerequisiti, step di rollback, contatti di escalation, step di verifica*
 
-2. **Discussione** (5 min): chi dovrebbe essere responsabile di mantenere aggiornate le pagine Confluence collegate a Jira?
+### Discussione di gruppo (5 min)
+
+Chi dovrebbe essere responsabile di mantenere aggiornate le pagine Confluence collegate a Jira? Discutete insieme considerando: page ownership, frequenza di aggiornamento, processi di revisione.
 
 ### Se sei bloccato
 
 - **La macro `/jira` non appare?** Verifica di essere nell'editor della pagina (non in modalità lettura). Prova anche a digitare `/jira work`
-- **Errore nella query JQL?** Usa la query di esempio: `project = "IT" AND status != Done ORDER BY priority DESC`
+- **Errore nella query JQL?** Usa la query base del tuo ruolo dalla tabella sopra, oppure prova: `status != Done ORDER BY priority DESC`
 - **Non trovi dove collegare Confluence nel work item Jira?** Cerca il pulsante "+" o "Link" nel pannello del work item, poi seleziona "Existing Confluence page"
 - **Il link Confluence non appare nel work item?** Attendi qualche secondo — la sincronizzazione bidirezionale potrebbe richiedere un momento
 
