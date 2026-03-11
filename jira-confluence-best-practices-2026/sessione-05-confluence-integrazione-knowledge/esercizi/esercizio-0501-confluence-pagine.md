@@ -74,6 +74,14 @@ Dopo aver creato le pagine:
 4. **Pagine recenti**: verifica che le tue pagine appaiano nella sezione "Recenti"
 5. **(Opzionale) Sidebar**: personalizza la sidebar dello spazio aggiungendo uno shortcut a una delle tue pagine (nota: richiede permessi di space admin)
 
+### Peer review (5 min)
+
+1. **Mostra la tua pagina migliore** a un collega
+2. Il collega risponde a 2 domande:
+   - L'informazione è facile da trovare?
+   - La struttura è chiara per chi non conosce il processo?
+3. Annota un suggerimento ricevuto e, se il tempo lo consente, applica la modifica
+
 ### Se sei bloccato
 
 - **Non trovi la macro o il pannello?** Nell'editor, digita `/` seguito dal nome (es. `/pannello`, `/espansione`, `/tabella`)
@@ -83,6 +91,6 @@ Dopo aver creato le pagine:
 
 ## Risultato atteso
 
-- 2 pagine Confluence complete, formattate e con etichette (di cui una da template)
-- Capacità di usare la ricerca e la navigazione in Confluence
-- Familiarità con l'editor di Confluence e gli elementi di formattazione
+- 2 pagine Confluence che soddisfano tutti e 5 i criteri della checklist obbligatoria (di cui una da template)
+- Almeno 1 pagina di un collega trovata tramite ricerca per etichetta e aggiunta ai preferiti
+- Feedback ricevuto da un collega sulla chiarezza di almeno 1 pagina
