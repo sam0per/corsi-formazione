@@ -2,12 +2,12 @@
 marp: true
 theme: default
 paginate: true
-title: Sessione 5 Confluence Integrazione e Knowledge Transfer
+title: Sessione 5 Confluence Integrazione e Knowledge Sharing
 ---
 
 <!-- _class: lead -->
 
-# Sessione 5: Confluence, Integrazione e Knowledge Transfer
+# Sessione 5: Confluence, Integrazione e Knowledge Sharing
 
 **Documentazione, integrazione Jira-Confluence e piano di knowledge sharing**
 
@@ -178,7 +178,7 @@ Crea 2 pagine (una da zero, una da template) + ricerca e navigazione
 <!-- _class: lead -->
 
 # Blocco 2
-## Integrazione Jira-Confluence e Knowledge Transfer
+## Integrazione Jira-Confluence e Knowledge Sharing
 
 ---
 
@@ -262,7 +262,7 @@ Crea 2 pagine (una da zero, una da template) + ricerca e navigazione
   section { font-size: 24px; }
 </style>
 
-# Piano di Knowledge Transfer
+# Piano di Knowledge Sharing
 
 ### 5 domande chiave
 
@@ -316,6 +316,6 @@ Piano concreto con target, contenuti, formati, calendario e metriche
 
 ### Prossimi passi
 
-- Completare il piano di knowledge transfer
+- Completare il piano di knowledge sharing
 - Creare/strutturare lo spazio Confluence "Formazione Jira — Tyvak"
 - Condurre la prima sessione di formazione interna entro 2 settimane

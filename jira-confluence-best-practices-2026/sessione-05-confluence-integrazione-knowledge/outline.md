@@ -1,4 +1,4 @@
-# Sessione 5 — Confluence, Integrazione e Knowledge Transfer
+# Sessione 5 — Confluence, Integrazione e Knowledge Sharing
 
 > ⏱ Durata: 4 ore | 📅 Sessione 5 di 5 (ultima sessione)
 
@@ -8,7 +8,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 - Usare Confluence per creare e organizzare documentazione
 - Integrare Jira e Confluence per un flusso di lavoro completo
-- Preparare un piano di knowledge transfer per i colleghi
+- Preparare un piano di knowledge sharing (condivisione delle conoscenze) per i colleghi
 - Avere una visione completa delle best practice Jira/Confluence
 
 ---
@@ -52,7 +52,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ---
 
-### Blocco 2 — Integrazione Jira-Confluence e Knowledge Transfer (1:55 - 2:50)
+### Blocco 2 — Integrazione Jira-Confluence e Knowledge Sharing (1:55 - 2:50)
 
 #### 5.4 Integrazione Jira ↔ Confluence (25 min)
 
@@ -79,10 +79,10 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Mantenere la documentazione aggiornata: page ownership in Confluence — chi è responsabile?
 - Ciclo di vita dei contenuti: archiviare pagine obsolete, revisione periodica
 
-#### 5.6 Piano di Knowledge Transfer (15 min)
+#### 5.6 Piano di Knowledge Sharing (15 min)
 
-- Perché il knowledge transfer è fondamentale
-- Struttura di un piano di knowledge transfer:
+- Perché il knowledge sharing è fondamentale
+- Struttura di un piano di knowledge sharing:
   1. **A chi**: gruppi target (team lead, operativi, nuovi assunti)
   2. **Cosa insegnare**: argomenti prioritari per i colleghi
   3. **Come**: formati (sessioni live, video, documentazione, affiancamento)
@@ -103,7 +103,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
   - Sessione 2: JQL → ora sapete trovare qualsiasi informazione
   - Sessione 3: Dashboard → ora sapete visualizzare e comunicare i dati
   - Sessione 4: Automazioni e admin → ora sapete ottimizzare i processi
-  - Sessione 5: Confluence e KT → ora sapete documentare e condividere
+  - Sessione 5: Confluence e KS → ora sapete documentare e condividere
 - Risorse per continuare a imparare:
   - [Atlassian Community](https://community.atlassian.com/)
   - [Atlassian University](https://university.atlassian.com/) — include la certificazione Confluence Essentials (ACA-920)

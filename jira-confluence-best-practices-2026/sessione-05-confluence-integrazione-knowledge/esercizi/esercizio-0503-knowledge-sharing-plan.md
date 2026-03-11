@@ -79,6 +79,6 @@ Definite un calendario realistico per le prossime 4-8 settimane:
 
 ## Risultato atteso
 
-- 1 piano di knowledge transfer completo con target, contenuti, formati, calendario e almeno 1 metrica di successo
+- 1 piano di knowledge sharing completo con target, contenuti, formati, calendario e almeno 1 metrica di successo
 - Ogni partecipante ha almeno 1 responsabilità specifica nel piano
 - (Opzionale) 1 spazio Confluence strutturato per la formazione interna
