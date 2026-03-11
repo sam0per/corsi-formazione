@@ -41,7 +41,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Ricerca per etichetta
 - Pagine recenti e Starred (preferiti)
 - Shortcuts e personalizzazione della sidebar dello spazio (richiede permessi di space admin)
-- Permessi Confluence: permessi di spazio, restrizioni di pagina, gruppi
+- Permessi Confluence: permessi globali (site admin), permessi di spazio (space admin), restrizioni di pagina (autore / space admin). I gruppi sono un meccanismo trasversale per assegnare permessi a tutti i livelli
 - Notifiche e watching: seguire pagine per ricevere aggiornamenti sulle modifiche
 
 **☕ Pausa (10 min)**

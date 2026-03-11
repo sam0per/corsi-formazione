@@ -87,17 +87,19 @@ Sito Atlassian (tyvak.atlassian.net)
 
 | Livello | Cosa controlla | Chi lo gestisce |
 |---------|---------------|-----------------|
+| **Permessi globali** | Accesso a tutta l'istanza Confluence, creazione spazi | Site admin |
 | **Permessi di spazio** | Chi può vedere, aggiungere, eliminare contenuti nello spazio | Space admin |
 | **Restrizioni di pagina** | Limita chi può vedere o modificare una singola pagina | Autore / space admin |
-| **Gruppi** | Insieme di utenti con gli stessi permessi | Site admin |
 
-> **Space shortcuts** (link rapidi nella sidebar): solo gli **space admin** possono aggiungerli.
+> **Gruppi**: meccanismo per assegnare permessi a insiemi di utenti. Utilizzabili a tutti e tre i livelli (globale, spazio, pagina). Gestiti dal site admin.
+
+> **Space shortcuts** (link rapidi nella sidebar): solo gli **space admin** possono aggiungerli. Nota: Atlassian sta progressivamente sostituendo gli shortcuts con Smart Links nel content tree.
 
 ## Notifiche e watching
 
 - **Watch** (seguire): clicca "Watch" su una pagina per ricevere notifiche sulle modifiche
 - **Watch uno spazio**: segui tutte le pagine di uno spazio contemporaneamente
-- **Gestione notifiche**: icona campana → Notification settings
+- **Gestione notifiche**: profilo → **Settings** → **Email** per le preferenze di notifica email. L'icona campana mostra le notifiche recenti ricevute
 
 ## Integrazione Jira ↔ Confluence
 

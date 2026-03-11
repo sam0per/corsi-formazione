@@ -149,19 +149,21 @@ Sito Atlassian (tyvak.atlassian.net)
 
 # Permessi e notifiche
 
-### Permessi
+### Permessi — tre livelli
 
 | Livello | Cosa controlla | Chi gestisce |
 |---------|---------------|--------------|
+| **Globale** | Accesso all'intera istanza Confluence | Site admin |
 | **Spazio** | Accesso a tutto lo spazio | Space admin |
 | **Pagina** | Restrizioni su singola pagina | Autore / space admin |
-| **Gruppi** | Permessi per insiemi di utenti | Site admin |
+
+> **Gruppi**: non sono un livello di permesso, ma un meccanismo per assegnare permessi a insiemi di utenti a tutti e tre i livelli.
 
 ### Notifiche
 
 - **Watch** (seguire): ricevi notifiche quando una pagina cambia
 - **Watch spazio**: segui tutte le pagine di uno spazio
-- Gestione: icona campana → Notification settings
+- Gestione: profilo → **Settings** → **Email** (per preferenze email) oppure "Watch" sulla singola pagina
 
 ---
 
