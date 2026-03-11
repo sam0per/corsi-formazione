@@ -11,6 +11,7 @@ Sito Atlassian (tyvak.atlassian.net)
        ├── Live Doc → documento collaborativo in tempo reale (senza pubblicazione)
        ├── Blog Post → aggiornamenti cronologici
        ├── Whiteboard → lavagna collaborativa
+       ├── Database → dati strutturati in tabelle collaborative
        ├── Cartella (Folder) → organizzazione dei contenuti
        └── Sotto-pagina → gerarchia ad albero
 ```

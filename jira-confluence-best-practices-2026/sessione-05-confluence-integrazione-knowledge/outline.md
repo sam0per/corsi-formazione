@@ -29,7 +29,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 - Creare uno spazio: tipo (Collaboration, Knowledge base, Custom), struttura
 - Creare pagine con l'editor cloud (Atlassian cloud editor)
-  - Tipi di contenuto: pagine, live doc, blog post, whiteboard, cartelle (folder)
+  - Tipi di contenuto: pagine, live doc, blog post, whiteboard, database, cartelle (folder)
 - Formattazione: titoli, tabelle, elenchi, espansioni (expand), pannelli (panel element: info, note, warning, error, success)
 - Template predefiniti: meeting notes, decision, how-to, retrospettiva
 - Organizzazione: gerarchia pagine, etichette (label), content tree
