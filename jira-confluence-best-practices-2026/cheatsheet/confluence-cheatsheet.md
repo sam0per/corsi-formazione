@@ -40,6 +40,8 @@ Sito Atlassian (tyvak.atlassian.net)
 | `/data` | Inserisce un selettore di data |
 | `---` | Inserisce una linea separatrice |
 
+> **Nota**: i comandi sopra funzionano con l'interfaccia Confluence in italiano. Con UI in inglese usare: `/table`, `/expand`, `/panel`, `/action`, `/image`. Il comando `/jira` è uguale in entrambe le lingue.
+
 ## Pannelli (panel element)
 
 | Tipo | Colore | Quando usare |

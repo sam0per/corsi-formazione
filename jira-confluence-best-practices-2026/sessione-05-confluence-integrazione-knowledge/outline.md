@@ -40,7 +40,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 - Ricerca globale Confluence
 - Ricerca per etichetta
 - Pagine recenti e Starred (preferiti)
-- Shortcuts e personalizzazione della sidebar dello spazio (richiede permessi di space admin)
+- Shortcuts e personalizzazione della sidebar dello spazio (richiede permessi di space admin). Nota: Atlassian sta progressivamente sostituendo gli shortcuts con Smart Links nel content tree
 - Permessi Confluence: permessi globali (site admin), permessi di spazio (space admin), restrizioni di pagina (autore / space admin). I gruppi sono un meccanismo trasversale per assegnare permessi a tutti i livelli
 - Notifiche e watching: seguire pagine per ricevere aggiornamenti sulle modifiche
 

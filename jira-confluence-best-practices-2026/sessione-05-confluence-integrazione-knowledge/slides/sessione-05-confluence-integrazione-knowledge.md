@@ -93,6 +93,8 @@ Sito Atlassian (tyvak.atlassian.net)
 | `/immagine` | Immagine |
 | `/jira` | Macro Jira |
 
+> I comandi sopra sono per istanze con UI in italiano. Con UI in inglese usare: `/table`, `/expand`, `/panel`, `/action`, `/image`, `/jira`.
+
 ### Pagine vs Live Doc
 
 - **Pagina**: workflow di pubblicazione (bozza → pubblica)
@@ -115,7 +117,7 @@ Sito Atlassian (tyvak.atlassian.net)
 | **DevOps Runbook** | Procedure operative IT |
 | **ITSM Runbook** | Gestione alert |
 
-> Confluence Cloud offre **70+ template** nella galleria
+> Confluence Cloud offre **100+ template** nella galleria
 
 ---
 
