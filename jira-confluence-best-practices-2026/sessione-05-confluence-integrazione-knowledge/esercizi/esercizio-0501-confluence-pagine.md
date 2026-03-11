@@ -11,7 +11,7 @@ Creare due pagine Confluence strutturate e utili per il proprio ruolo.
 ### Preparazione
 
 1. Accedi a Confluence
-2. Usa lo spazio Confluence predisposto dal docente per il tuo ruolo (oppure, se indicato, creane uno nuovo scegliendo tra i tipi: Collaboration, Knowledge base, Custom)
+2. Usa lo spazio Confluence il tuo ruolo (oppure, se indicato, creane uno nuovo scegliendo tra i tipi: Collaboration, Knowledge base, Custom)
 
 ### Creazione pagine
 

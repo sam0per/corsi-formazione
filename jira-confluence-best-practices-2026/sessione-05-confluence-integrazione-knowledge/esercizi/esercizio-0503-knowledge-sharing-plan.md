@@ -10,7 +10,7 @@ Preparare un piano concreto per trasferire le competenze acquisite ai colleghi T
 
 ### Step 1 — Identificare il pubblico
 
-In gruppo, compilate la tabella:
+Compilate la tabella:
 
 | Gruppo target | N° persone stimate | Livello attuale | Cosa devono sapere |
 |--------------|--------------------|-----------------|--------------------|
@@ -70,12 +70,6 @@ Definite un calendario realistico per le prossime 4-8 settimane:
    - Sotto-pagina: Video e risorse
    - Sotto-pagina: Cheat sheet
 3. Collegate i materiali del corso come punto di partenza
-
-### Se sei bloccato
-
-- **Non sapete da dove partire?** Iniziate dal gruppo target che conoscete meglio e procedete per analogia
-- **Il calendario sembra troppo ambizioso?** Meglio un piano realistico con meno attività che un piano completo che non verrà rispettato
-- **Non siete d'accordo sulle priorità?** Votate a maggioranza e annotate le alternative come nota
 
 ## Risultato atteso
 
