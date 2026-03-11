@@ -51,7 +51,7 @@ Definite un calendario realistico per le prossime 4-8 settimane:
 
 | Settimana | Attività | Responsabile | Formato | Target |
 |-----------|----------|-------------|---------|--------|
-| Sett. 1 | | | | |
+| Sett. 1 | *es. Navigazione base Jira* | *es. IT Manager* | *Sessione live 45 min* | *Team lead* |
 | Sett. 2 | | | | |
 | Sett. 3 | | | | |
 | Sett. 4 | | | | |
