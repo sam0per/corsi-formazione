@@ -15,7 +15,7 @@ Al termine di questa sessione i partecipanti saranno in grado di:
 
 ## Programma dettagliato
 
-### Blocco 1 — Confluence essenziali (0:00 - 1:00)
+### Blocco 1 — Confluence essenziali (0:00 - 1:00, include 10 min Q&A/buffer)
 
 #### 5.1 Panoramica Confluence Cloud (15 min)
 

@@ -46,6 +46,7 @@ Tyvak International
 - **Knowledge base** per procedure, FAQ e guide operative
 - Parte dell'ecosistema Atlassian: Jira + Confluence + JSM
 - Complementare a Jira: **Confluence documenta**, **Jira traccia il lavoro**
+- **Esempio Tyvak**: procedure facility, manuale onboarding HR, documentazione ordini
 
 ---
 
@@ -174,6 +175,8 @@ Sito Atlassian (tyvak.atlassian.net)
 ### 1. Creare pagine Confluence
 
 Crea 2 pagine (una da zero, una da template) + ricerca e navigazione
+
+> Per comandi aggiuntivi dell'editor, consultare il **Confluence Cheatsheet** nei materiali del corso.
 
 ---
 
