@@ -36,6 +36,8 @@
 
 **Content tree (Albero di navigazione)**: La sidebar di navigazione di uno spazio Confluence che mostra la gerarchia di pagine, live doc e cartelle. Supporta diverse viste: albero, visite recenti, ultimo aggiornamento, ordine alfabetico.
 
+**Cartella (Folder)**: Tipo di contenuto Confluence per organizzare pagine e documenti all'interno di uno spazio. Funziona come una directory per raggruppare contenuti correlati.
+
 ## D
 
 **Dashboard**: Pagina personalizzabile con gadget che visualizzano dati da Jira.
@@ -130,6 +132,8 @@
 
 **Sottoscrizione (Subscription)**: Notifica email periodica basata sui risultati di un filtro JQL.
 
+**Smart Link**: Funzionalità Atlassian che genera automaticamente un'anteprima visuale (titolo, stato, icona) quando si incolla un URL di Jira o Confluence in una pagina. Disponibile anche come tipo di contenuto nel content tree di Confluence.
+
 **Spazio (Space)**: In Jira Cloud: **contenitore organizzativo per il lavoro** (in precedenza chiamato "progetto/project"). In Confluence: contenitore per pagine e documentazione. Non confondere i due contesti.
 
 **Space (Spazio Jira)**: Contenitore organizzativo in Jira Cloud (in precedenza "progetto/project"). Non confondere con gli spazi Confluence.
@@ -159,6 +163,8 @@
 **Wallboard**: Modalità di visualizzazione a schermo intero di una dashboard.
 
 **Watching (Seguire)**: Funzionalità Confluence per ricevere notifiche quando una pagina o uno spazio viene modificato. Clicca "Watch" sulla pagina per attivarla.
+
+**Whiteboard (Lavagna)**: Tipo di contenuto Confluence per la collaborazione visuale. Permette di creare diagrammi, mappe mentali e schemi utilizzando forme, connettori, note adesive e testo libero. Supporta la collaborazione simultanea.
 
 **Work Item (Elemento di lavoro)**: Unità di lavoro in Jira Cloud (in precedenza chiamata "issue"). Include Epic, Story, Task, Sub-task, Bug e tipi personalizzati.
 
